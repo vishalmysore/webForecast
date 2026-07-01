@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>webForecast — 200M Time-Series Transformer (WebGPU)</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <main class="app">
+    <header>
+      <h1>webForecast</h1>
+      <p class="sub">
+        Client-side 200M-parameter patched time-series transformer.
+        Instance-normalize → patch → forecast → denormalize, entirely in your browser.
+      </p>
+    </header>
+
+    <section class="controls">
+      <button id="demoBtn">Load demo series</button>
+      <label class="file-label">
+        Load CSV/JSON
+        <input id="file" type="file" accept=".csv,.json,.txt" hidden />
+      </label>
+      <label class="horizon-label">
+        Horizon (patches)
+        <input id="horizon" type="number" min="1" max="32" value="8" />
+      </label>
+      <button id="runBtn" disabled>Forecast</button>
+    </section>
+
+    <section class="chart-wrap">
+      <canvas id="chart"></canvas>
+      <div class="legend">
+        <span><i class="sw hist"></i> history</span>
+        <span><i class="sw fc"></i> forecast</span>
+      </div>
+    </section>
+
+    <footer>
+      <div id="status" class="status">initializing…</div>
+      <div class="meta">d_model 1024 · 12 layers · 16 heads · patch 16 · ctx 512 · q4f16_1</div>
+    </footer>
+  </main>
+
+  <script src="./main.js"></script>
+</body>
+</html>

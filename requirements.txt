@@ -1,0 +1,9 @@
+# Model definition, training, and export (offline / one-time, needs a GPU).
+torch>=2.2
+safetensors>=0.4
+numpy>=1.24
+
+# Weight conversion + WebGPU compilation is done with the MLC LLM toolchain.
+# It is installed from MLC's prebuilt wheels, NOT from PyPI. See scripts/ and
+# https://llm.mlc.ai/docs/install/mlc_llm.html . Pin to a nightly, e.g.:
+#   pip install --pre -U -f https://mlc.ai/wheels mlc-llm-nightly-cpu mlc-ai-nightly-cpu
