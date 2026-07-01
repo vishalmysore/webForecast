@@ -84,6 +84,21 @@ button:disabled { opacity: 0.5; cursor: default; }
   font-size: 0.9rem;
 }
 
+.samples {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 16px;
+  margin: 0 0 16px;
+  font-size: 0.82rem;
+}
+.samples-label { color: var(--muted); }
+.sample { display: inline-flex; align-items: center; gap: 6px; }
+.sample a { color: var(--accent); text-decoration: none; font-family: ui-monospace, monospace; }
+.sample a:hover { text-decoration: underline; }
+.sample a.dl { color: var(--muted); font-size: 0.95rem; text-decoration: none; }
+.sample a.dl:hover { color: var(--accent); }
+
 .chart-wrap {
   background: var(--panel);
   border: 1px solid var(--border);

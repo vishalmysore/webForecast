@@ -186,6 +186,24 @@ function loadSeries(series) {
   draw();
 }
 
+// Load a bundled sample file (fetch -> parse -> chart) when its name is clicked.
+async function loadSampleFromUrl(url) {
+  setStatus(`loading ${url.split('/').pop()}…`);
+  try {
+    const res = await fetch(url, { cache: 'no-store' });
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    loadSeries(parseSeries(await res.text()));
+  } catch (e) {
+    setStatus(`failed to load sample: ${e.message}`, true);
+  }
+}
+document.querySelectorAll('a[data-load]').forEach((a) => {
+  a.addEventListener('click', (e) => {
+    e.preventDefault();
+    loadSampleFromUrl(a.getAttribute('data-load'));
+  });
+});
+
 $('demoBtn').addEventListener('click', () => loadSeries(demoSeries()));
 $('runBtn').addEventListener('click', runForecast);
 $('file').addEventListener('change', (e) => {
