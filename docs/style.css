@@ -98,6 +98,8 @@ button:disabled { opacity: 0.5; cursor: default; }
 .sample a:hover { text-decoration: underline; }
 .sample a.dl { color: var(--muted); font-size: 0.95rem; text-decoration: none; }
 .sample a.dl:hover { color: var(--accent); }
+.sample a.browse { color: var(--muted); font-style: italic; }
+.sample a.browse:hover { color: var(--accent); }
 
 .chart-wrap {
   background: var(--panel);
