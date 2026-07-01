@@ -109,6 +109,7 @@ button:disabled { opacity: 0.5; cursor: default; }
 .sw { width: 16px; height: 3px; border-radius: 2px; display: inline-block; }
 .sw.hist { background: #94a3b8; }
 .sw.fc { background: var(--accent); }
+.sw.band { background: rgba(56,189,248,0.3); height: 10px; border-radius: 3px; }
 
 footer {
   display: flex;

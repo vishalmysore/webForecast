@@ -9,7 +9,9 @@ const $ = (id) => document.getElementById(id);
 
 const state = {
   series: [],          // full historical series (numbers)
-  forecast: [],        // last forecast (numbers)
+  forecast: [],        // last forecast point (q50)
+  lo: [],              // q10 band
+  hi: [],              // q90 band
   engine: '(starting)',
   ready: false,
 };
@@ -65,7 +67,7 @@ function draw() {
   const fc = state.forecast;
   if (!hist.length) return;
 
-  const all = hist.concat(fc);
+  const all = hist.concat(fc, state.lo, state.hi);
   const min = Math.min(...all), max = Math.max(...all);
   const pad = (max - min) * 0.08 || 1;
   const lo = min - pad, hi = max + pad;
@@ -108,6 +110,19 @@ function draw() {
     ctx.stroke();
   };
 
+  // uncertainty band (q10–q90) as a filled polygon
+  if (state.lo.length && state.hi.length) {
+    const off = hist.length - 1;
+    const anchor = hist[hist.length - 1];
+    ctx.fillStyle = 'rgba(56,189,248,0.14)';
+    ctx.beginPath();
+    ctx.moveTo(X(off), Y(anchor));
+    state.hi.forEach((v, i) => ctx.lineTo(X(off + 1 + i), Y(v)));
+    for (let i = state.lo.length - 1; i >= 0; i--) ctx.lineTo(X(off + 1 + i), Y(state.lo[i]));
+    ctx.closePath();
+    ctx.fill();
+  }
+
   line(hist, 0, '#94a3b8', 1.25);                          // history
   if (fc.length) {
     // connect last history point to the forecast for continuity
@@ -130,6 +145,8 @@ worker.onmessage = (ev) => {
       break;
     case 'forecast':
       state.forecast = m.forecast;
+      state.lo = m.lo || [];
+      state.hi = m.hi || [];
       setStatus(`forecast: ${m.horizon} steps in ${m.ms}ms via ${m.engine}`);
       draw();
       $('runBtn').disabled = false;
@@ -154,8 +171,8 @@ function runForecast() {
   if (!state.ready || !state.series.length) return;
   $('runBtn').disabled = true;
   setStatus('forecasting...');
-  const nPred = parseInt($('horizon').value, 10) || 8;
-  worker.postMessage({ type: 'forecast', series: state.series, nPred });
+  const horizon = parseInt($('horizon').value, 10) || 128;
+  worker.postMessage({ type: 'forecast', series: state.series, horizon });
 }
 
 /* ---------------- init ---------------- */
@@ -163,6 +180,8 @@ function loadSeries(series) {
   if (!series.length) { setStatus('no numeric data found', true); return; }
   state.series = series;
   state.forecast = [];
+  state.lo = [];
+  state.hi = [];
   setStatus(`loaded ${series.length} points`);
   draw();
 }

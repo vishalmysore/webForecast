@@ -1,96 +1,107 @@
 # webForecast
 
-Client-side, zero-server **200M-parameter patched time-series transformer** that
-runs forecasting entirely in the browser via WebGPU. Implements
-[`spec.md`](spec.md) — a decoder-only, LLaMA-structured model compiled with the
-MLC LLM (TVM Unity) toolchain and hosted statically on GitHub Pages.
+The **from-scratch TimesFM 70M** time-series foundation model, running **entirely
+in the browser** on WebGPU — no server, no API. Load a series, get an
+autoregressive probabilistic forecast (q50 point + q10–q90 band) rendered on a
+canvas.
+
+**Live:** https://vishalmysore.github.io/webForecast/
+
+Built on and faithful to **[FareedKhan-dev/timesfm-from-scratch](https://github.com/FareedKhan-dev/timesfm-from-scratch)**
+(model + article by Fareed Khan). The published checkpoint
+[FareedKhan/timesfm-from-scratch-70m](https://huggingface.co/FareedKhan/timesfm-from-scratch-70m)
+is loaded, exported to ONNX, int8-quantized, and served to onnxruntime-web.
+
+## Architecture (the "small" / 70M tier)
+
+TimesFM-2.5-style **patched decoder** — not a text LLM. Verified param count:
+**67,810,176 (67.8M)**.
+
+| field | value |
+|-------|-------|
+| model_dim | 1024 |
+| layers | 10 |
+| heads | 16 |
+| patch_len (in) | 32 |
+| horizon_len (out) | 128 |
+| context | 512 (16 patches) |
+| tokenizer | `ResidualBlock(2·patch → dim)` — values **+ padding mask** |
+| norm | **sandwich RMSNorm**, qk-norm, per-dim learned scale |
+| attention | fused QKV, RoPE, SDPA (scale=1.0) |
+| FFN | two-matrix SiLU (not SwiGLU) |
+| output | point + **9 quantile** heads (10 channels); AR feedback on q50 |
+| RevIN | **first-patch** reversible instance norm |
 
 ## Layout
 
 ```
 webForecast/
-├── spec.md                     # the authoritative system spec
-├── requirements.txt            # torch / safetensors / mlc-llm
-├── model/
-│   ├── config.py               # TSConfig — all architecture numbers (~201M)
-│   ├── ts_transformer.py       # the model: patch-embed + LLaMA blocks + head
-│   └── export_llama.py         # adapter -> HF-LLaMA checkpoint for mlc_llm
-├── scripts/
-│   ├── quantize.sh             # spec 3.1  q4f16_1 quantization
-│   └── compile.sh              # spec 3.2  WebGPU compile + stage into docs/
-└── docs/                       # the GitHub Pages site (spec 4)
-    ├── index.html
-    ├── style.css
-    ├── main.js                 # UI: ingest, worker handshake, canvas chart
-    ├── timeSeriesWorker.js     # inference pipeline (WebGPU + local fallback)
-    └── model-config/           # compiled weights land here (git-empty)
+├── model/                    # faithful PyTorch (vendored from the reference)
+│   ├── config.py             # tiny / small / base configs
+│   ├── layers.py             # ResidualBlock, RMSNorm, RoPE, attention, block
+│   ├── revin.py              # first-patch RevIN
+│   ├── timesfm.py            # PatchedDecoder (encode + AR forecast)
+│   └── export_onnx.py        # load HF weights -> static ONNX for the browser
+├── docs/                     # GitHub Pages site
+│   ├── index.html, style.css, main.js
+│   ├── timeSeriesWorker.js   # onnxruntime-web (WebGPU) + JS AR decode + fallback
+│   └── model-config/
+│       ├── timesfm_small.int8.onnx   # 65MB int8 graph (committed)
+│       └── ts_meta.json
+├── requirements.txt
+└── spec.md                   # original system spec (kept for provenance)
 ```
 
-## Architecture (spec §2)
-
-| field | value |
-|-------|-------|
-| type | decoder-only, LLaMA-structured (RMSNorm, RoPE, SwiGLU) |
-| d_model | 1024 |
-| layers | 12 |
-| heads | 16 |
-| context | 512 patches |
-| patch size P | 16 time-steps |
-| params | ~201.4M |
-| quantization | q4f16_1 (~100–120 MB) |
-
-The single adaptation vs. a text LLM: the `nn.Embedding` token table is replaced
-by a **linear patch projection** (`P → d_model`) and the `lm_head` by a **forecast
-head** (`d_model → P`). Everything between is a stock LLaMA graph, so MLC compiles
-it to WebGPU without custom operators. Instance normalization (RevIN-style) wraps
-the whole forward pass.
-
-## Build the model (offline, one-time, needs a GPU)
+## Reproduce the model artifacts (offline)
 
 ```bash
 pip install -r requirements.txt
 
-# 1. sanity-check the architecture / param count
-python model/ts_transformer.py
+# sanity: build the 70M model, print param count + a forecast
+python model/timesfm.py
 
-# 2. (train your checkpoint here -> runs/ts200m.pt)
-
-# 3. export to a LLaMA-format checkpoint for MLC
-python model/export_llama.py --ckpt runs/ts200m.pt --out export --fp16
-
-# 4. quantize + compile to WebGPU, staged into docs/model-config/
-bash scripts/quantize.sh export quantized-model
-bash scripts/compile.sh  quantized-model docs/model-config
+# fetch real weights (271MB) and export the browser ONNX (see docs/model-config/README.md)
+python model/export_onnx.py --weights weights/model.safetensors \
+  --out docs/model-config/timesfm_small.onnx
 ```
 
-## Run the site
-
-Serve `docs/` over HTTP (WebGPU + workers need a real origin):
+## Run locally
 
 ```bash
-python -m http.server -d docs 8000   # http://localhost:8000
+npx serve docs -p 5187      # http://localhost:5187
 ```
 
-- **With compiled weights staged** → the worker loads the MLC WebGPU model.
-- **Without them** → the worker falls back to a dependency-free on-device
-  forecaster running the *same* normalize→patch→autoregress→denormalize
-  pipeline, so the demo works immediately. The status bar always reports which
-  engine ran.
+The worker loads the int8 ONNX and runs the real model on WebGPU (falling back to
+the wasm CPU backend, then to a dependency-free local forecaster if the model or
+runtime can't load). The status bar reports which engine ran, e.g.
+`timesfm-70m-onnx-webgpu`.
 
-## Deploy
+## How the browser inference works
 
-Push to `main`, enable **GitHub Pages → deploy from `/docs`** (spec §5). If the
-weights push the repo toward GitHub's 1 GB limit, host `params/` on a public
-Hugging Face model repo and repoint `CFG.modelDir` in `timeSeriesWorker.js`.
+The ONNX graph is the model's `encode` (fixed 512-context forward → per-patch
+`[16, 128, 10]` predictions in normalized space + first-patch `mu, sigma`).
+`timeSeriesWorker.js` reproduces the rest of `PatchedDecoder.forecast()` in JS:
+build the padding mask, denormalize with `mu, sigma`, take the last patch's
+128-step horizon, feed the **q50 median** (channel 5) back autoregressively for
+horizons > 128, and surface **q10/q90** (channels 1/9) as the uncertainty band.
 
-## Honest status
+## Verified
 
-- ✅ Model definition, param budget, and LLaMA export adapter are complete and
-  verified (`python model/ts_transformer.py`).
-- ✅ Frontend pipeline (ingest, instance-norm, patching, denorm, charting) and
-  the on-device fallback engine are complete and runnable now.
-- ⏳ The WebGPU engine loads MLC artifacts, but driving the compiled graph with
-  *continuous* patch tensors needs the low-level TVM runtime bind (web-llm's
-  chat API is token-oriented). That harness is stubbed with a clear error and
-  is the remaining integration step once real weights exist — see the note in
-  `timeSeriesWorker.js`.
+- ✅ Model builds to **67.8M** params; `strict=True` load of the real weights.
+- ✅ ONNX matches PyTorch to **1.4e-6**; int8 forecast MAE **0.11** (~0.18 %).
+- ✅ Real model runs in-browser on **WebGPU** (~1.3 s / 128-step forecast in
+  local preview), forecast + band render, zero console errors.
+
+## Deployment note
+
+If loading onnxruntime-web from the CDN is blocked on the live site (a COEP /
+service-worker interaction can do this on `*.github.io`), the page transparently
+falls back to the local forecaster. Self-hosting the onnxruntime-web dist under
+`docs/vendor/` and pointing `CFG.ortVersion`/`wasmPaths` at it removes that
+dependency.
+
+## Credit
+
+Model architecture, training, and the 70M checkpoint are the work of
+**[Fareed Khan](https://github.com/FareedKhan-dev)**. This repo packages that model
+for zero-server WebGPU inference.

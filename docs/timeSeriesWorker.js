@@ -1,211 +1,191 @@
 /*
- * timeSeriesWorker.js  (spec Section 6, directive #1)
+ * timeSeriesWorker.js
  * ---------------------------------------------------------------------------
- * Off-main-thread inference pipeline for the 200M patched time-series
- * transformer. Implements the client-side data flow from spec Section 4.4:
+ * Off-main-thread inference for the from-scratch TimesFM 70M model
+ * (FareedKhan-dev/timesfm-from-scratch, "small" tier), exported to ONNX and
+ * run with onnxruntime-web on the WebGPU backend (wasm fallback).
  *
- *   raw series -> instance normalization -> 1D patching
- *              -> transformer forecast (WebGPU model, or local fallback)
- *              -> denormalization -> back to the UI for charting
+ * The ONNX graph is the model's `encode`: it takes a fixed 512-point context +
+ * padding mask and returns per-patch horizon predictions in NORMALIZED space
+ * plus the first-patch (mu, sigma). Everything around it — RevIN denorm, q50
+ * feedback, and the autoregressive loop — is reproduced here in JS to exactly
+ * match PatchedDecoder.forecast(). Point channel 5 = q50 median (TimesFM-2.5
+ * default); channels 1 and 9 are q10/q90 for the uncertainty band.
  *
- * The "continuous linear patch payload injection" the spec describes lives in
- * patchify()/instanceNorm() below: instead of integer token IDs we build
- * P-length float patches and hand them to the engine.
- *
- * Two engines implement the same interface { ready, forecast(patches,...) }:
- *   - WebGPUEngine : loads the MLC-compiled artifacts from ./model-config/ and
- *                    runs them via @mlc-ai/web-llm's WebGPU runtime. Requires
- *                    the ~100MB weights produced by scripts/compile.sh.
- *   - LocalEngine  : dependency-free on-device forecaster implementing the same
- *                    normalize->patch->autoregress->denormalize pipeline so the
- *                    page works on GitHub Pages before the big model is staged.
- *
- * The worker auto-selects WebGPU when the artifacts + navigator.gpu are present
- * and falls back to Local otherwise, always reporting which engine ran.
+ * Engines (same interface): OnnxEngine (real model) with transparent fallback
+ * to LocalEngine (dependency-free) when the model/runtime is unavailable.
  */
 
 'use strict';
 
 const CFG = {
-  patchSize: 16,        // P  (spec 2)
-  nCtxPatches: 512,     // N_patches context window
-  nPredPatches: 8,      // default horizon = 8 * 16 = 128 steps
+  patchLen: 32,
+  contextLen: 512,      // 16 patches
+  horizonLen: 128,      // steps produced per forward
+  numOutputs: 10,       // [mean, q10..q90]
+  pointChannel: 5,      // q50
+  q10Channel: 1,
+  q90Channel: 9,
   modelDir: './model-config',
+  ortVersion: '1.20.1',
 };
 
-/* ------------------------------------------------------------------ *
- * Preprocessing  (spec 4.2)                                          *
- * ------------------------------------------------------------------ */
-function instanceNorm(series) {
-  const n = series.length;
-  const mean = series.reduce((a, b) => a + b, 0) / n;
-  let v = 0;
-  for (const x of series) v += (x - mean) * (x - mean);
-  const std = Math.sqrt(v / n) + 1e-5;
-  const norm = series.map((x) => (x - mean) / std);
-  return { norm, mean, std };
-}
-
-function denorm(values, mean, std) {
-  return values.map((x) => x * std + mean);
-}
-
-// Split a normalized series into non-overlapping P-length patches. The tail is
-// left-padded to a whole patch so short/odd-length inputs still work.
-function patchify(norm, patchSize) {
-  const usable = Math.floor(norm.length / patchSize) * patchSize;
-  const trimmed = norm.slice(norm.length - usable); // keep most-recent window
-  const patches = [];
-  for (let i = 0; i < trimmed.length; i += patchSize) {
-    patches.push(trimmed.slice(i, i + patchSize));
+/* ------------------------- preprocessing ------------------------- */
+// Build the fixed [512] context + padding mask from an arbitrary-length series.
+// Short series are LEFT-padded (mask=1); the model's first-patch RevIN skips the
+// padded patches. Long series keep the most-recent 512 points.
+function buildContext(series) {
+  const L = CFG.contextLen;
+  const x = new Float32Array(L);
+  const pad = new Float32Array(L); // 1 = padded/missing
+  if (series.length >= L) {
+    x.set(series.slice(series.length - L));
+  } else {
+    const off = L - series.length;
+    for (let i = 0; i < off; i++) { x[i] = 0; pad[i] = 1; }
+    x.set(series, off);
   }
-  return patches;
+  return { x, pad };
 }
 
-/* ------------------------------------------------------------------ *
- * LocalEngine -- dependency-free fallback forecaster                 *
- * ------------------------------------------------------------------ *
- * Not the 200M net, but it exercises the identical pipeline and produces a
- * genuine forecast so the demo is useful without the compiled weights. It
- * decomposes the (already instance-normalized) history into a linear trend, a
- * detected seasonal profile, and a damped continuation of recent dynamics.
- */
+/* ------------------------- LocalEngine (fallback) ------------------------- */
 const LocalEngine = {
   name: 'local-js',
-  ready: true,
+  meta: null,
   async init() { return true; },
-
-  // Detect a dominant period via autocorrelation of the residual after trend.
-  _detectPeriod(res) {
-    const n = res.length;
-    const maxLag = Math.min(Math.floor(n / 2), 168); // cap (e.g. weekly-of-hourly)
+  _linfit(y) {
+    const n = y.length; let sx = 0, sy = 0, sxx = 0, sxy = 0;
+    for (let i = 0; i < n; i++) { sx += i; sy += y[i]; sxx += i * i; sxy += i * y[i]; }
+    const d = n * sxx - sx * sx || 1;
+    const slope = (n * sxy - sx * sy) / d;
+    return { slope, intercept: (sy - slope * sx) / n };
+  },
+  _period(res) {
+    const n = res.length, maxLag = Math.min(Math.floor(n / 2), 168);
     let best = 0, bestScore = 0;
     for (let lag = 2; lag <= maxLag; lag++) {
       let num = 0, d0 = 0, d1 = 0;
-      for (let i = lag; i < n; i++) {
-        num += res[i] * res[i - lag];
-        d0 += res[i] * res[i];
-        d1 += res[i - lag] * res[i - lag];
-      }
-      const score = num / (Math.sqrt(d0 * d1) + 1e-9);
-      if (score > bestScore) { bestScore = score; best = lag; }
+      for (let i = lag; i < n; i++) { num += res[i] * res[i - lag]; d0 += res[i] * res[i]; d1 += res[i - lag] * res[i - lag]; }
+      const s = num / (Math.sqrt(d0 * d1) + 1e-9);
+      if (s > bestScore) { bestScore = s; best = lag; }
     }
-    return bestScore > 0.3 ? best : 0; // require meaningful correlation
+    return bestScore > 0.3 ? best : 0;
   },
-
-  _linfit(y) {
-    const n = y.length;
-    let sx = 0, sy = 0, sxx = 0, sxy = 0;
-    for (let i = 0; i < n; i++) { sx += i; sy += y[i]; sxx += i * i; sxy += i * y[i]; }
-    const denomv = n * sxx - sx * sx || 1;
-    const slope = (n * sxy - sx * sy) / denomv;
-    const intercept = (sy - slope * sx) / n;
-    return { slope, intercept };
-  },
-
-  // patches: array of P-length normalized arrays. Returns a flat normalized
-  // forecast of horizon = nPred * P steps.
-  async forecast(patches, nPred, patchSize) {
-    const hist = patches.flat();
+  async forecast(series, horizon) {
+    const hist = series.slice(-CFG.contextLen);
     const n = hist.length;
-    const horizon = nPred * patchSize;
-
     const { slope, intercept } = this._linfit(hist);
     const trend = (i) => intercept + slope * i;
     const resid = hist.map((v, i) => v - trend(i));
-
-    const period = this._detectPeriod(resid);
+    const period = this._period(resid);
     let seasonal = null;
     if (period > 0) {
-      seasonal = new Array(period).fill(0);
-      const counts = new Array(period).fill(0);
-      for (let i = 0; i < n; i++) { seasonal[i % period] += resid[i]; counts[i % period]++; }
-      for (let p = 0; p < period; p++) seasonal[p] /= counts[p] || 1;
+      seasonal = new Array(period).fill(0); const c = new Array(period).fill(0);
+      for (let i = 0; i < n; i++) { seasonal[i % period] += resid[i]; c[i % period]++; }
+      for (let p = 0; p < period; p++) seasonal[p] /= c[p] || 1;
     }
-
-    // Damped continuation of the leftover (non-trend, non-seasonal) noise.
-    const lastResid = resid[n - 1] - (seasonal ? seasonal[(n - 1) % period] : 0);
-    const out = new Array(horizon);
+    const lastR = resid[n - 1] - (seasonal ? seasonal[(n - 1) % period] : 0);
+    const point = new Array(horizon), lo = new Array(horizon), hi = new Array(horizon);
+    const sd = Math.sqrt(resid.reduce((a, b) => a + b * b, 0) / n);
     for (let h = 0; h < horizon; h++) {
       const idx = n + h;
-      let val = trend(idx);
-      if (seasonal) val += seasonal[idx % period];
-      val += lastResid * Math.pow(0.85, h + 1); // damp toward the trend/season
-      out[h] = val;
+      let v = trend(idx);
+      if (seasonal) v += seasonal[idx % period];
+      v += lastR * Math.pow(0.85, h + 1);
+      point[h] = v; const band = sd * (1 + h / horizon);
+      lo[h] = v - 1.28 * band; hi[h] = v + 1.28 * band; // ~q10/q90
     }
-    return out;
+    return { point, lo, hi };
   },
 };
 
-/* ------------------------------------------------------------------ *
- * WebGPUEngine -- MLC-compiled 200M model via @mlc-ai/web-llm         *
- * ------------------------------------------------------------------ */
-const WebGPUEngine = {
-  name: 'webgpu-mlc',
-  ready: false,
+/* ------------------------- OnnxEngine (real model) ------------------------- */
+const OnnxEngine = {
+  name: 'timesfm-70m-onnx',
   meta: null,
-  engine: null,
+  session: null,
+  ort: null,
 
   async init() {
-    if (typeof navigator === 'undefined' || !navigator.gpu) return false;
-    // Are the compiled artifacts staged? ts_meta.json is written by compile.sh.
+    // Model artifacts staged?
     try {
-      const res = await fetch(`${CFG.modelDir}/ts_meta.json`, { cache: 'no-store' });
-      if (!res.ok) return false;
-      this.meta = await res.json();
-    } catch (_) {
-      return false;
-    }
+      const r = await fetch(`${CFG.modelDir}/ts_meta.json`, { cache: 'no-store' });
+      if (!r.ok) return false;
+      this.meta = await r.json();
+    } catch (_) { return false; }
 
-    // Load the web-llm runtime and the MLC WebGPU module. Pinned to 0.2.79
-    // (see memory: webslmdemo-webllm-custom-model-config) for stable custom
-    // appConfig loading.
-    const webllm = await import(
-      'https://esm.run/@mlc-ai/web-llm@0.2.79'
+    const ort = await import(
+      `https://cdn.jsdelivr.net/npm/onnxruntime-web@${CFG.ortVersion}/dist/ort.webgpu.min.mjs`
     );
-    const modelId = 'ts200m-q4f16_1';
-    const appConfig = {
-      model_list: [{
-        model: new URL(`${CFG.modelDir}/params`, self.location.href).href,
-        model_id: modelId,
-        model_lib: new URL(`${CFG.modelDir}/ts_model_webgpu.wasm`, self.location.href).href,
-      }],
-    };
-    this.engine = await webllm.CreateMLCEngine(modelId, {
-      appConfig,
-      initProgressCallback: (p) => post('progress', { stage: 'model', ...p }),
+    this.ort = ort;
+    ort.env.wasm.numThreads = 1; // no SharedArrayBuffer/COEP dependency
+    ort.env.wasm.wasmPaths =
+      `https://cdn.jsdelivr.net/npm/onnxruntime-web@${CFG.ortVersion}/dist/`;
+
+    const hasGPU = typeof navigator !== 'undefined' && !!navigator.gpu;
+    const providers = hasGPU ? ['webgpu', 'wasm'] : ['wasm'];
+    const modelUrl = `${CFG.modelDir}/${this.meta.onnx}`;
+
+    post('log', { message: `loading ONNX (${providers.join('>')}) from ${modelUrl}` });
+    this.session = await ort.InferenceSession.create(modelUrl, {
+      executionProviders: providers,
+      graphOptimizationLevel: 'all',
     });
-    this.ready = true;
+    this.name = `timesfm-70m-onnx-${hasGPU ? 'webgpu' : 'wasm'}`;
     return true;
   },
 
-  // NOTE: @mlc-ai/web-llm's high-level chat API is token-oriented. Driving the
-  // compiled graph with continuous patch tensors requires the low-level TVM
-  // runtime handle (engine.getTVMRuntime-style access) to bind the patch-embed
-  // output directly, plus the ts_io.safetensors projections applied here in JS.
-  // That harness is the remaining integration step once real weights exist.
-  async forecast(patches, nPred, patchSize) {
-    throw new Error(
-      'WebGPU continuous-patch inference harness not yet wired; ' +
-      'stage weights via scripts/compile.sh and implement the TVM patch bind.'
-    );
+  // One encode -> denormalized [128, numOutputs] for the LAST patch position.
+  async _encodeLastPatch(series) {
+    const { x, pad } = buildContext(series);
+    const T = this.ort.Tensor;
+    const feeds = {
+      x: new T('float32', x, [1, CFG.contextLen]),
+      padding: new T('float32', pad, [1, CFG.contextLen]),
+    };
+    const out = await this.session.run(feeds);
+    const o = out.out;                        // [1, 16, 128, 10]
+    const mu = out.mu.data[0], sigma = out.sigma.data[0];
+    const N = o.dims[1], H = o.dims[2], Q = o.dims[3];
+    const base = (N - 1) * H * Q;             // last patch offset
+    const d = o.data;
+    const rows = new Array(H);
+    for (let h = 0; h < H; h++) {
+      const off = base + h * Q;
+      const row = new Float32Array(Q);
+      for (let c = 0; c < Q; c++) row[c] = d[off + c] * sigma + mu; // denorm
+      rows[h] = row;
+    }
+    return rows;                              // [128][10] original scale
+  },
+
+  async forecast(series, horizon) {
+    const point = [], lo = [], hi = [];
+    let ctx = series.slice();
+    let produced = 0;
+    while (produced < horizon) {
+      const rows = await this._encodeLastPatch(ctx);
+      for (let h = 0; h < CFG.horizonLen && produced < horizon; h++, produced++) {
+        point.push(rows[h][CFG.pointChannel]);
+        lo.push(rows[h][CFG.q10Channel]);
+        hi.push(rows[h][CFG.q90Channel]);
+        ctx.push(rows[h][CFG.pointChannel]);  // feed q50 back (AR)
+      }
+    }
+    return { point, lo, hi };
   },
 };
 
-/* ------------------------------------------------------------------ *
- * Worker orchestration                                               *
- * ------------------------------------------------------------------ */
-let activeEngine = LocalEngine;
+/* ------------------------- orchestration ------------------------- */
+let active = LocalEngine;
 
-function post(type, payload) {
-  self.postMessage({ type, ...payload });
-}
+function post(type, payload) { self.postMessage({ type, ...payload }); }
 
 async function selectEngine() {
   try {
-    if (await WebGPUEngine.init()) return WebGPUEngine;
+    if (await OnnxEngine.init()) return OnnxEngine;
   } catch (e) {
-    post('log', { message: `WebGPU engine unavailable: ${e.message}` });
+    post('log', { message: `ONNX engine unavailable: ${e.message}` });
   }
   await LocalEngine.init();
   return LocalEngine;
@@ -215,41 +195,26 @@ self.onmessage = async (ev) => {
   const msg = ev.data || {};
   try {
     if (msg.type === 'init') {
-      activeEngine = await selectEngine();
-      post('ready', { engine: activeEngine.name, meta: activeEngine.meta || null });
+      active = await selectEngine();
+      post('ready', { engine: active.name, meta: active.meta || null });
       return;
     }
-
     if (msg.type === 'forecast') {
-      const series = Float64Array.from(msg.series);
-      const nPred = msg.nPred || CFG.nPredPatches;
-      const patchSize = (activeEngine.meta && activeEngine.meta.patch_size) || CFG.patchSize;
-
-      // 1) normalize  2) patch  3) forecast  4) denormalize
-      const { norm, mean, std } = instanceNorm(Array.from(series));
-      let patches = patchify(norm, patchSize);
-      if (patches.length > CFG.nCtxPatches) patches = patches.slice(-CFG.nCtxPatches);
-
+      const series = Array.from(msg.series);
+      const horizon = msg.horizon || CFG.horizonLen;
       const t0 = performance.now();
-      let forecastNorm;
+      let res;
       try {
-        forecastNorm = await activeEngine.forecast(patches, nPred, patchSize);
+        res = await active.forecast(series, horizon);
       } catch (e) {
-        // Any engine failure -> transparent fallback to Local so the UI works.
-        post('log', { message: `${activeEngine.name} forecast failed, using local: ${e.message}` });
-        await LocalEngine.init();
-        activeEngine = LocalEngine;
-        forecastNorm = await LocalEngine.forecast(patches, nPred, patchSize);
+        post('log', { message: `${active.name} failed, using local: ${e.message}` });
+        await LocalEngine.init(); active = LocalEngine;
+        res = await LocalEngine.forecast(series, horizon);
       }
-      const ms = performance.now() - t0;
-
-      const forecast = denorm(forecastNorm, mean, std);
       post('forecast', {
-        forecast,
-        horizon: forecast.length,
-        engine: activeEngine.name,
-        ms: Math.round(ms),
-        norm: { mean, std },
+        forecast: res.point, lo: res.lo, hi: res.hi,
+        horizon: res.point.length, engine: active.name,
+        ms: Math.round(performance.now() - t0),
       });
       return;
     }
