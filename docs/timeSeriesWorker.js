@@ -119,6 +119,7 @@ const OnnxEngine = {
     );
     this.ort = ort;
     ort.env.wasm.numThreads = 1; // no SharedArrayBuffer/COEP dependency
+    ort.env.logLevel = 'error';  // silence benign "node not assigned to EP" warnings
     ort.env.wasm.wasmPaths =
       `https://cdn.jsdelivr.net/npm/onnxruntime-web@${CFG.ortVersion}/dist/`;
 
@@ -130,6 +131,7 @@ const OnnxEngine = {
     this.session = await ort.InferenceSession.create(modelUrl, {
       executionProviders: providers,
       graphOptimizationLevel: 'all',
+      logSeverityLevel: 3,       // errors only (hide EP-assignment warnings)
     });
     this.name = `timesfm-70m-onnx-${hasGPU ? 'webgpu' : 'wasm'}`;
     return true;

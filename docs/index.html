@@ -58,6 +58,34 @@
       <div id="status" class="status">initializing…</div>
       <div class="meta">TimesFM 70M · d 1024 · 10 layers · 16 heads · patch 32 · ctx 512 · int8 ONNX</div>
     </footer>
+
+    <section class="about">
+      <h2>About the model</h2>
+      <p>
+        This runs the <strong>from-scratch TimesFM 70M</strong> model by
+        <a href="https://github.com/FareedKhan-dev" target="_blank" rel="noopener">Fareed Khan</a> —
+        the published PyTorch checkpoint, exported to ONNX and int8-quantized (~65&nbsp;MB),
+        executed client-side with onnxruntime-web on WebGPU. No server, no API.
+      </p>
+      <ul class="links">
+        <li>
+          <span>Model weights</span>
+          <a href="https://huggingface.co/FareedKhan/timesfm-from-scratch-70m" target="_blank" rel="noopener">huggingface.co/FareedKhan/timesfm-from-scratch-70m</a>
+        </li>
+        <li>
+          <span>Model source &amp; architecture</span>
+          <a href="https://github.com/FareedKhan-dev/timesfm-from-scratch" target="_blank" rel="noopener">github.com/FareedKhan-dev/timesfm-from-scratch</a>
+        </li>
+        <li>
+          <span>Article</span>
+          <a href="https://levelup.gitconnected.com/building-a-200m-parameter-time-series-llm-from-scratch-a99ec624ba15" target="_blank" rel="noopener">Building a 200M-parameter time-series LLM from scratch</a>
+        </li>
+        <li>
+          <span>This deployment</span>
+          <a href="https://github.com/vishalmysore/webForecast" target="_blank" rel="noopener">github.com/vishalmysore/webForecast</a>
+        </li>
+      </ul>
+    </section>
   </main>
 
   <script src="./main.js"></script>
