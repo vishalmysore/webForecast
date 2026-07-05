@@ -115,6 +115,36 @@ button:disabled { opacity: 0.5; cursor: default; }
   display: block;
 }
 
+.tip {
+  position: absolute;
+  display: none;
+  pointer-events: none;
+  z-index: 5;
+  background: rgba(2, 6, 23, 0.92);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 7px 10px;
+  font-size: 0.8rem;
+  color: var(--text);
+  font-family: ui-monospace, monospace;
+  white-space: nowrap;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4);
+}
+.tip b { color: #fff; font-weight: 600; }
+.tip .tip-idx { color: var(--muted); }
+.tip .tip-tag {
+  display: inline-block;
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 1px 5px;
+  border-radius: 4px;
+  margin-right: 6px;
+}
+.tip .tip-tag.history { background: rgba(148, 163, 184, 0.25); color: #cbd5e1; }
+.tip .tip-tag.forecast { background: rgba(56, 189, 248, 0.25); color: var(--accent); }
+.tip .tip-band { color: var(--muted); margin-top: 3px; }
+
 .legend {
   display: flex;
   gap: 18px;

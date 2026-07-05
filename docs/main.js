@@ -67,16 +67,21 @@ function draw() {
   const fc = state.forecast;
   if (!hist.length) return;
 
-  const all = hist.concat(fc, state.lo, state.hi);
-  const min = Math.min(...all), max = Math.max(...all);
+  // y-range spans history + forecast + band; x-axis spans only the plotted
+  // points (history followed by the forecast), so the data fills the width.
+  const yvals = hist.concat(fc, state.lo, state.hi);
+  const min = Math.min(...yvals), max = Math.max(...yvals);
   const pad = (max - min) * 0.08 || 1;
   const lo = min - pad, hi = max + pad;
   const padL = 44, padR = 12, padT = 12, padB = 22;
   const plotW = w - padL - padR, plotH = h - padT - padB;
-  const total = all.length;
+  const total = hist.length + fc.length;
 
   const X = (i) => padL + (i / (total - 1)) * plotW;
   const Y = (v) => padT + (1 - (v - lo) / (hi - lo)) * plotH;
+
+  // stash the transform so the hover handler can map cursor <-> data
+  state.chart = { X, Y, total, histLen: hist.length, padL, plotW, padT, plotB: h - padB, w };
 
   // grid + axis labels
   ctx.strokeStyle = 'rgba(148,163,184,0.18)';
@@ -128,6 +133,70 @@ function draw() {
     // connect last history point to the forecast for continuity
     line([hist[hist.length - 1], ...fc], hist.length - 1, '#38bdf8', 2);
   }
+}
+
+/* ---------------- hover tooltip + crosshair ---------------- */
+// Value/label at a data index (history vs forecast, with q10/q90 band).
+function pointAt(idx) {
+  const h = state.chart.histLen;
+  if (idx <= h - 1) {
+    return { type: 'history', label: `#${idx}`, value: state.series[idx] };
+  }
+  const fi = idx - h;
+  return {
+    type: 'forecast', label: `+${fi + 1}`,
+    value: state.forecast[fi],
+    lo: state.lo[fi], hi: state.hi[fi],
+  };
+}
+
+function showHover(clientX, clientY) {
+  const c = state.chart;
+  const tip = $('tip');
+  if (!c || !state.series.length) { tip.style.display = 'none'; return; }
+  const canvas = $('chart');
+  const rect = canvas.getBoundingClientRect();
+  const mx = clientX - rect.left, my = clientY - rect.top;
+  if (mx < c.padL || mx > c.w - 12) { tip.style.display = 'none'; draw(); return; }
+
+  let idx = Math.round(((mx - c.padL) / c.plotW) * (c.total - 1));
+  idx = Math.max(0, Math.min(c.total - 1, idx));
+  const p = pointAt(idx);
+  if (p.value == null || !isFinite(p.value)) { tip.style.display = 'none'; return; }
+
+  // base chart + crosshair + marker
+  draw();
+  const canvasCtx = canvas.getContext('2d');
+  const px = c.X(idx), py = c.Y(p.value);
+  canvasCtx.save();
+  canvasCtx.strokeStyle = 'rgba(148,163,184,0.5)';
+  canvasCtx.lineWidth = 1;
+  canvasCtx.beginPath(); canvasCtx.moveTo(px, c.padT); canvasCtx.lineTo(px, c.plotB); canvasCtx.stroke();
+  const dot = p.type === 'forecast' ? '#38bdf8' : '#cbd5e1';
+  canvasCtx.fillStyle = dot;
+  canvasCtx.beginPath(); canvasCtx.arc(px, py, 3.5, 0, Math.PI * 2); canvasCtx.fill();
+  canvasCtx.restore();
+
+  // tooltip content
+  let html = `<span class="tip-tag ${p.type}">${p.type}</span>` +
+             `<b>${fmt(p.value)}</b> <span class="tip-idx">${p.label}</span>`;
+  if (p.type === 'forecast' && p.lo != null && p.hi != null) {
+    html += `<div class="tip-band">q10–q90: ${fmt(p.lo)} – ${fmt(p.hi)}</div>`;
+  }
+  tip.innerHTML = html;
+  tip.style.display = 'block';
+  // place near cursor, flipping left near the right edge
+  const tw = tip.offsetWidth;
+  let left = mx + 14; if (left + tw > c.w) left = mx - tw - 14;
+  tip.style.left = `${Math.max(0, left)}px`;
+  tip.style.top = `${Math.max(0, my + 14)}px`;
+}
+
+function fmt(v) {
+  const a = Math.abs(v);
+  if (a >= 1000) return v.toFixed(0);
+  if (a >= 10) return v.toFixed(1);
+  return v.toFixed(2);
 }
 
 /* ---------------- worker wiring ---------------- */
@@ -214,6 +283,11 @@ $('file').addEventListener('change', (e) => {
   r.readAsText(f);
 });
 window.addEventListener('resize', draw);
+
+// hover tooltip
+const chartEl = $('chart');
+chartEl.addEventListener('mousemove', (e) => showHover(e.clientX, e.clientY));
+chartEl.addEventListener('mouseleave', () => { $('tip').style.display = 'none'; draw(); });
 
 loadSeries(demoSeries());
 setStatus('starting inference engine...');
