@@ -281,8 +281,3 @@ scale or unit is fine.
   · [70M checkpoint](https://huggingface.co/FareedKhan/timesfm-from-scratch-70m)
 - **Runtime:** [onnxruntime-web](https://onnxruntime.ai/) (WebGPU)
 - **This deployment:** [webForecast](https://github.com/vishalmysore/webForecast)
-
-Everything here is **MIT-licensed**. The vendored model code retains Fareed
-Khan's copyright notice; the browser packaging, export tooling, and samples are
-under this project's MIT license. You're free to use, modify, and publish it —
-just keep the attribution.
