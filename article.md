@@ -219,9 +219,42 @@ non-seasonal random walk (`stock_price_daily.json`).
    hit **Forecast**.
 3. Check the status bar — `timesfm-70m-onnx-webgpu` means it ran on your GPU.
 
-Ten ready-to-use datasets (and the raw files to download and modify) live at
+### The sample datasets
+
+The app ships with **ten ready-to-use series**, deliberately chosen to span the
+patterns a forecaster meets in the wild — and to show where the model shines and
+where it (honestly) struggles. Click any of them on the page to load and forecast
+instantly, hit the **⭳** to download the raw file, or grab and edit them from
 [`docs/samples/`](https://github.com/vishalmysore/webForecast/tree/main/docs/samples).
-CSV input uses the last numeric column; JSON input is a plain array of numbers.
+
+| dataset | format | pattern it demonstrates |
+|---|---|---|
+| `electricity_hourly.csv` | CSV | daily **and** weekly seasonality + slow trend |
+| `solar_generation_hourly.csv` | CSV | daytime on/off "bell" (zeros at night) + weather noise |
+| `network_traffic_5min.json` | JSON | intraday cycle with occasional bursts |
+| `web_visits.json` | JSON | weekday/weekend traffic rhythm |
+| `temperature_daily.csv` | CSV | annual (365-day) seasonality |
+| `stock_price_daily.json` | JSON | **non-seasonal random walk** — the hard case |
+| `retail_sales_weekly.csv` | CSV | yearly seasonality + trend + a December spike |
+| `co2_monthly.csv` | CSV | strong upward trend + annual cycle (a Keeling curve) |
+| `airline_passengers_monthly.csv` | CSV | *multiplicative* growth × seasonality |
+| `sunspots_monthly.csv` | CSV | a long (~11-year) cycle |
+
+Two are worth loading back-to-back to *see* what a probabilistic model does:
+
+- **`co2_monthly.csv`** — a clean trend + seasonal signal. The forecast confidently
+  continues both the rise and the annual wiggle, with a **tight** q10–q90 band.
+- **`stock_price_daily.json`** — a random walk with no real structure. The model
+  responds with a nearly flat projection and a **wide, fanning** band. That's the
+  correct behavior: it's saying "I don't know," out loud, through its uncertainty.
+
+That contrast is the whole point of quantile forecasting — the *band* tells you
+how much to trust the *line*.
+
+**Input formats.** CSV uses the last numeric column of each row (so a
+`timestamp,value` file just works); JSON is a plain array of numbers. Bring your
+own by clicking **Load CSV/JSON** — the series is normalized per-instance, so any
+scale or unit is fine.
 
 ---
 
