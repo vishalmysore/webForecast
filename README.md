@@ -5,7 +5,7 @@ in the browser** on WebGPU — no server, no API. Load a series, get an
 autoregressive probabilistic forecast (q50 point + q10–q90 band) rendered on a
 canvas.
 
-**Live:** https://vishalmysore.github.io/webForecast/
+**Live:** https://vishalmysore.github.io/webForecast/ · **Write-up:** [article.md](article.md) · **License:** [MIT](LICENSE)
 
 Built on and faithful to **[FareedKhan-dev/timesfm-from-scratch](https://github.com/FareedKhan-dev/timesfm-from-scratch)**
 (model + article by Fareed Khan). The published checkpoint
@@ -100,8 +100,14 @@ falls back to the local forecaster. Self-hosting the onnxruntime-web dist under
 `docs/vendor/` and pointing `CFG.ortVersion`/`wasmPaths` at it removes that
 dependency.
 
-## Credit
+## Credit & license
 
 Model architecture, training, and the 70M checkpoint are the work of
-**[Fareed Khan](https://github.com/FareedKhan-dev)**. This repo packages that model
-for zero-server WebGPU inference.
+**[Fareed Khan](https://github.com/FareedKhan-dev)**
+([timesfm-from-scratch](https://github.com/FareedKhan-dev/timesfm-from-scratch),
+MIT). This repo packages that model for zero-server WebGPU inference.
+
+Everything here is **MIT-licensed** ([LICENSE](LICENSE)) — the vendored model code
+(`model/layers.py`, `model/revin.py`, `model/timesfm.py`) retains Fareed Khan's
+copyright notice; the browser app, export tooling, and samples are under this
+project's MIT license. Free to use, modify, and publish with attribution.
