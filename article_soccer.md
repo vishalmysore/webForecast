@@ -34,7 +34,7 @@ sensible bookmaker would put the favourite.
 
 ---
 
-## Why TimesFM is the *wrong* tool — until you reframe the problem
+## Reframing the question so a forecaster can answer it
 
 TimesFM is a **univariate, patched decoder**. You feed it one numeric sequence
 sampled at a regular interval and it extrapolates the next N points. It has no
