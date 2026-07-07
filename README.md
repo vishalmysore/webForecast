@@ -102,7 +102,8 @@ horizons > 128, and surface **q10/q90** (channels 1/9) as the uncertainty band.
 ## Bonus demo — World Cup 2026 champion odds (`docs/wc/`)
 
 A worked example of using the forecaster as one stage of a larger pipeline, all
-client-side. **[Live](https://vishalmysore.github.io/webForecast/wc/).**
+client-side. **[Live](https://vishalmysore.github.io/webForecast/wc/)** ·
+**[Write-up: article_soccer.md](article_soccer.md).**
 
 1. **Data → Elo.** `scripts/build_elo.py` reads ~49k international results
    (1872–2026, [martj42/international_results](https://github.com/martj42/international_results))
