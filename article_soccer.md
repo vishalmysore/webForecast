@@ -32,6 +32,13 @@ Everything — the model, the 50,000-tournament simulation, the charts — runs 
 static page on your own GPU. Spain comes out top at ~30%, which is about where a
 sensible bookmaker would put the favourite.
 
+> **Credit where it's due.** The time-series model at the heart of this — the
+> from-scratch TimesFM architecture and the 70M checkpoint — is the work of
+> **[Fareed Khan](https://github.com/FareedKhan-dev)**, from his
+> *[timesfm-from-scratch](https://github.com/FareedKhan-dev/timesfm-from-scratch)*
+> project. This post just puts his model to work on a fun forecasting problem.
+> It's MIT-licensed, and so is this.
+
 ---
 
 ## Reframing the question so a forecaster can answer it
