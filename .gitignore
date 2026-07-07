@@ -15,6 +15,12 @@ weights/
 docs/model-config/*.onnx
 !docs/model-config/timesfm_small.int8.onnx
 
+# Raw results dataset (~3.6MB) for the World Cup demo — downloaded, not committed.
+# Regenerate before running scripts/build_elo.py via:
+#   curl -L -o scripts/data/results.csv \
+#     https://raw.githubusercontent.com/martj42/international_results/master/results.csv
+scripts/data/
+
 # scratch
 *.log
 

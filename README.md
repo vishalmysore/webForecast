@@ -45,9 +45,16 @@ webForecast/
 ├── docs/                     # GitHub Pages site
 │   ├── index.html, style.css, main.js
 │   ├── timeSeriesWorker.js   # onnxruntime-web (WebGPU) + JS AR decode + fallback
-│   └── model-config/
-│       ├── timesfm_small.int8.onnx   # 65MB int8 graph (committed)
-│       └── ts_meta.json
+│   ├── model-config/
+│   │   ├── timesfm_small.int8.onnx   # 65MB int8 graph (committed)
+│   │   └── ts_meta.json
+│   └── wc/                   # World Cup 2026 champion-odds demo (see below)
+│       ├── index.html, wc.css, wc.js
+│       ├── poisson.js        # Dixon-Coles match model
+│       ├── tournament.js     # 48-team Monte-Carlo (groups → knockout)
+│       └── elo.json          # real Elo + the 12 groups (precomputed)
+├── scripts/
+│   └── build_elo.py          # offline Elo + group precompute -> docs/wc/elo.json
 ├── requirements.txt
 └── spec.md                   # original system spec (kept for provenance)
 ```
@@ -91,6 +98,35 @@ horizons > 128, and surface **q10/q90** (channels 1/9) as the uncertainty band.
 - ✅ ONNX matches PyTorch to **1.4e-6**; int8 forecast MAE **0.11** (~0.18 %).
 - ✅ Real model runs in-browser on **WebGPU** (~1.3 s / 128-step forecast in
   local preview), forecast + band render, zero console errors.
+
+## Bonus demo — World Cup 2026 champion odds (`docs/wc/`)
+
+A worked example of using the forecaster as one stage of a larger pipeline, all
+client-side. **[Live](https://vishalmysore.github.io/webForecast/wc/).**
+
+1. **Data → Elo.** `scripts/build_elo.py` reads ~49k international results
+   (1872–2026, [martj42/international_results](https://github.com/martj42/international_results))
+   and computes a World Football Elo rating per team, sampled monthly, plus the
+   real 12-group 2026 draw (reconstructed from the scheduled fixtures) →
+   `docs/wc/elo.json`.
+2. **Forecast.** The same TimesFM worker projects each of the 48 teams' Elo
+   trajectory forward; the 1-step q50 is its tournament-time strength and the
+   q10/q90 band is its uncertainty.
+3. **Match model.** `poisson.js` maps two Elos to a Dixon-Coles bivariate-Poisson
+   scoreline distribution (even match ≈ 1.3 goals/side; a 200-Elo edge ≈ +1.4
+   goal supremacy).
+4. **Tournament.** `tournament.js` Monte-Carlos the real format — 12 groups of 4
+   (round-robin) → top two + eight best thirds → 32-team knockout — sampling
+   scorelines per match. Optionally each team's strength is drawn from its
+   forecast band per trial, so forecast uncertainty propagates into the odds.
+
+The result is a per-team championship probability (favourites land in the
+realistic ~15–30 % range, and everything sums to 100 %). It's a demo, not a
+betting model: the knockout seeding is a merit-based simplification of FIFA's
+positional bracket, and the odds carry wide, honest uncertainty.
+
+To regenerate the data: `curl` the results CSV (command in `.gitignore`) into
+`scripts/data/`, then `python scripts/build_elo.py`.
 
 ## Deployment note
 

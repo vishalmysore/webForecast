@@ -1,0 +1,82 @@
+/* World Cup page — small additions on top of the shared style.css */
+
+.controls .chk {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: #cbd5e1;
+  user-select: none;
+}
+.controls select {
+  background: #0f172a;
+  color: #e2e8f0;
+  border: 1px solid #334155;
+  border-radius: 6px;
+  padding: 3px 6px;
+}
+
+.section-label {
+  font-size: 12px;
+  font-weight: 600;
+  color: #94a3b8;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  margin: 14px 0 8px;
+}
+
+/* group draw */
+.groups {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 8px;
+}
+.group {
+  background: rgba(15, 23, 42, 0.5);
+  border: 1px solid rgba(148, 163, 184, 0.15);
+  border-radius: 8px;
+  padding: 7px 9px;
+}
+.group .ghead { font-size: 11px; font-weight: 700; color: #38bdf8; margin-bottom: 4px; }
+.gteam {
+  display: flex; justify-content: space-between; gap: 6px;
+  font-size: 12px; color: #cbd5e1; padding: 1px 0;
+}
+.gteam .ge { color: #64748b; font-variant-numeric: tabular-nums; }
+.gteam:first-of-type span:first-child { color: #e2e8f0; font-weight: 600; }
+
+.odds { margin-top: 18px; }
+.odds-scroll { max-height: 640px; overflow-y: auto; border-radius: 8px; }
+table#oddsTable {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+#oddsTable th, #oddsTable td {
+  padding: 7px 10px;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.15);
+  text-align: left;
+}
+#oddsTable th { color: #94a3b8; font-weight: 600; font-size: 12px; }
+#oddsTable td.num, #oddsTable th.num { text-align: right; font-variant-numeric: tabular-nums; }
+#oddsTable td.empty { text-align: center; color: #64748b; padding: 22px; }
+#oddsTable .team { font-weight: 600; color: #e2e8f0; }
+#oddsTable .grp { color: #94a3b8; font-size: 12px; }
+#oddsTable thead th { position: sticky; top: 0; background: #0b1220; z-index: 1; }
+#oddsTable .champ { font-weight: 700; color: #38bdf8; text-align: right; font-variant-numeric: tabular-nums; }
+.bar-col { width: 34%; }
+.bar {
+  position: relative;
+  height: 14px;
+  background: rgba(56, 189, 248, 0.10);
+  border-radius: 4px;
+  overflow: hidden;
+}
+.bar > span {
+  position: absolute; left: 0; top: 0; bottom: 0;
+  background: linear-gradient(90deg, #0ea5e9, #38bdf8);
+  border-radius: 4px;
+}
+.legend { flex-wrap: wrap; gap: 10px 16px; }
+.legend .team-key { display: inline-flex; align-items: center; gap: 5px; font-size: 12px; color: #cbd5e1; }
+.legend .team-key i { width: 12px; height: 3px; border-radius: 2px; display: inline-block; }

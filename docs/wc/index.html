@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>webForecast · World Cup 2026 champion odds</title>
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="./wc.css" />
+</head>
+<body>
+  <main class="app">
+    <header>
+      <h1>World Cup 2026 · champion odds</h1>
+      <p class="sub">
+        The full 48-team tournament, forecast entirely in your browser.
+        <b>TimesFM 70M</b> (WebGPU) projects each team's <b>Elo trajectory</b>
+        forward from real match history; a <b>Dixon-Coles</b> model samples every
+        scoreline; a <b>Monte-Carlo</b> of the real format — 12 groups → best
+        thirds → 32-team knockout — turns those into championship probability.
+        No server.
+      </p>
+    </header>
+
+    <section class="controls">
+      <label class="horizon-label">Trials
+        <select id="trials">
+          <option value="20000">20k</option>
+          <option value="50000" selected>50k</option>
+          <option value="100000">100k</option>
+        </select>
+      </label>
+      <label class="chk"><input type="checkbox" id="uncertain" checked />
+        propagate forecast uncertainty</label>
+      <button id="runBtn" disabled>Forecast tournament</button>
+    </section>
+
+    <section class="groups-wrap">
+      <div class="section-label">The draw · 12 groups (Elo shown)</div>
+      <div id="groups" class="groups"></div>
+    </section>
+
+    <section class="chart-wrap">
+      <div class="section-label">Elo history + TimesFM forecast · top 8 contenders</div>
+      <canvas id="chart"></canvas>
+      <div class="legend" id="legend"></div>
+    </section>
+
+    <section class="odds">
+      <div class="section-label">Championship odds · all 48 teams</div>
+      <div class="odds-scroll">
+      <table id="oddsTable">
+        <thead>
+          <tr>
+            <th>#</th><th>Team</th><th>Grp</th><th class="num">Elo now→proj</th>
+            <th class="num">R16</th><th class="num">QF</th>
+            <th class="num">Champion</th><th class="bar-col">odds</th>
+          </tr>
+        </thead>
+        <tbody id="oddsBody">
+          <tr><td colspan="8" class="empty">Run the forecast to see odds.</td></tr>
+        </tbody>
+      </table>
+      </div>
+    </section>
+
+    <footer>
+      <div id="status" class="status">initializing…</div>
+      <div class="meta">
+        Elo from 49k internationals (1872–2026) · real 2026 draw · TimesFM 70M
+        ONNX/WebGPU · Dixon-Coles ρ=−0.06 · <a href="../index.html">← time-series demo</a>
+      </div>
+    </footer>
+  </main>
+  <script type="module" src="./wc.js"></script>
+</body>
+</html>
