@@ -17,7 +17,9 @@
         forward from real match history; a <b>Dixon-Coles</b> model samples every
         scoreline; a <b>Monte-Carlo</b> of the real format — 12 groups → best
         thirds → 32-team knockout — turns those into championship probability.
-        No server.
+        A <b>SentiScore</b> alongside each team reads the tone of the last two
+        weeks of world news headlines — a media-sentiment index, not a
+        predictor. No server.
       </p>
     </header>
 
@@ -52,12 +54,13 @@
         <thead>
           <tr>
             <th>#</th><th>Team</th><th>Grp</th><th class="num">Elo now→proj</th>
+            <th class="senti-col">SentiScore</th>
             <th class="num">R16</th><th class="num">QF</th>
             <th class="num">Champion</th><th class="bar-col">odds</th>
           </tr>
         </thead>
         <tbody id="oddsBody">
-          <tr><td colspan="8" class="empty">Run the forecast to see odds.</td></tr>
+          <tr><td colspan="9" class="empty">Run the forecast to see odds.</td></tr>
         </tbody>
       </table>
       </div>
@@ -67,7 +70,8 @@
       <div id="status" class="status">initializing…</div>
       <div class="meta">
         Elo from 49k internationals (1872–2026) · real 2026 draw · TimesFM 70M
-        ONNX/WebGPU · Dixon-Coles ρ=−0.06 · <a href="../index.html">← time-series demo</a>
+        ONNX/WebGPU · Dixon-Coles ρ=−0.06 · SentiScore = Google News tone / VADER (14d) ·
+        <a href="../index.html">← time-series demo</a>
       </div>
     </footer>
   </main>

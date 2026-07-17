@@ -22,7 +22,7 @@ const FC_HORIZON = 12;
 const COLORS = ['#38bdf8', '#f472b6', '#a3e635', '#fbbf24', '#c084fc',
                 '#fb7185', '#34d399', '#60a5fa'];
 
-const state = { data: null, ready: false, fc: null, groupOf: {}, chartRows: null };
+const state = { data: null, senti: null, ready: false, fc: null, groupOf: {}, chartRows: null };
 
 /* ---------------- worker forecast client (strictly sequential) ---------------- */
 const worker = new Worker('../timeSeriesWorker.js');
@@ -69,6 +69,25 @@ function gauss(mean, sd) {
   return mean + sd * Math.sqrt(-2 * Math.log(u)) * Math.cos(2 * Math.PI * v);
 }
 const pct = (p) => (p * 100).toFixed(p >= 0.1 ? 1 : 2) + '%';
+const escapeHtml = (s) => String(s).replace(/[&<>"']/g,
+  (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+
+/* ---------------- SentiScore (media-sentiment) cell ---------------- */
+function sentiCell(team) {
+  const s = state.senti && state.senti.teams[team];
+  if (!s || s.score == null) {
+    return '<span class="senti-pill s-na" title="No recent coverage found">'
+      + '<span class="sv">—</span></span>';
+  }
+  const cls = s.score >= 54 ? 's-high' : s.score >= 46 ? 's-mid' : 's-low';
+  const heads = (s.headlines || []).slice(0, 3)
+    .map((h) => `• ${h.title}${h.domain ? ' (' + h.domain + ')' : ''}`).join('\n');
+  const tip = `Media-sentiment index — ${s.label} (tone ${s.tone > 0 ? '+' : ''}${s.tone})`
+    + `\nGDELT news tone, last ${state.senti.timespan}. Not a measure of anyone's emotional state.`
+    + (heads ? `\n\nRecent coverage:\n${heads}` : '');
+  return `<span class="senti-pill ${cls}" title="${escapeHtml(tip)}">`
+    + `<span class="sv">${s.score}</span><span class="sl">${escapeHtml(s.label)}</span></span>`;
+}
 
 /* ---------------- forecasting (once, cached) ---------------- */
 async function forecastAll() {
@@ -135,6 +154,7 @@ function renderTable(rows) {
       <td class="team">${r.team}</td>
       <td class="grp">${r.group}</td>
       <td class="num">${Math.round(r.eloNow)}→${Math.round(r.eloProj)}</td>
+      <td class="senti">${sentiCell(r.team)}</td>
       <td class="num">${pct(r.reach['Round of 16'])}</td>
       <td class="num">${pct(r.reach['Quarterfinal'])}</td>
       <td class="champ">${pct(r.champion)}</td>
@@ -228,7 +248,12 @@ async function init() {
       for (const m of members) state.groupOf[m] = k;
     }
     renderGroups();
-    setStatus(`loaded ${state.data.teams.length} teams · ${Object.keys(state.data.groups).length} groups · ${state.data.months.length} monthly Elo points · starting engine…`);
+    // SentiScore is a sidecar metric — load it if present, but never block on it
+    try {
+      const sres = await fetch('./senti.json', { cache: 'no-store' });
+      if (sres.ok) state.senti = await sres.json();
+    } catch (_) { /* no senti.json yet — table shows — for the column */ }
+    setStatus(`loaded ${state.data.teams.length} teams · ${Object.keys(state.data.groups).length} groups · ${state.data.months.length} monthly Elo points${state.senti ? ' · SentiScore loaded' : ''} · starting engine…`);
   } catch (e) {
     setStatus(`failed to load elo.json: ${e.message}`, true);
     return;
