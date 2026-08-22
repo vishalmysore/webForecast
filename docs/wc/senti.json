@@ -1,27 +1,27 @@
 {
-"generated": "2026-08-21",
+"generated": "2026-08-22",
 "method": "Google News RSS headlines over 14d, VADER compound sentiment, score=clamp(50+5*tone,0,100)",
 "source": "Google News RSS + VADER (no API key)",
 "note": "Media-sentiment index: how positive/negative recent public coverage of the team is. Not a measure of anyone's emotional state.",
 "timespan": "14d",
 "teams": {
 "Algeria": {
-"score": 51,
-"tone": 0.19,
+"score": 52,
+"tone": 0.42,
 "volume": 3,
 "label": "neutral",
 "headlines": [
+{
+"title": "Ivory Coast collapse against Algeria at WAFCON after errors and red card",
+"domain": "www.espn.com",
+"url": "https://news.google.com/rss/articles/CBMingFBVV95cUxON3cyTE9lV3RJR0p0SmZVanZSVFBnZkJ6Ung0WWRvNzM3dXZaY092RWNxckgzTkxlU19sYjdVakdPeENkSTdSN3B1ZEFzS200Z1E0ZFZpLTFpZ3N0U0F5di1ld3ppNGltUkVydy1sUjFuMVJBajJySFFqbndLZjJGTldrOVhoOGJxTTF3Mm1xNEtZWTlkbUQ3RzAxd3BiUQ?oc=5",
+"date": "Sat, 08 Aug 2026 07:00:00 GMT"
+},
 {
 "title": "Morocco, Algeria reach WAFCON semifinals and qualify for FIFA World Cup",
 "domain": "www.aljazeera.com",
 "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPM2luNGdnTWJjZ1VNOXZYaXFUbDVIZ3NCYmdTTkZCMTY3NGZCTms3WTRzM0hqaWlxVU1pYmhnZ3lrYUhqaExCY1BkM1p5OWxXWUZ0YnJkTXJ2S0xkc2pWRWdSRmg3OEJmSnpWeEpTUUlqUFZRSmwwLVQ0a09RTW1wOG9kbE9MSjVTYTJyaDFKX2VpZDVMZmwtc3ZOVF9Db0FoaU5TakFfUms4d3FMaVpuRFJB0gG3AUFVX3lxTE5reU1QRi0xRkdwRWYtVGs3c1lmNktVYXljb0JaWjNIM0E0eW1OM1Bka2NGQjVwbUZXeG4xT2NJVzlkZElpdWJYcERjaHA3enROLU1SVzI4eWJFdUlhLU9mV19HdzduZjlvWGFUekVjOFduUnhQYjBFNVVhTmp2VVBEekwxYWFUQUlPb2dDUm0xdklQTU52aVpuUEJKM05rYXUwNzRubEhvdEtuN3RwY1pVR2tORE12VQ?oc=5",
 "date": "Sun, 09 Aug 2026 07:00:00 GMT"
-},
-{
-"title": "Morocco 1-1 Algeria (Aug 15, 2026) Final Score",
-"domain": "www.espn.com",
-"url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE44Z3IzdGtlY29MbWpiaFdHUTd1ckpFel85eE5vXzZGcG9XSTd3RGl1U1JXdnRkNlVaVFR1bWcyLXhpTnJOVHJOaXl6QkdhTHN5dkZhTjZ4UktlbUlQdDBJcjk1VFpvSkJ1MzJrd0Vha3VYWmd1M25J?oc=5",
-"date": "Sat, 15 Aug 2026 07:00:00 GMT"
 },
 {
 "title": "Two Spirit Players Help Teams Clinch Spot in 2027 FIFA Women’s World Cup After WAFCON Quarterfinals",
@@ -32,62 +32,62 @@
 ]
 },
 "Argentina": {
-"score": 50,
-"tone": -0.01,
+"score": 35,
+"tone": -3.08,
 "volume": 3,
-"label": "neutral",
+"label": "under pressure",
 "headlines": [
 {
-"title": "Norway calls on Infantino to quit amid backing from Mexico, Argentina",
+"title": "Argentina players, staff banned for combined 21 games after World Cup final brawl - The Athletic",
+"domain": "www.nytimes.com",
+"url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNLVlodUgwWE1qbjFDcThCWXNyS1ktek5sMS1lQld0N1dUWVFBOTlJanc2LURqZWd5bkZKcEl1Y0JSZWZ0ZU5JcnNWbXRPcVJ0NzJHYTNlLUNSbzFfakdZVGZZTFlHOWxDSHVfWV9Fak5CYVNidjl0SlM1aXRVY0FEQWVOY215UFhRWlRick1GckZUY3RtZENBYg?oc=5",
+"date": "Fri, 21 Aug 2026 16:13:34 GMT"
+},
+{
+"title": "Paredes banned 10 games as Argentina punished for World Cup final brawl",
 "domain": "www.espn.com",
-"url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOeUduTWFUNTEyQW9CQ3BVU002YzBBczBIMnk3VG1OdWlzejJOMDdlaVpGd3p6V1oxSEE2a0pPdjQ1RnR4LTdGOUFXR3lPWmc0bFZQT2dQNXFXV1dsU2RFeTVuc3JqcHVuTFRRNG1obThleldjLWpJYmE5RE9VYUJ3R2hmNzlpd243MkF3ZURETl9GakE2ZjdoeVJKTTF0UGFMYk82YzRrYmNrRzZR?oc=5",
-"date": "Fri, 07 Aug 2026 07:00:00 GMT"
+"url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQaDdHeXUzdjRKRVM5OWQzU2d1UjlveFFVaE16Yy15LURHZFhwTzF1YXFsWFNsRmIxNEVHc01JYVFSSjhvT0ZCWDQ5NGZWaVUzZTdOSzVOelJMZXRza0J1MnFhM2s2WXoxX0RtWWZXMW1FOVVsMjRTcHYtREtnZTR5Q01LT0c5MDhKVHNDNDJsRXNpYmFfa3JodEVYaWtVMUNmZkJKUG9mSXB1UjhLTFZOYkpEVWxCam9yVzdCSmJqSkFfX1NRNEJ3UXlOTHVBOVVQaXl3Yw?oc=5",
+"date": "Fri, 21 Aug 2026 14:52:00 GMT"
 },
 {
-"title": "Jorge Messi, father of Argentina soccer great Lionel Messi, dies at 68",
-"domain": "www.cbsnews.com",
-"url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPamJEZ3A3MGVwQ2dZSXhJeVE5WGFFeThPR2hHeVRFdjBzUVJ5RkpFRGp1amNNckpyM1NQSnkyUkE2U3ZLZmxVQk9NUTRlZXNnMk80NW1hRC10bU50UnUzUl83YndJcENQcHBKN2djQkFlR1NvSkJuZURKUnpGZjlzV3Z0cFd3ay01VWw4QXBNSmFYLVVzb1E?oc=5",
-"date": "Sat, 08 Aug 2026 07:00:00 GMT"
-},
-{
-"title": "'Game for the ages': Messi, Argentina stage comeback against Egypt in World Cup thriller - ABC News",
-"domain": "abcnews.com",
-"url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPMTczZ194ZUxLTjFScmNSaXFXOGpFb2R5MlBLbFJmamlhRXBjS0l6NzFBNExLZlBMakFMTnRtbURpM1p3RkxNbEVmVm1DUGZOVnpwbkJITEdNSUdzbDlsN3dGNkJkdkFQTDNybUxpRWNFZ0loRHViMElhZWpEa2JQVG1nX2dvVmlmck10RWtfZGwzLVdleUlxQzViTlZESlRFTlHSAacBQVVfeXFMTUVWUkpDMS05TE5Fa3dwX082Smx2ZUV2THdhQUM4b293NnlMNDJJRG01OHVhYV9NSUhCRFpYQXFBUlQwVmUxZlNqejFDWHRJaHg5eWw0czhuR0lsbGhtejFBc3VTbllRSGdQb1ZjdmZqUy1RZV9mVW9la1gzV2hMUHl3dVVUd2lLbWFXV0RnOHpPMVFDNUg5Z09tSmlaVF9FQ3JnX0N4NVE?oc=5",
-"date": "Wed, 19 Aug 2026 15:56:31 GMT"
+"title": "Paredes banned for 10 games after World Cup final fracas, Argentina fined",
+"domain": "www.reuters.com",
+"url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQWlBpR2t3SUZ6Q25IYUd6ZWNVc2xtOW9EN2lrTEM5VGhlcGlIZWtyNHpfN0FxcE9kdU1ES2tfaG5KVk9Hejc2MzBTdUltRFgyTFJ2QVJKcEtIdmc5dDJSd0hSREVRblF4T3dHMUh5NEtHcEp5RDJaNDhEMllDOHM1NUpOTDZUXzdRSS12VFpIX0NuWUJsbTQ4d0tkUjVRMUNYQzZHVkkzZWprY1VYTUVzQ3JQZF9QNUY4UGc?oc=5",
+"date": "Fri, 21 Aug 2026 18:56:43 GMT"
 }
 ]
 },
 "Australia": {
-"score": 55,
-"tone": 1.0,
+"score": 57,
+"tone": 1.44,
 "volume": 3,
 "label": "positive",
 "headlines": [
 {
-"title": "Australia falls into line with AFC stance but stops short of calling for Infantino’s head",
-"domain": "www.theguardian.com",
-"url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxONHVPdVZNcG9iZS1fRUNHM2lGSjVlcFZfY3VUS3BEbnl6N0oxVG1ZcGhkRF9aMzdlYlZsanhNSGc5WDhXNnFMQ1JnMmJ3ajBHX0JiRDBJYXFIVFU4OWxjVmNUaS1pWldITlI3aWZwVVJ5MzBLY05uc1lTbWY1dklENU05TVlXbmhCR3BPY3hLWjdSQTVaTHJ0cXF6QjV2dmpMLUZOVllZc3hZOWFNeVJR?oc=5",
-"date": "Tue, 11 Aug 2026 07:00:00 GMT"
+"title": "US defeats Australia 2-0 in 2nd World Cup win, securing spot in knockout round - ABC News",
+"domain": "abcnews.com",
+"url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPSXBTR1FFbWpiY0NHdTVrbUJWMThud1VCeUdjdUxxMkNya3FSWFR3eVZ5VzhxQzh3dENoclVqRGZBRVgwU01OcS1CNEJPeF95cXhocWN4c25VX2Vya3RvemNxWUh3cE1Fay1tMDdJS3ZtYzhOa0Q2d202b1ZhaFZnOGJkdkUxWXFsM1FidnVVTHBMNzjSAZgBQVVfeXFMT3owMXU3ejVNb3AxWkItVllZMkZJNDZUdGhMT1YtcGt1WlVrcDJnQkZ0bzN1T3N5WkppLXdPVXpvazN1NUE1ZnoyenRka0lZT0szQ00za1FsZ1FJWDdZS1owU2JuVkR1SnRrWjFmNlV6SHJSeXFDcV9GcmMtUVlaLVlTdXU4NVotdThxNzd1UGV3bG4xYjBpYXk?oc=5",
+"date": "Fri, 21 Aug 2026 07:20:08 GMT"
 },
 {
 "title": "49ers Set to Paint Melbourne Red with Schedule of Events Ahead of First-Ever NFL Australia Game",
 "domain": "www.49ers.com",
 "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQWXJFX3Zkb1I5dlRzb2NEaHVxTUlMa0ZOeHdRYUwzd0NCbzRFejhISmVZbnlJWnlJRjlfWXY4QjgxVXVka3ZEa2RieWFTUllCaDQtc3RzZWpSX2dDeHhOb2l6VE1EV0JuRlJ5TkgzQWxkLXNtREFiSnhxdFJ2QXU1ODRPUHJRYWhVUW5XTlFmR0F2QnBpOUpId0M0OWpWZmp5QUNwU2ZhNjhMc0tENkV0OEpXcXF0RURKenEwTVE0VQ?oc=5",
-"date": "Wed, 12 Aug 2026 20:03:19 GMT"
+"date": "Wed, 12 Aug 2026 07:00:00 GMT"
 },
 {
-"title": "Meet FSU punter Daniel Hughes, the most interesting man in college football",
-"domain": "www.tomahawknation.com",
-"url": "https://news.google.com/rss/articles/CBMixAJBVV95cUxNV2h4SDlFM0JmUkY1dklGOXIxbGFPODFzbkxMcGMtYlUxVl9qUkVWSS1DN1RzbzNUdzBEcHBBRFlQSDlTTHNYeUN5U1FRR0Z6WUg5ZkZxUlVYbUNEa2thZUJNM1FXM1RyY2l2cWsxcXJYNS1vVHJjZjZ1Zkh1ZGdHVEpNMURQeEVxMEo2dEp0clRHQVNpY21WQTJKLWpibnhxZWVGOHBZWHNfWVNXUkQ4WmdlRmJ3eFUyalRWNG0xYXVfWDFaS1FBMEtFVld4UWg2aE9SeU5rX2RLMjMwQTVHWW80Z0xGSE0tdFVjRF85UEZwUTNrNDczRk5SRG5JZUszRFNyMVlMTlI5WFlORFhYZVNwenNPRjN1RXcyWDhwUXRlMnhYOXlMVW44WmNsb1NmNUNZcWtvMkZ0OWF3SVZCZENPTkk?oc=5",
-"date": "Sat, 15 Aug 2026 12:00:00 GMT"
+"title": "Australia falls into line with AFC stance but stops short of calling for Infantino’s head",
+"domain": "www.theguardian.com",
+"url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxONHVPdVZNcG9iZS1fRUNHM2lGSjVlcFZfY3VUS3BEbnl6N0oxVG1ZcGhkRF9aMzdlYlZsanhNSGc5WDhXNnFMQ1JnMmJ3ajBHX0JiRDBJYXFIVFU4OWxjVmNUaS1pWldITlI3aWZwVVJ5MzBLY05uc1lTbWY1dklENU05TVlXbmhCR3BPY3hLWjdSQTVaTHJ0cXF6QjV2dmpMLUZOVllZc3hZOWFNeVJR?oc=5",
+"date": "Tue, 11 Aug 2026 07:00:00 GMT"
 }
 ]
 },
 "Austria": {
-"score": 73,
-"tone": 4.61,
+"score": 60,
+"tone": 1.93,
 "volume": 3,
-"label": "buoyant",
+"label": "positive",
 "headlines": [
 {
 "title": "Construction in Austria Revealed a Roman-Era Mass Grave Beneath a Soccer Field. New Research Suggests That the Men's Enemies Targeted Their 'Sensitive Areas'",
@@ -96,48 +96,48 @@
 "date": "Thu, 20 Aug 2026 15:06:00 GMT"
 },
 {
-"title": "In-form trio lead Belgium into Austria showdown",
-"domain": "www.daviscup.com",
-"url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxONHZSVC1BVkJVTUZUdnRuckp6ZVk4dlhfZVhyVTBvbFVFT2NEZEszSXNnTzh1Z2c0RXJETlQ3VXQ0UE5EdGtfUWFVTUJaY3pFMktLdXQ1blFrd0FLWHM3WmpGMkxmcm5IczBiQ2YzUTZQc0c5QmgyVWNzS0NnOG9xQ0trRTV2TWM?oc=5",
-"date": "Mon, 17 Aug 2026 20:47:40 GMT"
-},
-{
 "title": "Austria UEFA Super Cup Soccer",
 "domain": "www.daytondailynews.com",
 "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPYkpxaFhzMkZyaTBvanllaFYxMXY3NFNXMEZRUzNiLXItczE1RktnMVdkTkItZTRBVzU5QWxwd19reWtrcUJKeVhYUHlxbVVCTHJKYTJwNlgzcFpyZzY2QXlYMWw5TFVub01WRDBXWFNBSFJ1SUVWNVhPd3p1NF9ROXJmMmNVa1Q4RWx0VjBCTHlFQUw3SVMxMzRMRHBaQzhaaVRFNG5NRWpINWhrbFlHM1RVUGNfU3NtTVBvYmRJaw?oc=5",
 "date": "Tue, 11 Aug 2026 17:53:18 GMT"
+},
+{
+"title": "Austria’s football story: From Vienna’s gardens to the world stage",
+"domain": "www.uefa.com",
+"url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPNDV5NW9wTE1rMm0xSHR6clIwTFNGbmMzREZxclRuS1B2QU52RkJTdFllXzRHdzkzbmhpa3JxQzlaOGE0Vl9ESTI0dUlsR3NfZHV0aGl6U0JlOUZYc3kzSXlGR1ZTS3c1dWFhVmtTSmtDRGxIUDYxX1JhVUdTY0g3TTJuZ0dNTTBSVVJuX1J0eDVGUXFQSFhFdE1meC1veFVQWmN6ZEt6RG0xaVF0ajE3cnZURzV0dDlwc2tUQVItUF85R09XaXFNdHFING1sNnNWeHlV?oc=5",
+"date": "Mon, 10 Aug 2026 08:52:13 GMT"
 }
 ]
 },
 "Belgium": {
-"score": 53,
-"tone": 0.54,
+"score": 54,
+"tone": 0.74,
 "volume": 3,
-"label": "neutral",
+"label": "positive",
 "headlines": [
 {
-"title": "Youri Tielemans Opens Up on Surprise Manchester United Move and Belgium's World Cup Heartbreak",
-"domain": "sports.yahoo.com",
-"url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPMlFid0JER2FXODVCNE16VDk0c0JmZEpwSC0tenB2ZWdBdEVBMWRfdTlqWVkyRmVqY3FrNUVodW1iV2Rxa28tZ2RlLWlLX2JyZzBzcnNib2hFTmVYVEVsMzZ6dldVRjJjQm1hQ0E5WFBsa3ZYcWp4c0o2OVNpbFE2S01iZU11d2t0ZjM5aW5QSHNtOTRx?oc=5",
-"date": "Sat, 15 Aug 2026 00:28:00 GMT"
-},
-{
-"title": "Youri Tielemans: FIFA's Balogun red card U-turn inspired Belgium to beat U.S. at World Cup",
-"domain": "www.espn.com",
-"url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNWHBydndlc2F4c3lMRWFPb0J5VHFoSkFuSER5b21vYmVZbXByWkRVOXRiZWM1S0o2bnBMUWxYbjM0VU5jMEN6bW1vVnlSWGJtckFua3dLV0ZkZFI1d0lGTVlCVTVwb3pkV3lxUHR0Zm5QN215VUN3LWpMYkdwNVRheUJwV2hmQ0xsYnBQUHl6X0I1TFAzNHdXMmhnV3dFdmVQUlRCU1R2all0bl9QSmlMLWdWcU9RWnFEUHlDdEN4UWZUSWZNU21ZRkUzWGwwd0E?oc=5",
-"date": "Wed, 12 Aug 2026 07:00:00 GMT"
+"title": "Garcia blames Belgium’s doctors for World Cup struggles",
+"domain": "www.reuters.com",
+"url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNZmFJb0JOMWROdnNjQTl2TDFwOFB1QzN6S1d6ZTUydVZQYzVfVVc5OEpQaUEtVjVnQlNLWmVyaW9RWGh3dVU2ZFJyd1l0WVVIVVNzVHh3cldzaXVBU0VISDBDU1FxdE9xTHY2WHJJdGt2dFAyZllncmM5S0lpN256YWVKck4zdzJUVm0wR3RhWkR4cUttanpma0N0aFBiYzAya2c?oc=5",
+"date": "Mon, 17 Aug 2026 19:33:00 GMT"
 },
 {
 "title": "Belgium winger Diego Moreira joins AC Milan in latest big-money sale by Strasbourg",
 "domain": "www.bozemandailychronicle.com",
 "url": "https://news.google.com/rss/articles/CBMijwJBVV95cUxOTjFTT3VxeFhCYWNCeEt1VFF0U3hpcGczYkd5YVJhZzBFRUtEaDlzT3F1OUlwTmhEaEJYQUJzUDU5TDh0Q2pQcVhpWHFWQXZGNE51OU5PSFdVRlBPaVoxT2JqdXMxYkRHa2tfR0dpQ19FbHJ5TURDVTlMM3dncHhjMmxhQ3dKdHp4UDlHZkpRdUhLeW50eHV4cmd0OFpuaGFnbXBUc2ZiOVJnNUs0ZHRKMHBTQ2k0b1Rla1JTbW43UjkxY3dmQXhqX3RlVU5LdTBpa2Q2c25oTThRcmo5d1dZdnZGVjBXNFBYeGZUUHRQSjdNQUV3Q2JaUFhkajN4UzBsOGlQWEQzdmJBR1BTSXpr?oc=5",
 "date": "Thu, 20 Aug 2026 08:56:31 GMT"
+},
+{
+"title": "Belgium players ‘surprised’ by Folarin Balogun World Cup ban decision – Youri Tielemans - The Athletic",
+"domain": "www.nytimes.com",
+"url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPOWlhdGpxQnIzc3phUllIR0FRVUprbWhncl9VTlFNSzdYYmVYTHlPTnZsSF9VSGhrTkJTdVpGandUbjBaazJhbWlmWXBTWG1BNWtWTk0wZkIzZjdTcFZ6elZ5OFowQjl4cUtEY202QjdUSjVpdzlDZEZ3VjBReW9uYVh2dEEycTU2TlFxRGdad2U3V0dmVzRmdTB1VEVwOGc?oc=5",
+"date": "Wed, 12 Aug 2026 07:00:00 GMT"
 }
 ]
 },
 "Bosnia and Herzegovina": {
 "score": 52,
-"tone": 0.44,
+"tone": 0.46,
 "volume": 3,
 "label": "neutral",
 "headlines": [
@@ -145,25 +145,25 @@
 "title": "World Cup Odds: USA vs. Bosnia-Herzegovina Lines, Spreads, Betting Trends",
 "domain": "www.vegasinsider.com",
 "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOdF90STJZQXZCcE92eGsxMlMzWjJKeHBxRWF5dWxHcjJ5bmlydWVpc0JTbVRwQ0tXTkRJWnNHRnE5X3YwY3FtUTNUXzZKa0xrczg1X3FIeEg5X1U4dGRsS0F4MmZBaHRkYWFrMXB1M016VVl0bFRackk2ZF8zS1NCNHdUeURadw?oc=5",
-"date": "Wed, 19 Aug 2026 07:00:00 GMT"
-},
-{
-"title": "Balogun furore risks eroding faith in officiating, say Webb and Masters",
-"domain": "www.reuters.com",
-"url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOLWJwWG92Zk5MZXVHOWVlZ0pTTlV6d0dNenk0TGpjNDNDUGZRaHRkWUhlUmFzUkxyY0xmVXM3dUlsUHREcjVtdXRtWW9qY01NQTlKanJYYVFOMlotaXdqcF9jWmx4TUpmWFdDUVZyak9KZEtNaUdqTnBPM25NdnJyUkdQRkxoaE5acE9uVEdBR2F4c1kweVVUT1FEZ05SZngwTWFfdU81Tm5DNEE3UjJ1ckhjVQ?oc=5",
-"date": "Wed, 19 Aug 2026 16:29:26 GMT"
+"date": "Thu, 20 Aug 2026 07:00:00 GMT"
 },
 {
 "title": "Canada is ready to become a soccer nation as it hosts World Cup opener against Bosnia",
 "domain": "foxchattanooga.com",
 "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNUTRTYmV1YWV3RkxMSTFqaGt0NUFpSnBDQTVSYkJQblpmT0ZzZ1M2WHRqTFoyTDNqSlNXNHA4MHBQWk5ENHNxS09vZFVYOUU1VGxmQVRSVDFUZFoyOHNPRU1oMWFJNDRpMkNwdTEzcTVQUXdrOVp3ME9SZ0U4b2hzSGQwMVVGMmpSQkZrQXl6QjQ1Q2cyYkVEeElWWnV1Skk5U0tCUjVKNngybmpCVUZVUmhaY2NseG1ZcmtVZUIxX2lzbFY0dDVvRXEyRWI5ZV9sM1oya3lxNS1RQQ?oc=5",
 "date": "Wed, 12 Aug 2026 21:29:34 GMT"
+},
+{
+"title": "Newcastle sign Bosnian defender Dedic from Benfica",
+"domain": "www.reuters.com",
+"url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQX1k1NVR4X2FVLUh4TkFPSXRBUVp3ZHhCZTlYa1ZHc3RQWUtRZFB4OVNocEx0LTlXQThsQV9HTW8xS1FsOFUtd21QU3JlZlpwTGNNOUFHOGlhd0p2R0NjZHczdXhDbG5LRUtKc0JSTjV6Wl9vdlBmOTY0N1lldzJRT2xWWjByMndObExqUENoWUVFbVNEazNDTTZjWQ?oc=5",
+"date": "Tue, 18 Aug 2026 08:43:43 GMT"
 }
 ]
 },
 "Brazil": {
-"score": 57,
-"tone": 1.36,
+"score": 58,
+"tone": 1.66,
 "volume": 3,
 "label": "positive",
 "headlines": [
@@ -180,50 +180,50 @@
 "date": "Thu, 20 Aug 2026 16:49:52 GMT"
 },
 {
-"title": "That sinking feeling: The viral Brazilian goal celebration that went badly wrong - The Athletic",
-"domain": "www.nytimes.com",
-"url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxONjkyNkFNc09yeU1mV0hkNkFXS0FSYWYycUt5S1pGNm1pU0xLaUVIVU8wSEVBemVQNmtEbmNkSllOd0dmZjl3NDJ4bjFwMlBISUVDbE81a0ladWJIQWFOZy1KRHNaYVl3d1dmbC0xSVZtVS1waUxNSUQzQjFBQmNpMVdxbUtqcnFUUE55MTVHSVhlVm53Rmc?oc=5",
-"date": "Mon, 10 Aug 2026 07:00:00 GMT"
+"title": "Brazil Soccer Legend Ronaldinho is Coming Out of Retirement at 46-Years Old To Play Professionally in Italy's Serie C",
+"domain": "www.barstoolsports.com",
+"url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxObjZDTlhGMUVGSkQzVm9RbWFNVVFleXQtY1pJX3g4Zm9IRXNsSi1jSnVEZkZLczdOZ0thMmhPdklSbkRFNUFGUVB6Ull4b2NTekVKUWFJSDFrSS1FZ0EwemE0QTZ4MXljbHdTUElTS0EwWi1lMEVZZG1veGplWDA0eVdOaV9pZ0JldUlIMy1MRVBVTGZfdXBJcVhCWTE3SHpPOFNhYlh3VHRXMkx2Ym1WaHJNYW9IeEpQM2JDRnpR?oc=5",
+"date": "Fri, 21 Aug 2026 14:32:36 GMT"
 }
 ]
 },
 "Canada": {
-"score": 64,
-"tone": 2.84,
-"volume": 3,
-"label": "buoyant",
-"headlines": [
-{
-"title": "U.S. Under-17 Women's National Team Downs Canada, 4-1, to Finish Final Training Camp Before 2026 FIFA U-17 Women's World Cup in Morocco",
-"domain": "www.ussoccer.com",
-"url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQamQ3ajhaNVBkTXJ3OG5vS1FtdTBQOS01TnNQekFuVkgtNjlreWtyc21JM2F5MXBYdFAxdDBaeS1zNFNxUGU5Zzl6bXBxYVgxRllBdmZNYkpSaUs5bURRRGpSTkJBUnI1RnB2T2lBWDg3dzNlSEFuczVCX3M5TFFxM1Fvd2ZBY3d0YnlnT0V3eVFlSHMwLWtkaGZDSVpPb0NmVU9VVFB4UGtVeElmX29rekUyQnM5UmUxcndiMzloWGR1cjJL?oc=5",
-"date": "Fri, 21 Aug 2026 00:39:12 GMT"
-},
-{
-"title": "Concacaf joins the Football Association of Ireland, Canada Soccer and UEFA Together for Women in Football Leadership Knowledge Exchange",
-"domain": "www.concacaf.com",
-"url": "https://news.google.com/rss/articles/CBMilAJBVV95cUxQYUxmUWFlUW1rMnZ2X3NJVjJDcTdDamhfdXNRNmpYLTBIaGRzTnZlOWNVNGk4UFpEdFNaTUdWcDhfNV9aeG1wNTdpMjZ2X2ltRGVBc2ZvLUFpUnA4R2FsZzM1T085LTdQYW1xZlpDUkxkQ29PZU9Zc2tRUU1RUm1jdm5tMjRFbUZubkIxWEE1RkZiYm5MdHJSY2hwMVRrTG9icUNVRy1kMzNTWHJrVmRZb1kyR3RNV0plR3JPazhuejF6S18zZ0l2dzM4S3ZiaUhOVkhJYXJOUHMxNHpZNDBfSEgxclVWZ1g1a0JvQi1ER2s1dmFIbThrdmphRjl2X1JJWGVfYk9GYVhieXpiRUJRQVVnSVI?oc=5",
-"date": "Thu, 13 Aug 2026 19:15:26 GMT"
-},
-{
-"title": "How Jacob Shaffelburg’s wild World Cup ride is helping fuel LAFC’s post-break surge",
-"domain": "www.latimes.com",
-"url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9BakNRUkxGREpUbFRLNU5JcnJKTmpVSzlZd0pWUWVpXzQ3YWV4NVo4VURfSzN1eVRMS1IxSG5DX2dJa1FLazAxOEhQMjF0bmVENnZVYmNSbEliTmJoTnJMNjdWRkhYajhwUVI0ZWJpOGNWanhF?oc=5",
-"date": "Tue, 18 Aug 2026 11:00:00 GMT"
-}
-]
-},
-"Cape Verde": {
-"score": 57,
-"tone": 1.38,
+"score": 60,
+"tone": 2.1,
 "volume": 3,
 "label": "positive",
 "headlines": [
 {
-"title": "Grass from Cape Verde’s historic World Cup goal preserved by RI museum",
-"domain": "www.wpri.com",
-"url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQWlJYNDhKTHJLUTJWYkhSeUxrMS1aNXFLWGZNUGNtd1FfVlJIVlF3elVuWEFHby02ZzBWMS1OWXJ1Z1RtWEV2eHF2VlRoazRWY2xhMWdpZDNnZUNhOG1ocHNKM3MyR084ZVl4cEI2NlpoMm95SkxYcWQySXJBb3RPU19JTXRhMVNBMmk1ZjJHTlEtcXJnbWs5eVdSR2tOTjRxVi04LVVSV3ZHaHlBYzBNQ9IBtgFBVV95cUxPQXlfVHI2R0RMVlhOOFJYcnVobXlRVEdvckVCOXB3NURqX1hCeTA1YW45Q3NqV3p4S0Y5R3I3OXp4czVQLXQtU1V0Y0lsQXJ6RWo1T09wZE9KSUFRb1dPeDlhTndxTjI4TVRCc281akpmbGEtRFpLR01pSXJ2MTVBamZXX0JVWGRFZFdsNjZLTjI3RHp3TkFSck5id0ZaZlNrYWg2MFlYZTBOTkU1TlhYMm85Y2c2Zw?oc=5",
-"date": "Fri, 07 Aug 2026 07:00:00 GMT"
+"title": "SOC’s Noelle Sather Selected to Represent Canada in FIFA U-20 Women’s World Cup",
+"domain": "baylorbears.com",
+"url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQa3NRTjMxYWxyYzlLV3Z6enNnVzRsXzNOTW84a0tVWGhZLWtFRTUtSXltZWZRbld5LVBPQUNCZkhqNGRsaDlOSUcyR3RlOFA0Q2t5d19tQUxfVThPdXdZRkEzNk5IVmRpUEJuLUJzazc5bUpFdDZrbVBubWgyRDk0YU1uaThnaFV5SllLbjQxV3Rnd2NoVDgzNjkxX0dzLW8tclFHOUFONUk3R1VIWkZlaFhnMUNRTXJfbjlDazdDeW0?oc=5",
+"date": "Fri, 21 Aug 2026 21:33:53 GMT"
+},
+{
+"title": "Henning Named to Canada U20 Team for FIFA World Cup",
+"domain": "msuspartans.com",
+"url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNSmliQmhWRlMyQ1F2V0owdHBybVRQYlVucVpxM0l5Znp5WXhCQk1XNUdwTXB4VmpUeXRtLWhkWjh2R3BnLVZMMzB2aEdlOVhOdzVHZ0pwcUVUb0lyT1ExZk5UdzhTd3lXcTFYY1ZqbWNEeXQ1cWNhQmRaUE5IR3JXWkN1VGJxdjVDRnV5MFF4RHhlZGw3Z292ckw1TzM1eHowb053Q09sMA?oc=5",
+"date": "Fri, 21 Aug 2026 16:10:29 GMT"
+},
+{
+"title": "Henning named to Canada's U-20 FIFA Women's World Cup roster",
+"domain": "statenews.com",
+"url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNdmxmTGtHOVJSR0ZzQWNPWGUteENPWEk3a1dESW50dm9rU3RoTFNGRkZZdEtOekR5RjR0ejJmc2ZVLUIzYXJraXVGWS1LOEwyeTF0VWp1N1Z4azg2ODVQRFJfdVV3T1NfSkRRRDk0REpTS1YydXNhUFhvSzdJcERVNWJ4dUc3MjVTYU9sZy1QT05xUFQ5c0sxSDZabnI?oc=5",
+"date": "Fri, 21 Aug 2026 23:56:51 GMT"
+}
+]
+},
+"Cape Verde": {
+"score": 56,
+"tone": 1.16,
+"volume": 3,
+"label": "positive",
+"headlines": [
+{
+"title": "World Cup sensation Cape Verde appoints Bettencourt as coach to succeed Bubista",
+"domain": "www.newsday.com",
+"url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBTN2FKcllLNk04d3FtUFB1NzhBOWYwNC1kaXFBLUlCaUpzYnlOdVFxN2hfQk9Tc2tXUFo0UWRfZDlreVIzY3B4bzBlMlpJTVlkTVZuZW1jWExMWDg0Qjk4NFhfUjZQSFd0b2V3VW5iVngxNmY4ZlZqeTFkU0JkUQ?oc=5",
+"date": "Wed, 19 Aug 2026 14:37:48 GMT"
 },
 {
 "title": "FIFA World Cup 2026 MD5 recap: Cape Verde holding Spain headline day of draws",
@@ -241,7 +241,7 @@
 },
 "Colombia": {
 "score": 56,
-"tone": 1.14,
+"tone": 1.16,
 "volume": 3,
 "label": "positive",
 "headlines": [
@@ -266,8 +266,8 @@
 ]
 },
 "Croatia": {
-"score": 50,
-"tone": -0.03,
+"score": 49,
+"tone": -0.14,
 "volume": 3,
 "label": "neutral",
 "headlines": [
@@ -292,10 +292,10 @@
 ]
 },
 "Curaçao": {
-"score": 48,
-"tone": -0.39,
+"score": 44,
+"tone": -1.29,
 "volume": 3,
-"label": "neutral",
+"label": "strained",
 "headlines": [
 {
 "title": "Curaçao is a smart Caribbean escape for fall. Here's how to plan a trip",
@@ -304,22 +304,22 @@
 "date": "Sun, 16 Aug 2026 12:41:04 GMT"
 },
 {
-"title": "Curacao World Cup 2026: Fixtures, results, manager, squad depth and tactical analysis",
-"domain": "www.squawka.com",
-"url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQdVBJclJSTV84NDI5NzRHRlo5MVZHSnhfQ1VwTUtMSV9WU1ppNHlJa1p4dUxyYnZlUWJhdTI4X1h0dFJBSlkyblZkdHF6UWxERFhtMkE2ZFJQcVRPc09IekVuUmZMcldXQlhySEdZSUl0X0twWHhhZHUtVklaNW9CdTNscHVsalEwbFp0QjFoYU90TzYyenJja3pUNHFidw?oc=5",
-"date": "Thu, 20 Aug 2026 15:01:45 GMT"
+"title": "🔴Germany Vs Curaçao LIVE | FIFA World Cup 2026 | Germany Vs Curaçao At NRG Stadium, Houston | Brunch (hu1kkriG0s)",
+"domain": "mshale.com",
+"url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5OQjVFbFEySmZqSnV0T2hRdE5ManktZVBOMWx6NXQ5S0czQkpHZF9wcnFjR2YwOTNCeFpUMTFGMVlaTnRhc3IyN05VTFhLMEpwOXF0RVZ0RnpTZThTYU1PVg?oc=5",
+"date": "Fri, 14 Aug 2026 20:40:24 GMT"
 },
 {
-"title": "Technical and Medical Staff Contracts Expire; Curaçao Football Federation Begins Evaluation Process",
-"domain": "www.curacaochronicle.com",
-"url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQZXduTENBcUVmNGxHNHpjNEVPd1l0ZUlScldTZGV6MEZqZS1NbG04TUpHMkY1NUdCZHdzUmJ6SjA3ZVlwR3NvMExYaS1scnRoQ3FzWkJuWllLaFhQa1hTRjRFQ1R3TlprNDlpcnVVbVpEUHZEVWxJUGtaV2hidnlyLTNEclhBUnNQd2VvUmhXdHFqSC15VzdPSmxyVHJVX3hxY29ORmM2Rk4wWGlBTkRkd1ZQeWhPRk5iemMtbER4VEF0TkotVE50cUdWQTR2WjRueUdoVXlObUJUZzVn?oc=5",
-"date": "Fri, 07 Aug 2026 18:29:32 GMT"
+"title": "Rutten gives painful example of the aftermath of missing the World Cup with Curaçao",
+"domain": "www.goal.com",
+"url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOY3VoRFNvRHFEZ09HR3NCUmszX2RGRnlKcnpONHh4cTdNT016RnZwbWZBLVJYLU1RaG43RkpJMk9NMGE3ZGZfa295SzBlNzQwaDBNZE9rZGhXTmJWS1lEVUxNaEVfbE43S0lRckFJcmFMOUpZZk1OWHdnR2tHSTBoWUx6b0V5VzB4OUloNWtGQ1NQQVVRZlI2aHIzY016Rlg0MjM3LWhYdUNyTV9UeUpnNnNQQ3B6Tlp4enMyOGNmdjNTVzJ6dU9MSlQ0a1U?oc=5",
+"date": "Mon, 17 Aug 2026 19:41:13 GMT"
 }
 ]
 },
 "Czech Republic": {
-"score": 50,
-"tone": 0.0,
+"score": 51,
+"tone": 0.19,
 "volume": 3,
 "label": "neutral",
 "headlines": [
@@ -330,48 +330,48 @@
 "date": "Mon, 17 Aug 2026 11:44:30 GMT"
 },
 {
-"title": "Michal Sadilek Goal | Fifa World Cup 2026 | Czechia Vs South Africa Match, Gól Michala Sadílka Catanzaro Informa (gr5rivK4Qo)",
-"domain": "mshale.com",
-"url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBCU2o5WWVPSkktMng2N1V1STZ2UkxHSmVKZzE4bUN6X1lTSXluRzZ5ZTBBdjFjV0xlcFp1S3lqM0otOFE3SVJ1bXlHQ2VCMmVMRFg0YVFZNHpiU2NQTE05Rw?oc=5",
-"date": "Mon, 17 Aug 2026 17:27:07 GMT"
+"title": "PHOTOS: Czechia faces South Africa in the second Atlanta game of the World Cup",
+"domain": "www.ajc.com",
+"url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxObDFmTXBEU0NiMlNEZDdqa0RicHQxX2VwNnc0RF9kdzlXWTEtclNUcGV3ak1ZaUl0clZrZDd5SWJEem5xS3JnVVYzWU5Ua2MwWkdvVjRXQTNEaGRpNUFudVotYWlfcXUxTzl5X1BIWmZlSXpOdzI5anBmVms1SkRKc25RREFQRWp0VGx4eWp4UElKUzRXR2pLY29rSFBLZXExRTVyNlFxblR1UFd6TlpWV2F5bE5IR2xIR1dMczZR?oc=5",
+"date": "Sat, 22 Aug 2026 02:22:38 GMT"
 },
 {
-"title": "World Cup: Tough qualification race kicks off World Cup Round in Czechia",
-"domain": "orienteering.sport",
-"url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1QdkpyelNwUzVrQjlOdWZGS2o3Z3o1VzdjVElGakhZWnh0SGgzb2tOUTRQMEhmazNFcGd3WGk1MTB0NGcwNjIwazdVUQ?oc=5",
-"date": "Mon, 17 Aug 2026 10:13:24 GMT"
+"title": "Czech Republic v Israel | Match Highlights | ICC Men's T20 WC Europe Sub-Regional Qualifier C 2026",
+"domain": "www.icc-cricket.com",
+"url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNN1ZmNE9xVVg4ekxDenlMbzFRN3lqTnBiOEt4eVRjaDMzRVdKcmRxMnJPWWxFeEJpSm5xZlV6NlFENkVCZlZCWXY1WHA5amh5MnExV0paYWFjdnlzNndBdHFnNlo2dm9GYkVXenBDV1gyZTlvV3ZnVUIzc19DN1pvd0R0T2Mzd0wwWXFUY3BYLV9UR0pZNTFzV3Jma1pSYTR4WWQtRTQ2MXhKUk5SSFlLd3lPbGcwS1hKdDN4cnhaQW5TT2JPbTB6Sg?oc=5",
+"date": "Tue, 18 Aug 2026 23:26:36 GMT"
 }
 ]
 },
 "DR Congo": {
-"score": 45,
-"tone": -1.06,
+"score": 47,
+"tone": -0.56,
 "volume": 3,
-"label": "strained",
+"label": "neutral",
 "headlines": [
 {
 "title": "Coach in DR Congo banned by Fifa for 20 years for sexual abuse still training young players",
 "domain": "www.theguardian.com",
 "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOOEVQVDBURmNPc05tdDUxQ1ZjY2dHYVVHcThDU1BRdFdXdWY3bGwtb0FlbDFlcW1Yc3NGVU1ic1NGbmM2MkR0VGRUU2ZFd3RKQm1zNTRvVEdqSDlUY21uMXl0R0VkN3djRmlHZXlWTkFpa2FWbUZTdVUyOWdONFJCZEN1V0FLXzhNbjNwR0V1cU03U1dfRTMyMG5sWTlEVVJLSEpseDlxSi1Nd1ltLWJWc3NLVkRwRmdkUi1Dcmh0bDRwYlVjV2xYRUF4a2t4QTlXRUpPaEVFYw?oc=5",
-"date": "Fri, 14 Aug 2026 01:30:00 GMT"
+"date": "Thu, 13 Aug 2026 07:00:00 GMT"
+},
+{
+"title": "Morocco, Egypt, DR Congo and 3 other African countries back Infantino as Europe turns against him over $20 billion FIFA plan",
+"domain": "africa.businessinsider.com",
+"url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxObkZTaV9mMWt1Z2NkVm5IQWIwNEFVdjdOXzZ2NUhhNjlPU0VqYXhtSkZaYlBHdGdWa2R2S3JJTVAxX2dvc0taVU9QRHRzMEFpd01ZS3hEZnloQnZUUjdxaXVyRjJMWUlFVDNwT1RBT2RVYUlEbGM5VmwzeXl0V1R6eGl5U2NVcjVPdmZBUHRXYjJZTHk2UGVzQzh0T1BBYlB1ZktsVWFpQnFJRC1ncTFtWVZHRkhleEFaMEFPSm1sWW42c0hrY01ub0pENkk3Si01R1A1dGI0WQ?oc=5",
+"date": "Sun, 09 Aug 2026 07:00:00 GMT"
 },
 {
 "title": "DR Congo World Cup 2026: Route to the final, manager, squad depth and tactical analysis",
 "domain": "www.squawka.com",
 "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOR21NTkg5Ti0zTkN4RGZVUkZZM1dUOHJ3MG9sVjM2cG1iQWQwbWhVLXl2OTl6WXRTOFdVR3ZERHJaNV9tOHNBUUZtMlVqMkNVY0lORDNTMkNUOVhoc3lCWndvenFrS1I4dG9Kb0xBMklRaVlVTHdCMDV3YUNBbktIZ0FvRTBfdGUtMjJIVnlB?oc=5",
 "date": "Thu, 20 Aug 2026 15:34:24 GMT"
-},
-{
-"title": "Watch: Huge blaze after attack on petrol tank in Libya",
-"domain": "www.bbc.com",
-"url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBTQUFJVnpPQ0pNSy10d3VkX3kxWE84YXZJbm1OT045WHJubHdUQTAzbUZqNlBjNHhIS2RZbkxMOGxmOEpzeVF4blF0SGMxeWt1VmRmVVJlOA?oc=5",
-"date": "Tue, 11 Aug 2026 07:00:00 GMT"
 }
 ]
 },
 "Ecuador": {
-"score": 51,
-"tone": 0.2,
+"score": 50,
+"tone": -0.04,
 "volume": 3,
 "label": "neutral",
 "headlines": [
@@ -382,31 +382,25 @@
 "date": "Wed, 12 Aug 2026 07:00:00 GMT"
 },
 {
-"title": "Mamá, This Is for You | By Willian Pacho",
-"domain": "www.theplayerstribune.com",
-"url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQU3F5WHJwUEV1WjhGc3oxREZzLUVXZ0pxUUF4cklYX1hJZk94alZfLVoyaDQ2aDBJWTlWZ3BES1NOOUR5TkVUWFdIUEQ1M2padW5Ma2x3c2RrbGdFSDNsUUJKNGpTWmNiT2VjWkZ5SWt0QWk0NlVPNmYwWFZfeGhfT1d1cnhOdjItdnFvUGZuTW16NWFZUUxvMHFqdHdtZnR2NmJ3dg?oc=5",
-"date": "Mon, 10 Aug 2026 07:00:00 GMT"
+"title": "Police in Ecuador seize 1,000 pounds of cocaine bearing the face of soccer star Erling Haaland; woman arrested",
+"domain": "www.cbsnews.com",
+"url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBoR1VmTzF3ZmNOd3pyaUZYa2FGTlZKczFBcHBRUFdaMjBNRlNlZGh6N1lhc21XWGF6SXgzQ3lwYTFrVGVFVDFQTlQ5TkVpSEdCcnZYQzh3VlB1MG5UdGNWV2cwSDNVZUdVLWVSUHZzYW5mODVWNTVoV3RtVnB5LVE?oc=5",
+"date": "Thu, 13 Aug 2026 07:00:00 GMT"
 },
 {
 "title": "2027 FIFA Women's World Cup: Format, who has qualified?",
 "domain": "www.espn.com",
 "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOTkxPazZiUkkweXdLNlhuQmhDZkNpaVlDaXpGTEU3bmxWSHBqOElUZmVXSExKc1JvaFpiaHlTQ2F6TDFGVzB1RXZWSVRvN1FlR0ozb3JlN0hDOTVGQ29hVmtTa0NsOFFoWDVETGNJRDFKVS1YSEk0N05kQnp4NFN5cGVSU1dHTi16bWJMaFYxdDJ6bWNJWTBKRTNobW9kSUNLN0RuaXA1Q0s3cEZ2WWkxQ2tn?oc=5",
-"date": "Thu, 13 Aug 2026 08:04:00 GMT"
+"date": "Thu, 13 Aug 2026 07:00:00 GMT"
 }
 ]
 },
 "Egypt": {
 "score": 43,
-"tone": -1.41,
+"tone": -1.46,
 "volume": 3,
 "label": "strained",
 "headlines": [
-{
-"title": "'Game for the ages': Messi, Argentina stage comeback against Egypt in World Cup thriller - ABC News",
-"domain": "abcnews.com",
-"url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPMTczZ194ZUxLTjFScmNSaXFXOGpFb2R5MlBLbFJmamlhRXBjS0l6NzFBNExLZlBMakFMTnRtbURpM1p3RkxNbEVmVm1DUGZOVnpwbkJITEdNSUdzbDlsN3dGNkJkdkFQTDNybUxpRWNFZ0loRHViMElhZWpEa2JQVG1nX2dvVmlmck10RWtfZGwzLVdleUlxQzViTlZESlRFTlHSAacBQVVfeXFMTUVWUkpDMS05TE5Fa3dwX082Smx2ZUV2THdhQUM4b293NnlMNDJJRG01OHVhYV9NSUhCRFpYQXFBUlQwVmUxZlNqejFDWHRJaHg5eWw0czhuR0lsbGhtejFBc3VTbllRSGdQb1ZjdmZqUy1RZV9mVW9la1gzV2hMUHl3dVVUd2lLbWFXV0RnOHpPMVFDNUg5Z09tSmlaVF9FQ3JnX0N4NVE?oc=5",
-"date": "Wed, 19 Aug 2026 15:56:31 GMT"
-},
 {
 "title": "World Cup 2026: Egypt stuns Belgium early, settles for draw in Seattle",
 "domain": "foxchattanooga.com",
@@ -418,20 +412,26 @@
 "domain": "www.bozemandailychronicle.com",
 "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPVVdUWTJ5YnJoN3lVY3BsZVNLbHF5ZERiZjUyMEJ3X1Mwa3BkRERZSTc0ZlFlaWc4NFZTRy04ZmJHTGphemdPQjNWeUxUWkJrMnl1UnRHWk8tYWY4SXNLZzI0b2dyU2Vyb3BMVkwxQXZnUmg3ZGduU1ZncXNCeGNOOVFKRXpDclVROHJoT0NJb0p1Wmk5ZUtXdU5ndllGY1QxYmk4OXAyWHlQdll2Sk5lLTNlRWtsSWY4QnhRTmlJZU5XV2c?oc=5",
 "date": "Mon, 10 Aug 2026 22:35:30 GMT"
+},
+{
+"title": "Six Arab federations back Infantino amid revolt over World Cup plan",
+"domain": "www.espn.com",
+"url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOOXV5UUtQV19wcmNxQnkyZmxpc1lla3pmYWE4T3lyTTVjeFRXM1o3ZHFfRUZ1T1NSa0F0a0daS21IR3NBX19sWklBUFVwRzlacE82czJMMGFKci1TaHU3blg4Q0Q5TXJ5UEZEdnl4UnNQblYzb2NGdFFkdmVTOG5PSTVXbm53Mk5tcTNEQmRhRHFUVHU3TXNkTlFCRTZxRVNBTTRxdFdXR1ZxbEFrMTcw?oc=5",
+"date": "Thu, 13 Aug 2026 07:00:00 GMT"
 }
 ]
 },
 "England": {
-"score": 51,
-"tone": 0.15,
+"score": 50,
+"tone": 0.07,
 "volume": 3,
 "label": "neutral",
 "headlines": [
 {
-"title": "Marietta High School football team embarks on once-in-a-lifetime trip to England - WSB-TV",
-"domain": "www.wsbtv.com",
-"url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNNkg2RHJXWW1XQ29QUmpmbXRjamhsc3pHb3JBOVFiejhxM19ZOGlGX0tGSlJnNHN5WE5kZVFpTnIwSHprVHIzU18wSDJUYjBCOFd3Y3BsQnJGcDZfMW4ydUNKNzE2ZkFINC0zbENfRmJFZ2xvMEVUaTFQYmJ4UVc4N0NlR3h2TlkyZFI0X3psQjBveW5lazIwVmRQMzBCaHoxUXpZVWFKRVBzbFdvM054UVJKa1VLMDRfY2xheFMzMlJZNC1hRndwa1dvU0hkQmVDVW84cHdSMG1jNU4wUnVkSNIB9AFBVV95cUxPTUJ6bkhEUlRsUk43cVhsZEJBQ0xZRlpZR0tJN2FUbVNQWDhvdDJzTlJqckJqTzc1RjhjWjJDMTViQ3ZwZmN4WnJsY2dfaTQxSURjSlFEQm90aHdaZ1k0aV9BUEptY0pzM3JyNDA3Z2o5cEpEaEZKMURBcTB1eE1aMlJnMUhLSUtnQnVfZFo2T05SeG9tVTR4T2QzM0xGRU9JN3pKbmVJTjlSZ1lWQzFxQzFfUXF2Tm45N2gtQVdnWS1xNUk3RGFOOW9BdVRUZVE1WlVqd2ZQWGdLSEtBVHM2d1YyOXJVY09HZ2hvUHoyMXV1Z24t?oc=5",
-"date": "Fri, 14 Aug 2026 22:22:12 GMT"
+"title": "Why half of England's World Cup defenders are on the move",
+"domain": "www.bbc.com",
+"url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFB6anVvT0tlMFNPZkhVWTZGNkE3WnJCemtjZjNGZlk5ZEJTcUh4UW1pTlZGX05JWDNmYmlSUE82RGZjY2FMLWRnUEZFV1lUWURzVTRNc29qWkNZLTRlX29sYk5aOVBiZm8?oc=5",
+"date": "Thu, 13 Aug 2026 07:00:00 GMT"
 },
 {
 "title": "England Football Manager",
@@ -440,16 +440,16 @@
 "date": "Mon, 17 Aug 2026 14:51:39 GMT"
 },
 {
-"title": "Why half of England's World Cup defenders are on the move",
-"domain": "www.bbc.com",
-"url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFB6anVvT0tlMFNPZkhVWTZGNkE3WnJCemtjZjNGZlk5ZEJTcUh4UW1pTlZGX05JWDNmYmlSUE82RGZjY2FMLWRnUEZFV1lUWURzVTRNc29qWkNZLTRlX29sYk5aOVBiZm8?oc=5",
-"date": "Thu, 13 Aug 2026 14:41:24 GMT"
+"title": "Jota, Klinger to Represent England at U-20 World Cup",
+"domain": "gostanford.com",
+"url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQcWdxcFFOM0NpN05MTUNBbEtBd3RxX2VHajBHQ0ZhY1BkcVl2OE9ZdHZUQkR4dC1QUzVnWHprTmkwVVlETzBZa25LTWpoT01JLTVpb0NlNmxiOHlNcEt0UkhEakpKUnQ4SG1QNDlFUzVxOHNhMEYyVUZDa1JsdDBjS3lsemxZZU85Z1FtbXVtcnNWQzBy?oc=5",
+"date": "Fri, 21 Aug 2026 14:44:50 GMT"
 }
 ]
 },
 "France": {
-"score": 52,
-"tone": 0.37,
+"score": 49,
+"tone": -0.28,
 "volume": 3,
 "label": "neutral",
 "headlines": [
@@ -457,13 +457,13 @@
 "title": "Fabien Barthez reunited with Zinedine Zidane as France GK coach",
 "domain": "www.espn.com",
 "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNS0hULTNubUZ3VHBBVDFfWWFLVkF6b1c5dWlGZEtvc1diZ1JCMmFZRGJtaG5lNHV1UC1ULVJWOHFsb2RNWDNOa0dVNDlzTUh4Mmc0TERTTWt3WFRoNkxuRVl4S0RJSDJQUlNlczJpd3FHSXZvVEh5Wl9pbmI5elpZMGNGNWc1QXdueEhSdmNRTTNwX0NPNjFzVHd2ZUI5NElUQi1uWA?oc=5",
-"date": "Thu, 13 Aug 2026 21:22:00 GMT"
+"date": "Thu, 13 Aug 2026 07:00:00 GMT"
 },
 {
-"title": "France set to take part in U20 Women's World Cup",
-"domain": "www.bbc.com",
-"url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBjVDFwTmVYcC1XaWt1SWFOeGxvR2hYbGw0ejZtWFd2emRxcWpGeVVJMTZkZmdTS3o1YlRNdjBySHNVVW93ZkJiaC05LWFLN0h3VjQ4VWlPUXJzT0U3Y01rMWxjemVHNUE?oc=5",
-"date": "Fri, 07 Aug 2026 07:00:00 GMT"
+"title": "Basketball: Victor Wembanyama named new France captain ahead of FIBA World Cup qualifiers",
+"domain": "www.olympics.com",
+"url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPbkhfalYxU1ZnZUd6MjB4UXBRamNxeG5yMTVpeXNtc0E1VjRkODU3eWlrYVNLeV9mT1phQ1NLemJEeFRueERLVDhtUDJkcTE3UFVaRVdyT1FEcFQyenMwUGxUSHZSWGNsQnBRRGFMdWJKd2xqVHhhUEE2YVNDREhaTTFQcU05ZTd5Q3NfNDIxNF9ET2tBemFFaXRSR3dmN1N2YUVvSWlmaWJMdw?oc=5",
+"date": "Thu, 20 Aug 2026 18:26:00 GMT"
 },
 {
 "title": "Victor Wembanyama named captain for Team France ahead of FIBA World Cup qualifiers, Spurs announce",
@@ -474,10 +474,10 @@
 ]
 },
 "Germany": {
-"score": 52,
-"tone": 0.3,
+"score": 54,
+"tone": 0.72,
 "volume": 3,
-"label": "neutral",
+"label": "positive",
 "headlines": [
 {
 "title": "Jersey Germany Football Team 2012 Muller's Germany Match Shirt, 2012/13 CharityStars",
@@ -492,16 +492,16 @@
 "date": "Wed, 19 Aug 2026 19:29:00 GMT"
 },
 {
-"title": "Liberty’s Satou Sabally out of FIBA World Cup for Germany amid concussion recovery",
-"domain": "nypost.com",
-"url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOd3RDdTlMZUNBY0Z2OW1sVF81aXpuY05YY1NJbE9sWHI1MUdvNWFtYUw3VlVIUkFaQnVDcVYyMTlUUkRLLVFIMDJLeEVMNGRoMlZZSFBKdl8tNzR6SDN4V3A2dkRKVmRwMzdVUGtxcTdUcGhuNnZIRGZvV1hrN1ZrMXc4TmEwdnllbE9ibGVzeGFTT3o2RHhRYk9n?oc=5",
-"date": "Wed, 19 Aug 2026 17:30:00 GMT"
+"title": "Why the NHL is partnering with German soccer giant FC Bayern Munich - The Athletic",
+"domain": "www.nytimes.com",
+"url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQM1l1cmsyMmJTd2xMSTRVQnF6OUV1dDZFcmZMd2dGR21ldUxfSVpwbGdHaEpsVWhSSVlvMDNESkdQVzJPVE8xWjNzQk1YcU9lbHgzLWhDYTlOQVNxenRhNnFiSDljdXgzMUhSZTE3aDM5X3hXd3RKdEZBWENBOVZNM2R3WFY5QTVtNnVlLVJqSVFLV2hTZEpDOG4yek5RLVd3NFE?oc=5",
+"date": "Thu, 20 Aug 2026 15:55:42 GMT"
 }
 ]
 },
 "Ghana": {
-"score": 58,
-"tone": 1.6,
+"score": 60,
+"tone": 1.99,
 "volume": 3,
 "label": "positive",
 "headlines": [
@@ -509,25 +509,25 @@
 "title": "Nigeria to miss Women's World Cup after South Africa and Ghana win play-offs",
 "domain": "www.bbc.com",
 "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9SbnF4c2N3VzVNWlpSSUJGZXpUS2FDSDB4a3ZtQmplTzdOTTFaZjNMNlNrUWtWRGh1MEpwOVVWYWFpWHF5U2NSVXRldkp3MVU0NEhiT1owcUNvVVppZzhHTTZmX2dKSTQ?oc=5",
-"date": "Thu, 13 Aug 2026 22:13:48 GMT"
-},
-{
-"title": "South Africa end Nigeria’s Women’s World Cup hope, Ghana beat Ivory Coast",
-"domain": "www.aljazeera.com",
-"url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQVEs0V3JkMEtaNEVoRmtaMzlZTG1jc3RjamV5ZEpSYmhQZVBZUGNZNTNtVENKUXFWMm00MzJtQ1pCcURhcFRrTFV2dEItU3llRno4SFA0RTEtS2ZMNlo4S0h3TFkwR2tzM3g1S1EtVGQtbHd4VzUwTlFaN0dyNEtRcmVERl84dUtVT1ZHeEt1eGRNbWFrRnFuTDNpTnlmZzBveHJ3MnZNTzFFMUxWdWxtd1g4VdIBuAFBVV95cUxPLUJmdTBRbDVMTVRsSGdQeWE4Ukt0WU1ydUgwOUY4cmFsQU94R1dxRnFfTFptLWhjY1JvYjhQMVNGRm4zRGlXM2o1aEJ2VER2RXo4UFdVbjFZOTE0b3VBdFVCYlJuS0ZwOHZEQ0Q1YmZDcEdCeElWUm1xdGFyLUx1MHYxWVYtMzdaaVBCUWF1S0JtR0R4S01jS2NNcWk0Sm9obU9mdWd3MkZsaW82dzY2R3FLRHBUMXZr?oc=5",
-"date": "Fri, 14 Aug 2026 07:46:54 GMT"
+"date": "Thu, 13 Aug 2026 07:00:00 GMT"
 },
 {
 "title": "FIFA Women’s World Cup 2027 Play-off Tournament featuring South Africa, Ghana and more - preliminary phase draw and finals match schedule announced",
 "domain": "www.olympics.com",
 "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNYUtLUW5aTDFibzlYbTJYWGh3U1BJaldiUWQzQ1VhUGxxZHktZy0wc244Z2xhQVFNUVFsT2lqSC1OVHM2RWM4NWZraXFvTWZRZ1hyZHFfX21wTnEyY2d4NGNyVjJ5MkZ3VTl4VTRySk15Qk96UzdsMV9QSkJRZTJHMzlqcVhDcm44ZHVnbFlxZzVFUjdhRmdsMU9nRjZ1djVWd1JvRm9EdVoxcXNzMjFmQ2paOWxEVDIzLWoxMnctamhhSHFkVFE?oc=5",
 "date": "Thu, 20 Aug 2026 13:09:00 GMT"
+},
+{
+"title": "South Africa end Nigeria’s Women’s World Cup hope, Ghana beat Ivory Coast",
+"domain": "www.aljazeera.com",
+"url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQVEs0V3JkMEtaNEVoRmtaMzlZTG1jc3RjamV5ZEpSYmhQZVBZUGNZNTNtVENKUXFWMm00MzJtQ1pCcURhcFRrTFV2dEItU3llRno4SFA0RTEtS2ZMNlo4S0h3TFkwR2tzM3g1S1EtVGQtbHd4VzUwTlFaN0dyNEtRcmVERl84dUtVT1ZHeEt1eGRNbWFrRnFuTDNpTnlmZzBveHJ3MnZNTzFFMUxWdWxtd1g4VdIBuAFBVV95cUxPLUJmdTBRbDVMTVRsSGdQeWE4Ukt0WU1ydUgwOUY4cmFsQU94R1dxRnFfTFptLWhjY1JvYjhQMVNGRm4zRGlXM2o1aEJ2VER2RXo4UFdVbjFZOTE0b3VBdFVCYlJuS0ZwOHZEQ0Q1YmZDcEdCeElWUm1xdGFyLUx1MHYxWVYtMzdaaVBCUWF1S0JtR0R4S01jS2NNcWk0Sm9obU9mdWd3MkZsaW82dzY2R3FLRHBUMXZr?oc=5",
+"date": "Fri, 14 Aug 2026 07:46:54 GMT"
 }
 ]
 },
 "Haiti": {
-"score": 46,
-"tone": -0.83,
+"score": 48,
+"tone": -0.43,
 "volume": 3,
 "label": "neutral",
 "headlines": [
@@ -552,8 +552,8 @@
 ]
 },
 "Iran": {
-"score": 49,
-"tone": -0.21,
+"score": 48,
+"tone": -0.35,
 "volume": 3,
 "label": "neutral",
 "headlines": [
@@ -564,22 +564,22 @@
 "date": "Mon, 10 Aug 2026 07:00:00 GMT"
 },
 {
-"title": "Iran clubs face Qatar and UAE sides at neutral venues in Champions League",
-"domain": "www.aljazeera.com",
-"url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQLUw3djNramw0RGY5RDNVOTUzN0tRZjQxOXNvX1RsVWgzMFltc3RMUWhfNTZGb21kWHpxU1FRM1Bka0ctaW9UTkFyT2RNOVgzRVM4RWRqYjdIaURaa2pEaVFpZFpqTW9CNVBoaWVyQzBBRzBOUmdtUU5Hb0sxYUhVT080NlotQTZuR28zaUtlNzh3UnZsNHZtX1hsR0gtNml5MExvSjlRWFJhMmwzOXE5c01XTXJkNUxodDVFctIBvAFBVV95cUxQLUw3djNramw0RGY5RDNVOTUzN0tRZjQxOXNvX1RsVWgzMFltc3RMUWhfNTZGb21kWHpxU1FRM1Bka0ctaW9UTkFyT2RNOVgzRVM4RWRqYjdIaURaa2pEaVFpZFpqTW9CNVBoaWVyQzBBRzBOUmdtUU5Hb0sxYUhVT080NlotQTZuR28zaUtlNzh3UnZsNHZtX1hsR0gtNml5MExvSjlRWFJhMmwzOXE5c01XTXJkNUxodDVFcg?oc=5",
-"date": "Tue, 18 Aug 2026 15:21:17 GMT"
+"title": "Iran and Saudi Arabia Kept Apart in Asian Football Draw",
+"domain": "iranwire.com",
+"url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNS2lBalZ3NVdVT3puNHFoVUFSXzlFYV9NTmZQN0RNMDBQd011M0s0SDAxN1Jaa3pKc3ROY3M0R1R0MHF3dWowZzNYZGRrYUFmQTRGNVN0SmxEcnNSbjgwMzdBOXVBTXljVnIwcEZDOFlmcE9ndnBMT1RIOTIyTjNVc0FuSHVhbHNTUWxldnNkejRBUUhlUzhOVk0xNmk?oc=5",
+"date": "Wed, 19 Aug 2026 14:02:58 GMT"
 },
 {
-"title": "Iran says thank you to Mexico after being knocked out of World Cup",
+"title": "Iran team officials denied visas to enter U.S. for World Cup",
 "domain": "www.aol.com",
-"url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE16M2ZuVnpYQ0YzQkRjcldJeERMM1pnWk1odzVYOEUxWU91dTAxYlFpcnFKaXk1OHp1bzFwMmJBSmxkV3FwWFpIU0RPT013NzFSLTFpZlVqc1pHcU03STh0cVYtY2l2SWd4c1lLcFZUX2lXVk5uQ3d0bTdvT3A?oc=5",
-"date": "Sun, 16 Aug 2026 09:28:01 GMT"
+"url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOQWxEbWxIaXQ2T2h3aHhFS09iX1JqdmZBRkhSTHZCVzBPNzF2OG1DellUbXdfcXFSbmJCd1lTR1JHWmM1UXRnTVNNSXJhNGtpZ1Jnak5OdFB3ZXFJdVJGWVA5VXc5SEpHT3VCdHpaanduSzlXS3lJRUF5TmtVbjVMNnFR?oc=5",
+"date": "Thu, 13 Aug 2026 14:36:12 GMT"
 }
 ]
 },
 "Iraq": {
-"score": 44,
-"tone": -1.11,
+"score": 45,
+"tone": -1.0,
 "volume": 3,
 "label": "strained",
 "headlines": [
@@ -587,51 +587,51 @@
 "title": "A Pitch For Hope: Persecuted Yazidis Build Their Own Soccer Stadium In Iraq",
 "domain": "religionunplugged.com",
 "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPRWF0Tjh4WHlONk5UTmc2eWsyRUkwQThlUFUzOXhqSVQ1TDJ5THE5RDY2OEIzVm0xNlRDQXZMVlNtN09LejdGQlJQT1FfbXRObEpYVHNpd2hpeE92MnZQLWJZeG9xVjc2T0FzbXNucDlMYTU2VHFISXZIRFF6aWVQamZkcGZ1QmpZOG9MRUU1NVM3SUFySXVxYVlPNC1mVGUtc0xaMDZBUE5xMzNCMGx6ZUcwUjJDdjJiMW5rMTdn?oc=5",
-"date": "Wed, 12 Aug 2026 04:01:00 GMT"
+"date": "Wed, 12 Aug 2026 07:00:00 GMT"
+},
+{
+"title": "Iraq Football Association signs Hudl Wyscout deal to modernize scouting and analysis",
+"domain": "www.iraqinews.com",
+"url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPVlR6aDZneXlnT1dDd21INmJDeHJaVmNVY1lVTmFyWUJQZ19lWVF5M2psQUVnUzFncC1XVU9INTlPZnVJTWN3MDJUZHpuenRfSzBFeDZyaHdtXzlMX2gyU2I3dElGRkdKYVNWT0tocXRhZ1hrM0daQ2RFRjNYNy02NF9OcGZSdzlkNlhibnBoM1RlY05uUXY3MU1yNXFKYktlb1h0QkgwbmJwLWdqcExlVU55SlRWc0U?oc=5",
+"date": "Fri, 21 Aug 2026 06:53:28 GMT"
 },
 {
 "title": "Iraq World Cup 2026: Fixtures, key players and tactical analysis",
 "domain": "www.squawka.com",
 "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNNUd4Xy1nc2w1VlJkZkZOS1FyT19qRS1nRHdoVS10ek1LZDNHTWtKUk5OdEVBSXEyMUtwQkZ3Qjk3eWVpSU5hdUtzYU9oYVlPSTN3RmlyZkZUNGo2ZXY3UVpGUkUtZ29nRG9kbHpNNHQyWnhYSmZFcUMycHhPV2s0bHpQdWprMTVHWW5qbDUzdw?oc=5",
 "date": "Tue, 18 Aug 2026 14:50:37 GMT"
-},
-{
-"title": "Iraq Football Association signs Hudl Wyscout deal to modernize scouting and analysis",
-"domain": "www.iraqinews.com",
-"url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPVlR6aDZneXlnT1dDd21INmJDeHJaVmNVY1lVTmFyWUJQZ19lWVF5M2psQUVnUzFncC1XVU9INTlPZnVJTWN3MDJUZHpuenRfSzBFeDZyaHdtXzlMX2gyU2I3dElGRkdKYVNWT0tocXRhZ1hrM0daQ2RFRjNYNy02NF9OcGZSdzlkNlhibnBoM1RlY05uUXY3MU1yNXFKYktlb1h0QkgwbmJwLWdqcExlVU55SlRWc0U?oc=5",
-"date": "Fri, 21 Aug 2026 06:24:00 GMT"
 }
 ]
 },
 "Ivory Coast": {
-"score": 58,
-"tone": 1.61,
+"score": 60,
+"tone": 2.0,
 "volume": 3,
 "label": "positive",
 "headlines": [
 {
-"title": "Ghana come from behind to beat Ivory Coast and keep FIFA Women's World Cup dream alive",
+"title": "Ivory Coast collapse against Algeria at WAFCON after errors and red card",
 "domain": "www.espn.com",
-"url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNMW1Da09HRmwxZHR2cUxUWkFHQk1XdllFMm9pdTljZzJ2aW9BWHdPd0VpV3NsMzByaFg5UVhaNWhVVVNFSlIzLVU2SmpvWlVyMDhGc0FnMGZwenlkN3ZTRG1aMVZZWmRyd3pXcnVSYWR1dUdTRnRJRzAwazJ3NWRUUjdvWEhscjNUMm5uY3JycHhrOEVlMWE0X3huVE03akQyTkxDVElIU0hkbVlEOXNrTg?oc=5",
-"date": "Thu, 13 Aug 2026 19:12:00 GMT"
-},
-{
-"title": "Algeria earns its first Women's World Cup spot with 2-1 win over Ivory Coast - ABC News",
-"domain": "abcnews.com",
-"url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPdjc1SzdwOHA4M18za05xZDlMdmxpWlVtYTZkLVlZQ1Q2RUFaakpHVTZSeWJtaFJoaUljVUxRcWhTdm9FMVZkRmk5VUhicjNFU3pqRW1nVXluSmk4MFJVWUY5Q09BSXFiRXZxTW5sS3JZU2psQUxtM2VvSlplNDVmU01QMjBqOGRVWUdaRjVFVdIBlAFBVV95cUxNd0pGVS1fSWpqZ21qejloSFE3WTJHYWVGMmlxZmdDbjJkcHBiWEUybXFMNEN4dVdDZ1VXc2N3elItaDdFQURoWFJVdlktd25tLUh6MmlnSzdhN1k0ZXBVMDhYZE9OU292ZGpnelZzdmk3aUFkVDE3WUFMRWJqVXNELTAxb0lkMnROVWtRTVN0N2pVQmZl?oc=5",
+"url": "https://news.google.com/rss/articles/CBMingFBVV95cUxON3cyTE9lV3RJR0p0SmZVanZSVFBnZkJ6Ung0WWRvNzM3dXZaY092RWNxckgzTkxlU19sYjdVakdPeENkSTdSN3B1ZEFzS200Z1E0ZFZpLTFpZ3N0U0F5di1ld3ppNGltUkVydy1sUjFuMVJBajJySFFqbndLZjJGTldrOVhoOGJxTTF3Mm1xNEtZWTlkbUQ3RzAxd3BiUQ?oc=5",
 "date": "Sat, 08 Aug 2026 07:00:00 GMT"
 },
 {
-"title": "Germany re-introduces standing room tickets for national team home matches after more than 25 years",
-"domain": "www.reuters.com",
-"url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxON2dEVWtZS043TUktNEhrcFFZZTJ4MDVhdkp3OExaNUdaQWxHbmo0V0xkVldrT3I3Q2RKMmVGWWVYaUdOcTVLYmRRdGM5alVBMHk4bGlhZTlPa25lR1psWWlLcU1pbVhEdUVFR0gwQXNlYVc1eGRrdnNNOHpGR1IzVE9rTTYwNGFaTG1fc1hzeks5LTUtVklGekl5b0tmb3ppZHc3eDM5M2diNG5qYU1wMTE1Vk5oazd4YzdhLXJLLWVlaGt4?oc=5",
-"date": "Tue, 11 Aug 2026 07:00:00 GMT"
+"title": "WAFCON quarterfinals preview: World Cup spots on the line, players to watch and more key stories",
+"domain": "www.nytimes.com",
+"url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOM2dreTVFeDZiTzRSTHpzQlRkWEtjdGtKT3NFY3Q5MHZraVdxbG5WUy1EZ1J5aFB5dGdONjlxWEo1OVdPcVJQcnhuV1RXclRXcWxmb1Z3cUgwaFJzSmd1Nk9lWGdLQktpa2xWV0o0ZFJvbmZITlBaTmVxR1ZKck14RGExa1g2bUtlVGwyTDNVZ0xPX1d2WHFXY2VHakZIeVd0MXNFcXB0Zw?oc=5",
+"date": "Sun, 16 Aug 2026 07:00:00 GMT"
+},
+{
+"title": "Algeria earns its first Women’s World Cup spot with 2-1 win over Ivory Coast",
+"domain": "apnews.com",
+"url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQbVFnam05dlo4YXJRMmJfYVRmNU9XRU9lUXhWUzdrdGswbEFCWUtBUkZscHBtZ1dMWDVLbGZLMURNdU9MLVBfUjUzNUc5TzJMRDZvQXNXMlNPWGpuNzRWSVRXVFFkMWhQeHpxMmFnT1E3aU5WcURuRF9JenFfbzd3RWlXdnl1YjNMRDZMbXVB?oc=5",
+"date": "Sat, 08 Aug 2026 07:00:00 GMT"
 }
 ]
 },
 "Japan": {
-"score": 55,
-"tone": 1.06,
+"score": 56,
+"tone": 1.19,
 "volume": 3,
 "label": "positive",
 "headlines": [
@@ -648,44 +648,44 @@
 "date": "Thu, 20 Aug 2026 15:12:07 GMT"
 },
 {
-"title": "Norika Konno Named to Team Japan for 2026 FIBA Women’s World Cup",
-"domain": "gocards.com",
-"url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPSDUtMWlUWERyMkpONzQ2bmRIQkkxMWJZU1M1TjhsR3FyVlhxeTJpSzE5T0M5bGZzS2NYSFFYeDFPWWN5bTdoSXBiREY4OHR0Ri1iNHpTMFM2RkdxX3pjM2EyampiVWxDdUlibkJGWDZCR3FPUFFrWUpzb1JGQVNQbDFLdE00RmF2TTVaTnhwTVBja2p4NW9od1ZsODRDaldVclRyTF9hYXJDalY0eU56eEJnY0lvS0U?oc=5",
-"date": "Thu, 20 Aug 2026 15:40:25 GMT"
+"title": "Aston Villa’s Zion Suzuki: The U.S.-born Japan goalkeeper who turned down Man United - The Athletic",
+"domain": "www.nytimes.com",
+"url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOdkV4WkJjaEs3Wk1FTkE5eF9pb3lNUEZPbDdyd044dWJJRWkwemJCV3RzMm5mWWFFRnoxTXFhSEpxc1VjeDVfUjlKU0g1a3dOUnVXeF9XT012b3FMX25NNGU5dUt4enRtTDVibDhIWDFBSHRRS1o5aVhUakVGWFVrUDdiMVBlVVdDMXZrZzZaRDlMMk1MbTdJaUU0VEtlczJMd1JN?oc=5",
+"date": "Wed, 19 Aug 2026 08:05:14 GMT"
 }
 ]
 },
 "Jordan": {
-"score": 45,
-"tone": -1.09,
+"score": 46,
+"tone": -0.74,
 "volume": 3,
-"label": "strained",
+"label": "neutral",
 "headlines": [
 {
-"title": "LIVE UPDATES: Millikan Football vs Huntington Beach, Jordan vs Compton",
+"title": "PHOTOS: Compton Vs. Jordan, Football",
 "domain": "www.the562.org",
-"url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOZjViYmZhdVhiQmdGRVA3ZnFHNUQ2R1FlM3ZUM3JZYVRGYjEtZzF1WXJXakJRcm9jRVMxSmZqZk92OU9LYXRGNHV6MXBiamFsR2xUTm5NcE5Iam81QjhhZW1VR29TRWZrNHVzc00wak5LbnZDMW5nOG5LRDZGd2VXam9CM2s4aHhZM2hrX3VEb04tUjA3Q01ZX0NodEtURGtGZXJ3cnBR?oc=5",
-"date": "Fri, 21 Aug 2026 00:40:39 GMT"
+"url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5DREJIY2kzTWpITTR5ZmFvMWdFTDRuWVdaR09pbkJyZS1qUzlUX3dhWWZnXzltVkVXeUNqb2JROE1jRi01dWNIZ3Z0eHJLMlVLTWZqeEZUeEpITkpXbzRsdG03ZS04NmZCb1RQVVJ4cHJ1NzJ6a3ptRHJB?oc=5",
+"date": "Fri, 21 Aug 2026 07:10:03 GMT"
 },
 {
-"title": "On the Plains with Andre Jordan Jr.: ‘Football means a lot to me’ - Auburn Tigers",
-"domain": "auburntigers.com",
-"url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQVzN0NzNYLUtlMUdHamZfVXhFTVU1SFN1cmdKbVQzdmw4VFFYNGluZjUwakttUnVZM05ycHlMdzJ5aXBNZy1JNk81Qml4R3lldlBGT04tTzZIbVNmOHEyZzhwc2pxcW4yOEk0NDRNeWJ6SUROSTB6aG5NblJfTjBweW1sWXo4bVZrTThZTUhNWk51RERSX1BzdzduWGR1M1M4RWFySA?oc=5",
-"date": "Fri, 14 Aug 2026 10:53:55 GMT"
+"title": "Jordan Hall Named to Bednarik Award Watch List",
+"domain": "msuspartans.com",
+"url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNeDNVUENlTTN6a3hwMFZxT2FUSlc5VTFOMk40NmxYOXE2ZTRUWEdtUV8tMHVjT3M5WWFUemJ2a05Sd1F3X0RfMFFaekpkbHdYTEQzd1dTNjNORUNjbER1VkxYRXVTZWZfOFdPcnRKb1RvWmxhMy0zc0xwNUJFRWRnNXRFTzdMWTJMSjkxMllndDV2U2Ntb3ZTa1hR?oc=5",
+"date": "Fri, 21 Aug 2026 17:15:34 GMT"
 },
 {
-"title": "PHOTOS: East Jordan football grinds through first week of practice - Petoskey News-Review",
-"domain": "www.petoskeynews.com",
-"url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxNRzgweWd4MTRkeGl5MVdFbjhRTlRyaW9qOGxmbTM5cFZwQUFaMk1NUXZPZzZQU0xIVjFaZE9zTGZoeEM2NUF5R3NhRFdoNnRkR1BpM3NtM3lHZzVrblRiRHpOZWtqX200R3NVYjA1RUlwc1Z1cTRGUFg1Y3hlaVVxckU4Z3B0TDZLMG1MdmZTYnJGQnFhNUQ2VDRLazhoTFgwaEFfUUNmSGl5OEo5bVhrTHI5dnlLQlkwR2gyVlBia1ZhazJZUmhUWDVUNWZOaFRZdUpaQXZNU2RaWEp6QnJ3UnBBTHJWQ1J1YmNIdVQ0QjRsTG5p?oc=5",
-"date": "Fri, 14 Aug 2026 00:21:00 GMT"
+"title": "Miami RB Jordan Lyle allegedly drove 130 mph while evading traffic stop ahead of arrest",
+"domain": "sports.yahoo.com",
+"url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNTFpXemlvUGJGVmQ1eTJnYUFDUWxiUFlqUDFVUVoxNktuTngydTFobWtyRHpGMjZaVnhDYXFSdVhaeVpNa2JISWxPUXhPSG1nRmhKQ1IwU1pXX3h5dnlDSXlmRk5HVnNEZXdRQnNESzl2MVlRbldBSUZPUzNFQmsxQ2xVcjlTTmdBOWM3dlFWbjFKaGQxRng3Z3ItVVo0a3Y1aFFndzhsSHVZWTF2UVFvZExGUmtIUE5iVzQ3YXFxbk0yMy1JcUJDdGR1YWdHSFZBdGlsOVJ0UXBqVjUzWUxMMEtBUEtHa3M?oc=5",
+"date": "Tue, 18 Aug 2026 21:16:50 GMT"
 }
 ]
 },
 "Mexico": {
-"score": 65,
-"tone": 2.91,
+"score": 60,
+"tone": 1.91,
 "volume": 3,
-"label": "buoyant",
+"label": "positive",
 "headlines": [
 {
 "title": "10-Man U.S. Under-19 Men's National Team Falls to Mexico, 2-0, in 2026 Concacaf U-20 Men's Championship Final at Estadio Azteca",
@@ -694,22 +694,22 @@
 "date": "Sun, 09 Aug 2026 07:00:00 GMT"
 },
 {
-"title": "Norway calls on Infantino to quit amid backing from Mexico, Argentina",
-"domain": "www.espn.com",
-"url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOeUduTWFUNTEyQW9CQ3BVU002YzBBczBIMnk3VG1OdWlzejJOMDdlaVpGd3p6V1oxSEE2a0pPdjQ1RnR4LTdGOUFXR3lPWmc0bFZQT2dQNXFXV1dsU2RFeTVuc3JqcHVuTFRRNG1obThleldjLWpJYmE5RE9VYUJ3R2hmNzlpd243MkF3ZURETl9GakE2ZjdoeVJKTTF0UGFMYk82YzRrYmNrRzZR?oc=5",
-"date": "Fri, 07 Aug 2026 07:00:00 GMT"
+"title": "Goodbye CONCACAF, hello CONMEBOL? How would a Mexico switch affect the Mexican national team and Liga MX?",
+"domain": "en.as.com",
+"url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOeFB4NlBwVGJSZXFMdDFJMHB3a3Y0ZEFIVzBtRW9QUjRJU0d6ZE1rR2ZLME4tNXBuZnExdE4xRTBXV3dRRV9MMzlnZjg5Si14bXRMX1J6QkNxNkk5clNNVnNxUkdOeTk2aXJ5R21Zb1l1Szg0bHUzOXNPVkViUWRtRTRHYmlxclhxNV9ZeGR2V3oydjd1Z3dBdHYwZ3M2YTFpR2lLRFhyU1VXcDB5UGZZaFRnWXM2WlotamtRTVA1TEZCTTI4cDY1Tkx1N0hZQ1Z1OVNVUNIB6AFBVV95cUxOQktCcmJPQTlFV2FOWkhyYmhGRHFXZlJWOUl6dGM0QnV6ejRyQWxZWi1XS3NWNUxNeFBSVGptUDNuSnROTlJDb3dDZDM3SXd4SGpZYVBSUkhvSmR4Vk5QVGJ5YU5vdFFybWlBVkhDVnpVYzVMU3JKYURnUFBHMC0yQUlrRHdKbHBfZGlTSnhuVEwxTmY3bi1wbElWUzVwVzlyU2FzbFRMZWI3UHJDYXBsczViN1I4aVl5ZDdJdzJpaDA2SlF5TmxfMjViM3VxanptZTU4aW4tc21sRlN5bmtka3FZcm5kb3hq?oc=5",
+"date": "Wed, 12 Aug 2026 07:02:28 GMT"
 },
 {
-"title": "United States vs Mexico | Highlights",
-"domain": "www.concacaf.com",
-"url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxObjd0dlNHc21ZUENkYWtwU3lQbHVqd2FhMlBNUGI0bUZLYXhocDJKbzE4TktnSnZpdUFHYVQ1Z0h2RS1ZYndJeldSQmtJVnkyempnYjhrNTFXMlJ6THU2cTU3amJOVS1xYzRPVmVVcEJwOFJJLUtZVklaODRxUmlfZjI0ckQ4Q0tBUk4wd3ZELWRiSXh1ZE4zQzA1eC1lXzRzdTlN?oc=5",
-"date": "Mon, 10 Aug 2026 02:25:59 GMT"
+"title": "How to watch USA vs. Mexico: Concacaf U-20 Championship Final live stream, TV channel",
+"domain": "sports.yahoo.com",
+"url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNQUhDNGNwNXhGZ3kySTg1MWJnQUxXNmFFVUptM1EtaXVNNldGYzQ4MEU3VnNIeGZKR0c4a09DcWo1Smg5ZjdNcTJJQkZhSEZMVHBIUUJtajBzcWg4RnN5X0lBQkQwLTFCRnZwT0V0STBSZlFacUpRZU9CM1NsSDN2N013Yw?oc=5",
+"date": "Sun, 09 Aug 2026 07:00:00 GMT"
 }
 ]
 },
 "Morocco": {
-"score": 51,
-"tone": 0.23,
+"score": 53,
+"tone": 0.56,
 "volume": 3,
 "label": "neutral",
 "headlines": [
@@ -734,11 +734,17 @@
 ]
 },
 "Netherlands": {
-"score": 53,
-"tone": 0.61,
+"score": 52,
+"tone": 0.45,
 "volume": 3,
 "label": "neutral",
 "headlines": [
+{
+"title": "Netherlands hire Xavi as coach through 2030 World Cup",
+"domain": "www.espn.com",
+"url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxORlBjTDNNSE82cS1pVUh2VDlpc3VLNFJkNVhaaVRlc0NtYUZOc0xkbnRYSkJ1RlVnX3QtUjFnWjk1N3RVeDgzRjd2RlNrdUFGbmJUeUlNeDVVendtQ1FWd3ExQUtoVnpHTXk5LWdySW1kdE8tM2s1bFZuYnBiMGVrVmtlOE5Bc3pkU1F4ODJtWmtCajdT?oc=5",
+"date": "Wed, 12 Aug 2026 07:00:00 GMT"
+},
 {
 "title": "Xavi appointed new Netherlands head coach on four-year deal",
 "domain": "www.nytimes.com",
@@ -750,18 +756,12 @@
 "domain": "www.theguardian.com",
 "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNZTdkN2piNUpzVUVtaHFodmRRQUZaSGhMVnpjelNXTkxURGNUSEVOOERwVGxKMjlldlVtckpiVTl0ZTcxTzByR2tBNFlucHNrMThFUjJyZklLNl9la2xsU3NuNDZQTkQwT1VIelpFa3ZTaW1rQXVZUHRQQm12SDl4bHdTMWk1cVJtbkFHc0ZFOWZkMHhWeWNoWkNQZVhxYlR1T0ZHcEJyUlNyNGxKeTBXTmxFc0ZqOUVSLUJkSGZGa1U5Vms?oc=5",
 "date": "Wed, 12 Aug 2026 07:00:00 GMT"
-},
-{
-"title": "Xavi becomes first non-Dutch Netherlands coach since 1978",
-"domain": "www.bbc.com",
-"url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1rbVpacjBfaWI5d1RyOV9nSTF5OE16X3VZSnFtdUJYUVNVa0dlM3N3elQtdmpDNTUtSFJGNXVIZnFaR3ZBc2Jnd2xwQmo4UmJQb3dqbV9ZZHNMNUw0cEVldW9nM0s3bDA?oc=5",
-"date": "Wed, 12 Aug 2026 07:00:00 GMT"
 }
 ]
 },
 "New Zealand": {
-"score": 57,
-"tone": 1.44,
+"score": 60,
+"tone": 2.08,
 "volume": 3,
 "label": "positive",
 "headlines": [
@@ -786,17 +786,11 @@
 ]
 },
 "Norway": {
-"score": 40,
-"tone": -1.96,
+"score": 47,
+"tone": -0.63,
 "volume": 3,
-"label": "strained",
+"label": "neutral",
 "headlines": [
-{
-"title": "Norway’s soccer federation calls on Gianni Infantino to resign over failed World Cup plan",
-"domain": "apnews.com",
-"url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNelFKSjZMZTV3SVpjV3RDbk1LZi1RRkVWMWJON2F0bkZkUlFGY2taMk1ZdVNkeW8tV3lTaWJzUHN5azBtZGZ3Y05Hci1FN04tTEt5RzlmMm1VMmR3OHFkQ3RiTXp2bmdiQm9QV1cyWkdEYzFYTmR1YkFPbXhVbXRtaUtCVzdoVnYxMUVSQXNqNHltU0lVZ01HMUctakRqUzkybmRZc0Vfaks?oc=5",
-"date": "Fri, 07 Aug 2026 07:00:00 GMT"
-},
 {
 "title": "Preseason Football Tour: Norway has new faces, same goal",
 "domain": "www.uppermichiganssource.com",
@@ -808,12 +802,18 @@
 "domain": "www.espn.com",
 "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOcU85SGxmWFB2YXlUX2o5YTlhcmdxSnVVS1E4MGpaVElXVnlpa1kxOWplNW52LXFHYzlZc3o0M2ZQeVJVTGptMjE0TWJ0bTJlSlQ0aVBtdkxBRUlHOUJWcHoyVVdxVG1BTHcyUUFzemt3NEZ6UV93WktqYnN4U2JScWZNckZLNXFxaTRzTHpFdlNhMVBTdDRzaUVpNndGZ1ZCb1lSNmE4NmVMbmNpRjdtQ1ZhQnk0MC1BZXc?oc=5",
 "date": "Tue, 18 Aug 2026 12:33:00 GMT"
+},
+{
+"title": "Ecuador's police seize a cocaine shipment with stickers of Norway's soccer star Erling Haaland",
+"domain": "apnews.com",
+"url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNWjZEaGNLek9HeW9Ia3gxV0RyY1N4b0RVOWZPYWZFeDRJYzQyMTM1SGNqcFNoQXBnNDRHVTRqWkE2a1BqYm43dlNHVlNLNTlpSFBNNHA3NjBwZE9YaFZIRG1QZjZnY1pCQ0Rqd242NzExcWhxcUtQX1ktdG1NclViejY3WTRKbHQ1dWUtWnYtTkV4ZDdfZ0pIak41RUgwSzN2U3RaeVhMZC1ULVdOUVdLUklIdw?oc=5",
+"date": "Wed, 12 Aug 2026 07:00:00 GMT"
 }
 ]
 },
 "Panama": {
-"score": 52,
-"tone": 0.46,
+"score": 50,
+"tone": -0.09,
 "volume": 3,
 "label": "neutral",
 "headlines": [
@@ -824,22 +824,22 @@
 "date": "Mon, 10 Aug 2026 07:00:00 GMT"
 },
 {
-"title": "Bozeman High School (Panama City, FL) Football",
-"domain": "www.maxpreps.com",
-"url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBrUGRYaGp0bkt5OWxVSC1pM01pOEpuWnFfb1JBRWtVQU5oVEd5VGQ0ZW5FejRNWTZkOXpndnctOTBDUTlxM1dkTlZCU2psbzR5V3lvZEg2MzhmS2xDckctV1hONENDSHBVbnhsblZma2s?oc=5",
-"date": "Mon, 17 Aug 2026 00:27:18 GMT"
-},
-{
 "title": "Bay County high school football teams to be tested in season openers",
 "domain": "www.newsherald.com",
 "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxOU05XOFV6OElndXZqaWR5M1o0M3hhdDNtSHRJeThvVFpNX1BzSjZNTkxqSXFhNGdCZXIwa1otaGNnaU1jRTZaRGJDVGhtSGRxbmxiWlZkMy1qcGhHaFY0V0R6azVoN3h3LUNWRDhNVk42VlZQSlJBd1ZYQWI2MXFVM0kxaFRwd2JDelFNUnFHYlZiTlY1aXBTMjZnT29JVEFjNDlFXy1QeDR5VlR4V0xsejFTbW1KUUNDczJpMV9fTlNJQkpEU3NsamRIWXk2SWR3UFV6VkNjc0NKQjlrZW9qajRZRXhEQkY3bWxpM0Z4aDhIZWZs?oc=5",
 "date": "Wed, 19 Aug 2026 08:02:00 GMT"
+},
+{
+"title": "Schedule - Rutherford Rams (Panama City, FL) Football 26-27",
+"domain": "www.maxpreps.com",
+"url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE44YzhXN0Zkem5ucUtnSGptaEc5STRCOWZ4MTlmc2pmYXBhTkltRHo1OE5lWE9DRC1Dd3dEcFBPdWFESTB1X0xkd2xER3JqTkp1bDlKR0xvb20tZ2NYWjNKN1RHS19kYy1SazNkZFFOU2ZTNVo2UUFaX0xUSUQ3RWM?oc=5",
+"date": "Thu, 13 Aug 2026 07:00:00 GMT"
 }
 ]
 },
 "Paraguay": {
-"score": 51,
-"tone": 0.27,
+"score": 52,
+"tone": 0.42,
 "volume": 3,
 "label": "neutral",
 "headlines": [
@@ -856,16 +856,16 @@
 "date": "Mon, 17 Aug 2026 14:47:43 GMT"
 },
 {
-"title": "Why South America is lukewarm on a 2030 World Cup on home soil",
-"domain": "www.espn.com",
-"url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQY3Jfb1pEU3I2M0R1QWgybG51YWNxak4zTzNkRzlKUkdjNlNCdWNpeGRLaVJZZUp4a0RJLWpYVEVDc0h2N0c4WVY3QWFFRzBHUHlKWTlGM2tOMTk5Mno5X3VUUDlNTS1DeklVMklwUk5Jd01aenZMajdreFVhYkx1Q25BeTVyMnlEaVdSYmR6UXNwUkx1QWV4YzkwTmY5SVh6WnlLYzdPQQ?oc=5",
-"date": "Wed, 12 Aug 2026 15:36:00 GMT"
+"title": "US opens home World Cup with dynamic 4-1 victory over Paraguay; Balogun scores 2 goals",
+"domain": "fox11online.com",
+"url": "https://news.google.com/rss/articles/CBMilgJBVV95cUxNTXMyNkJrZG54UGVRWlRsS043aVRjaE83YzJIQjJlVjRCSFJSaGkwMGJXUEcxUkxVVEd5bGtiaEFSMmlPZWNyWEY3TjFLWUd4T3MwNU5TOWdjQzFROHJvRlhwYkJRYlhtdGVHck43UVB2SzJJYk8wbDE0ajJfTThXWWVOX0VJbTNLekZnUUhDYnNZUTRnZzNiQmQ5Yk02MW9UbVJRdDVXMnM3OWNDQkYxYXlMSnpGWHd1WnNNVHl5clV4dm03VFhPMGFXREVlNlV6WnI4NlB4UlEyVVZQcnp3Y0lPN25KSkJsd3A0bm1oV1FscWdDUTNTNzJJV19Kem9BUFplc0JoUjlIYlF2YWNqYVBpWFNyUQ?oc=5",
+"date": "Wed, 19 Aug 2026 09:06:03 GMT"
 }
 ]
 },
 "Portugal": {
-"score": 50,
-"tone": 0.09,
+"score": 52,
+"tone": 0.41,
 "volume": 3,
 "label": "neutral",
 "headlines": [
@@ -876,10 +876,10 @@
 "date": "Sun, 16 Aug 2026 15:16:00 GMT"
 },
 {
-"title": "Ronaldo hints at retirement, says upcoming year could be his last",
-"domain": "www.reuters.com",
-"url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOV29QVnJOSE5EQ05xOXBUZ3BBQUVpLTRwYjlZUU5SZ25vZW4weWZialA5RG1KWE9sd05kTjNrWmtaSzlmUlN1aG55cHdrT0YwVXI1ZHZ1ZzJ1N1RSRHh3aXBlTFB2WTUtRzAxMG80NVhKZU95VXdUbGVVWUc2em9LNFRNeFhHM21VWXNpN3EyNkF6Ujc2aWV0WVNjRnczSG9kaWpIMTNydGtnRFhRRzlJcw?oc=5",
-"date": "Sun, 16 Aug 2026 16:20:32 GMT"
+"title": "Cristiano Ronaldo Scores For Al-Nassr In First Game Since 2026 World Cup",
+"domain": "www.foxsports.com",
+"url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNdlgtUUFkYkdPdy1JQklpUGJmaS01NnFVR2F5b20xc19mMTY2RHFLVDQzQ1l4TVMybXNKUWVzakJ1blJJTzMySGZoUmVjZjVaTGp0dUhQaW5EUGljU3lKRzR1eEd1SGtsU2RkRnRNUmsyT0x5QjZQdDhiR3JwM0VOMWZiU2FEaGt5dXVwR0NNcjI1dTZSTlZwdFQtQU9JRjc1MVJDVmN2WkEtUdIBqgFBVV95cUxOSlQ5VGJSRHYyZ3VvT012b0RoM0ZsUjJ3TWtValpTTFdoell5SXJfdWN1WE53R1BtMVZlS2V3VXJnZUtORFlvam5ZUm1xbHFBR3JUWWktRFNoR2x3VHhkOUpXbTkxUlNzc2RWdUdmbWw5Tzh1dC1OcFdLRkEyWndEV3dMWDN5d1NFYmhGcGg4SkVla2ZHUFZ4bGFPTlNiekp1UmZoQS1qXzNRQQ?oc=5",
+"date": "Fri, 21 Aug 2026 21:13:57 GMT"
 },
 {
 "title": "Cristiano Ronaldo announces marriage to Georgina Rodriguez in Portugal",
@@ -890,43 +890,37 @@
 ]
 },
 "Qatar": {
-"score": 43,
-"tone": -1.4,
+"score": 42,
+"tone": -1.56,
 "volume": 3,
 "label": "strained",
 "headlines": [
 {
-"title": "Qatar challenges AFC over open letter attacking FIFA President Infantino",
-"domain": "www.aljazeera.com",
-"url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNNmN3MW1DTkkzRWJ2bjczOEJVRHVkNi1FZXdYQkV4RTAtTlR3ZlItX29JSlRlemtKeE5PU2VtVEl6SXBEV0swNlc0N1g1V2RyYTZ0cnVfVmI4Q3R4RVFwSmQ3b2U3U1Mtb3VnaVVYWlNtSGJIUnNHWW40MmNmOFN4MFVmMUlvbkNhQlZhMTRnV3kyMkpPLWFDNHktOFNrVzdUQ2I3eW1GeDFrVnR4RkptczhDdXBEQdIBuwFBVV95cUxOX0VUSm1PNE9PSFBLVVVhcmJTUXgtRmJuMGJEc0U4Z29vQ2VjeGlUZ1p1b01NMFhGOFFiLTVIblRCbVdVX19EeC1hZ0FUMVV3R1ZUM2tIemdmWFZXMWJRRXVrU245bTJrYndhZTVocUtreUNXekpwWkJnVUUyRjJDSFFIa0t1eEVNeHJxX21yYzk4UXpKb285b2FDWTdzZ3NLREhlODQzbmVEX1N2azdkTXFBeUxuQzU2NEVB?oc=5",
-"date": "Fri, 14 Aug 2026 15:40:47 GMT"
-},
-{
-"title": "Asia chief hits out at Qatar over pushback on letter attacking Infantino",
+"title": "Qatar challenges AFC over open letter attacking FIFA president Infantino",
 "domain": "www.reuters.com",
-"url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOSlNjLUI4OVRHWng4dnRDejlWbGJhY0hpS2xTNWZPNGlxZ003Vk0yOUNncTdCWTZfSWpaLTRReUMtMjJRLVJnaks3eTNYR0p5VEItRndTaHFKSmNUTDVydzlaaW1sWlRQYWlSYjFxeV9kVG5KMFUxSk85WkdTUGZEellENjJodTJRWVpVYUl2QVBMWlZXZXZ2VWdWWmhVZHo4VHEwZm4zU1hBMjVTdGJ1RTlJYm1MOVk?oc=5",
-"date": "Tue, 18 Aug 2026 06:45:05 GMT"
+"url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOWmZCX3lTS0xVdUxuVllPVHRIUkpLYzBnSE15NVY4cEg0UGlwalZhaVlqa2ZXY3NnTmJMNmFsdnlyMlRYMjZzdEhaejd4aDRnYU9MRVd2aUtiOFpIR2J1Tm85bDhFZDlzSHgzQmFjYUc5Y016SWRvWDNQeDNIZllwOVVLaEVFdWJzWnltZE45VWNEV2hfTDVqV0pja1lzYjVoRVlkN0w5bmhOOVo3dUI1Wmg3ZlNaa1R1RGdEUmN4Yw?oc=5",
+"date": "Sat, 15 Aug 2026 14:16:21 GMT"
 },
 {
 "title": "Six Arab federations back Infantino amid revolt over World Cup plan",
 "domain": "www.espn.com",
 "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOOXV5UUtQV19wcmNxQnkyZmxpc1lla3pmYWE4T3lyTTVjeFRXM1o3ZHFfRUZ1T1NSa0F0a0daS21IR3NBX19sWklBUFVwRzlacE82czJMMGFKci1TaHU3blg4Q0Q5TXJ5UEZEdnl4UnNQblYzb2NGdFFkdmVTOG5PSTVXbm53Mk5tcTNEQmRhRHFUVHU3TXNkTlFCRTZxRVNBTTRxdFdXR1ZxbEFrMTcw?oc=5",
-"date": "Thu, 13 Aug 2026 14:14:00 GMT"
+"date": "Thu, 13 Aug 2026 07:00:00 GMT"
+},
+{
+"title": "Soccer-Qatar still not satisfied with Asia chief over Infantino letter",
+"domain": "lufkindailynews.com",
+"url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxQSldmdkZ2T0otZVFUR0QwWWhBQ0g2OXVwYWlYLURUaXV6aGNUVzQ2OU13OEU5OWxJU1VYZWpscWxyVkdEdk1SWEJRSkpaS1hlbUF5bHNqS2NLVXdOSlIxejRxaHEzV2N3YWZkd3VYdmlmRzhtbVV3TWoyanFVeUE4d2ZweUJFN25vX3MwNU8yU3JnU190TzZjZGw5b04tU0lkUXN6S2oyN29ycnFmbFJKUE03TEdLZHI1QlpoZ1RJUXQtQ0VrNHdnLVBIYWZVN3AzWWtvZkw5NVVaOEI4dzJta29EdmwzSDdESFJlZnJ3dVp4a2VuckZac19FSlE?oc=5",
+"date": "Thu, 20 Aug 2026 07:36:31 GMT"
 }
 ]
 },
 "Saudi Arabia": {
 "score": 53,
-"tone": 0.54,
+"tone": 0.52,
 "volume": 3,
 "label": "neutral",
 "headlines": [
-{
-"title": "Supercopa de Espana moves to Istanbul from Saudi Arabia for 2027",
-"domain": "www.nytimes.com",
-"url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxON1hwN3dqQ1Z6TXMzRENaLVJkRmM1TllSOXQxaG50TDc2WTZEVks1LWNubDNYRjhydU52eXlvVUZpUXZNNFpfdm05a3ZwRHlWb1lvRDVKWkNWQ3J4eVhCNF9VMjVVaUozdnp3WmhsbkRpbkJQOXZ4V0x3NVZERnlkb1lxbjVzenMzV2h0MURKUjAxSEhodG1MYjFlakY?oc=5",
-"date": "Thu, 13 Aug 2026 11:50:45 GMT"
-},
 {
 "title": "Iran and Saudi Arabia Kept Apart in Asian Football Draw",
 "domain": "iranwire.com",
@@ -938,12 +932,18 @@
 "domain": "www.reuters.com",
 "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE4tM1ltWmgtTmJtWHFMQ3BaUkppdE1oT0pzODZ6UlhEV3lCVGM3Z3Ezc2o0X3RYZjVfdHlvYVQ0LTdpSHJMa3pHTDE3VnVWemRSNm00TjNTQXZPYjhYOUk4dWl2ZEJ3eHVwakpWcF9JVElPVzZSWEZZaA?oc=5",
 "date": "Mon, 17 Aug 2026 05:24:00 GMT"
+},
+{
+"title": "Young Saudi Arabia international goalkeeper signs with Sint Truiden as back up for Leo Kokubo",
+"domain": "sports.yahoo.com",
+"url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOTWVBd1JRMFlxam05aHNSeEp3MDdGbThJenZuaU96VDZDRDJIbDNHTS1lS2lsTll3OGV5Q2g0Um5UYzZfWEhrNjUtM182NmRKbW5xa192ZTR1d2o0aElwdTF5ekRhNnA5cDgtODYwaUlTR3RPOFNldmVnUklISTB1SnhxZDBfd3VRakJlUUp1ZHhoMzZ6ZHY4?oc=5",
+"date": "Mon, 17 Aug 2026 15:45:00 GMT"
 }
 ]
 },
 "Scotland": {
 "score": 56,
-"tone": 1.26,
+"tone": 1.22,
 "volume": 3,
 "label": "positive",
 "headlines": [
@@ -968,8 +968,8 @@
 ]
 },
 "Senegal": {
-"score": 48,
-"tone": -0.35,
+"score": 53,
+"tone": 0.57,
 "volume": 3,
 "label": "neutral",
 "headlines": [
@@ -980,22 +980,22 @@
 "date": "Tue, 18 Aug 2026 20:23:00 GMT"
 },
 {
-"title": "Patrick Vieira appointed Senegal head coach with AFCON qualifiers looming",
-"domain": "www.aljazeera.com",
-"url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNUHJaMVhEb29YamVQZTNtWW5rNFRUYkN2YklDb0ZtZWFubEd4MGVHQVhYY20tM2FoU0dKbUxTVWRYLVRsWUVGLVplaEgwazA4S2NiTm9CR3ptTXMxMGRydUNab3N6VlAxdy10cHJqWHJGd21RdHd4Z2k2Uy0tejA2WVNlb3R4NVM0b0xmNk9hNy1WbFF5V1JuY3RvVEIwRnF0WXUwTWE3YWNJMWZUdHV4LVRkRllOTHJWS1RvddIBvAFBVV95cUxNUHJaMVhEb29YamVQZTNtWW5rNFRUYkN2YklDb0ZtZWFubEd4MGVHQVhYY20tM2FoU0dKbUxTVWRYLVRsWUVGLVplaEgwazA4S2NiTm9CR3ptTXMxMGRydUNab3N6VlAxdy10cHJqWHJGd21RdHd4Z2k2Uy0tejA2WVNlb3R4NVM0b0xmNk9hNy1WbFF5V1JuY3RvVEIwRnF0WXUwTWE3YWNJMWZUdHV4LVRkRllOTHJWS1RvdQ?oc=5",
-"date": "Tue, 18 Aug 2026 14:47:28 GMT"
-},
-{
 "title": "Senegal announce Patrick Vieira as new head coach after Pape Thiaw exit",
 "domain": "www.espn.com",
 "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOMy04dTJFdTdiWkNDR2tKcHo0bzBVbGsyd1ZnTVFDSzZkUF9keGRiY1R2MjZHa29Pa3J6aG9wVHZ4YXdwYmQyMU1DdGpSSFQ4aWtfRzlTVEtCRjRLOWJhWV9QTm5iaHhMcG9oWDVGWkVTdkZnTDhuN2xxTmlxelpDcXUwcFdmVk5STEpPSmVDNnV1cDhZZEN5SkllZlRKTjlIN0h4SmNsVDBqNUtxVlFr?oc=5",
 "date": "Tue, 18 Aug 2026 14:38:00 GMT"
+},
+{
+"title": "NEXT CHALLENGE: Ex-NYCFC coach Vieira named Senegal men’s boss",
+"domain": "www.frontrowsoccer.com",
+"url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNcmtONFNjWmdyTW02dVZEUzdnOFQ0WVB4eHdPcHVtY0xxNEEzWFhON250aXhENFU5alkzV3hjVmswdno2VldMdTVrX3JDTTZwbENKVUdMLXZxRWxIMHdDeVBVZEU1VG1yQnlFeUlXbm9LSjhINWRHLTVVLXBOWVk0bFEzRlBFLVVuSVlKYjhzOVdYYnFEUG5mZDZuc3p0QnkxamwtUGZn?oc=5",
+"date": "Wed, 19 Aug 2026 00:57:18 GMT"
 }
 ]
 },
 "South Africa": {
-"score": 58,
-"tone": 1.67,
+"score": 61,
+"tone": 2.13,
 "volume": 3,
 "label": "positive",
 "headlines": [
@@ -1003,77 +1003,77 @@
 "title": "Ghana, South Africa end WAFCON with wins to keep Women's World Cup qualification hopes alive - ABC News",
 "domain": "abcnews.com",
 "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNYnZ1SkdENVB1bnd5eHdYb0M5Q0tTTEZ0ZzlacmJDZnAza1dYby1GNmlWelY2UjdhYWxldml1Q3RTLWJ5am5iQl8tWGVIVXBRU3RheVNrQ1ZCek1uRzZiTEt4OEtXRDlHMzhCZ1ZQWnJVeEJETzZvVFdsejMzZFJHNkJhX0VHOFdIOHNpaHV4OGdoem1MdXdxbFFB0gGfAUFVX3lxTFBYV294a0dtWUYxLV83bkdKUm1iUnZDSklmSTcxTnhvQ2dLVEs1blJET3gzbWtXbmxiSGFIMVlXbnVGQ1BGUGdmMGpXeEFobmZ3LUJMcy1aY3lXUjlGbkI0VEtlNU4xajJ3T010a1hFWFNxMHYweUJpMUlnMFBiRGZXLXNJM1YwQmt4Z2JNUUZIOExkcC13d1pQRm9ZNFptYw?oc=5",
-"date": "Fri, 14 Aug 2026 08:18:02 GMT"
+"date": "Thu, 13 Aug 2026 07:00:00 GMT"
 },
 {
-"title": "South Africa vs. Nigeria - Kick-off time, team news, permutations, how to watch",
-"domain": "africa.espn.com",
-"url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOY1M3VHltd1VWcWVKNzliUmotc2F5eFJWWnQ1ZlBxZ01ybnN3cEhrOFlRZEl6b09uUjFMWkhmMWdpRW9oeWRKZ3RMX2JXaC1ieXNMQ2JIdXdvX1hQdkU3aGZpSnljaF9sb1JHbW8tdVQtSHAzcHl1VzUyaGk5MGxVNUxjeGdtNWtlVFYxQ2ptMjNUaEE0UkgwWXBDTEhadlpobVdXc2JqWkh3MnA5TERV?oc=5",
-"date": "Thu, 13 Aug 2026 07:00:00 GMT"
+"title": "FIFA Women’s World Cup 2027 Play-off Tournament featuring South Africa, Ghana and more - preliminary phase draw and finals match schedule announced",
+"domain": "www.olympics.com",
+"url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNYUtLUW5aTDFibzlYbTJYWGh3U1BJaldiUWQzQ1VhUGxxZHktZy0wc244Z2xhQVFNUVFsT2lqSC1OVHM2RWM4NWZraXFvTWZRZ1hyZHFfX21wTnEyY2d4NGNyVjJ5MkZ3VTl4VTRySk15Qk96UzdsMV9QSkJRZTJHMzlqcVhDcm44ZHVnbFlxZzVFUjdhRmdsMU9nRjZ1djVWd1JvRm9EdVoxcXNzMjFmQ2paOWxEVDIzLWoxMnctamhhSHFkVFE?oc=5",
+"date": "Thu, 20 Aug 2026 13:09:00 GMT"
 },
 {
 "title": "Nigeria to miss Women's World Cup after South Africa and Ghana win play-offs",
 "domain": "www.bbc.com",
 "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9SbnF4c2N3VzVNWlpSSUJGZXpUS2FDSDB4a3ZtQmplTzdOTTFaZjNMNlNrUWtWRGh1MEpwOVVWYWFpWHF5U2NSVXRldkp3MVU0NEhiT1owcUNvVVppZzhHTTZmX2dKSTQ?oc=5",
-"date": "Thu, 13 Aug 2026 22:13:48 GMT"
+"date": "Thu, 13 Aug 2026 07:00:00 GMT"
 }
 ]
 },
 "South Korea": {
-"score": 47,
-"tone": -0.64,
+"score": 50,
+"tone": -0.04,
 "volume": 3,
 "label": "neutral",
 "headlines": [
 {
+"title": "South Korea soccer players push for a K League season shift as heat punishes summer matches",
+"domain": "www.nhregister.com",
+"url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPRHI2M3JDb213eE9NaC1lcnFZMFdaVXQyc2ozQmRuV3I1M2JTZDdzLUFCcmw2Z1I5aG1JUGxlQTY0R19pY3ExS2hEbGxvbF9hR1hHMExRdDhmUl9pZ1dhaVFHUlp3allLanBFVEZKNURfeUNfWUxUX0dJcWdoN1NON2Y5RHlOY2w2ZkpzYUs3WkFTV096V2RDRUNaNTJwakctM2l3?oc=5",
+"date": "Fri, 14 Aug 2026 18:42:43 GMT"
+},
+{
 "title": "‘Sexual services’ for referees scandal rocks South Korea’s top football body",
-"domain": "sports.yahoo.com",
-"url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNcHZDN2doZER5UFJiNk9aOTdkMWJvdmxXaGNKWExxR3B5UUxFYnpJUDlidUVpNVlFTzhtbndINk1JRXc4NFRSTUVCQ3NGZDg1b2NfbV9taXFWaTA5T1d3c00ta0tvRGFtckNOZTljWUhoaUoyMFU5cTNXa1JTeVF5bFg2ZlJwVTVG?oc=5",
+"domain": "www.cnn.com",
+"url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNMjM0bmI4c1l0dHRxM0RNMU5TU2N2YjhHaGdhakZvb2tiYWlqWUJ0TXV0VWNTaDlaUkVIOUxPV2JCRk1ZSnJTa09vZS1GNFhEdmtia0tqdFF1OFZfa0haTUdKdG1hdHdJSkpkVDc3bG1FT29YUkRfbVRZTjlHajRzOHJrUlpGVkFlWEJORnRhTndPZlk?oc=5",
 "date": "Tue, 11 Aug 2026 07:00:00 GMT"
 },
 {
-"title": "South Korea soccer players push for a K League season shift as heat punishes summer matches",
-"domain": "apnews.com",
-"url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPUUxnYnhqUnAwOTFpUUtTcEtidkhvaXctaWhIbXlBelFfdFEzVFBwN25JbzctUlhmd3Q0QTN5QjgxeGpCcGR6QVJpVWVkcTlUSnNzSlU5RTlWRzRkQXRkaGZZeEhPc001UVpROE1ZcEdRVmRNX0lXazRScHU0U2x3Y0Z5R01EbGFxZmZiRzRtQjg4U2FoTFI4?oc=5",
-"date": "Fri, 14 Aug 2026 07:19:00 GMT"
-},
-{
-"title": "Seoul police raid South Korea soccer association",
-"domain": "www.taipeitimes.com",
-"url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9hOG92eFJseWlzeFlUQldMbmVxZU1iZENFNGpvemxJSUZvZWxoN0tuVlFLWlM0dUR6Nk1kVU9jYkxkY2JudmNDdkphTDl2c1duZ21RYm9waXdqaG9aVmI1NXRib1lPUzY5MkRmVHlzRWN4V09KM3o2Yg?oc=5",
-"date": "Fri, 07 Aug 2026 07:00:00 GMT"
+"title": "South Korea footballers urge safety after extreme heat statistics",
+"domain": "www.aljazeera.com",
+"url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPS3lLbEQwR29qTnNYYlZ4WUltTnhqSW9pb05lY0pmQl9VUXByTmc1bXdqUlZJc2h2cmlXb01teFdnYjQ5ZTBUSWFwandoZWNmMlpISUstd21FSmVhSFJwM2VuWk5wMkxBLW0tNjhsTldEMGNLdURKTTRmaWU3NGgtbmgwajVLNFRnMEtfcTZEWi1KdnRDbVFMZlgwVlUzUmRFZkw2T29jWVN1NTR4U1QwRkdNMjBIV1FWemVXdklPY9IBvwFBVV95cUxPS3lLbEQwR29qTnNYYlZ4WUltTnhqSW9pb05lY0pmQl9VUXByTmc1bXdqUlZJc2h2cmlXb01teFdnYjQ5ZTBUSWFwandoZWNmMlpISUstd21FSmVhSFJwM2VuWk5wMkxBLW0tNjhsTldEMGNLdURKTTRmaWU3NGgtbmgwajVLNFRnMEtfcTZEWi1KdnRDbVFMZlgwVlUzUmRFZkw2T29jWVN1NTR4U1QwRkdNMjBIV1FWemVXdklPYw?oc=5",
+"date": "Fri, 21 Aug 2026 13:05:21 GMT"
 }
 ]
 },
 "Spain": {
-"score": 56,
-"tone": 1.2,
+"score": 46,
+"tone": -0.86,
 "volume": 3,
-"label": "positive",
+"label": "neutral",
 "headlines": [
 {
-"title": "PSG sign Spain's World Cup hero Torres from Barcelona",
+"title": "Paredes banned for 10 games after World Cup final fracas, Argentina fined",
 "domain": "www.reuters.com",
-"url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOUnBzODktMUh1OHVxX3l5UlFuTnlEdkJVSGFBY3FPb3JHMUQycGxXZ2lyTHZwUllQb1NXX0ZVcUp0RWlTZXl4bGlaQndRU09CZFdDSmxVV1pEYUtLY0RTeklUYi1QTHpNQ1V4RGlqV3NBSUE3b3lsWUVXS3dWYktVUWhWS1pKRkNNT1oyNVFXMHQtWXc?oc=5",
-"date": "Sat, 15 Aug 2026 12:54:59 GMT"
+"url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQWlBpR2t3SUZ6Q25IYUd6ZWNVc2xtOW9EN2lrTEM5VGhlcGlIZWtyNHpfN0FxcE9kdU1ES2tfaG5KVk9Hejc2MzBTdUltRFgyTFJ2QVJKcEtIdmc5dDJSd0hSREVRblF4T3dHMUh5NEtHcEp5RDJaNDhEMllDOHM1NUpOTDZUXzdRSS12VFpIX0NuWUJsbTQ4d0tkUjVRMUNYQzZHVkkzZWprY1VYTUVzQ3JQZF9QNUY4UGc?oc=5",
+"date": "Fri, 21 Aug 2026 18:56:43 GMT"
 },
 {
-"title": "Rodri’s journey from a Connecticut camp to World Cup win and Barcelona transfer: ‘Football was his religion’",
-"domain": "www.nytimes.com",
-"url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOZFNXMi1yNkEzYkhlR0Qwd0Rmc25aN1VKb1dHWWxMQ2UtREtoM1ZWb1FicEZNYUJqTDJmbDBRTVowRzM5cmpKb3Z2VF9iREpKeHdPdHVFZzN2WmEwN2V4aFR6Z0tiX2twT3JIbmJMRC1WX1ZYZk1OUTEyMVhMUjhUWTczaGpLaTAtOWs1cWtqUEdiS0RKdUpCbEFOZEhqUWRfY3c?oc=5",
-"date": "Tue, 18 Aug 2026 04:08:45 GMT"
+"title": "FIFA Announces Bans, Fines Stemming from Argentina's Fight with Spain After World Cup Final",
+"domain": "bleacherreport.com",
+"url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOSFc2R29RRFV1U3o1XzIwS1pTclp6bXRXbXBDUEx2bHF6dndPVzBUQkdOWXhGSXNQb1ZNRnhBWWhvdWJ6alQ2YkVBNEt6aXlMYmJmZHU2M1hoUkVmdm9GbVZIZGthZTFkV2NVU25ZbGxZbzdfYS1ZOTB6VmJ6bk93QnBueUdrbU83U21xT3JSUnZfRXluRUsxV3hLV1U5SmZCaHJsRUdmYXRlZlpEU1Z2eW9YZzBmeEFBaXhkbkh6b0t3UQ?oc=5",
+"date": "Fri, 21 Aug 2026 15:05:46 GMT"
 },
 {
-"title": "Spain beat Ireland in five-goal thriller at World Cup",
+"title": "2026 World Cup: Argentina FA fined, 4 players and 1 team official suspended for scuffle with Spain after final",
 "domain": "sports.yahoo.com",
-"url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPa01FZHR5bk43bXFZeXRvTUNYN19MSHRWWGM4SzRrVUNSX1c4VWtBX2dfZWtfVUhOS0s3bDVGMjZkbGlKMkZtN25ZSlRoZ2dDdll0ZnNXRm5uRlZwakpJOGN3RnkwOUVYQlVsc2FtN2RBRVNmbkxzdFNRbC1oYmFqNHZ6Yw?oc=5",
-"date": "Sun, 16 Aug 2026 22:40:15 GMT"
+"url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxQek5TVjkyS0dZQkVTaTFZMnpPeXFOTTBpSFFsMkVEZUVlLWp1aFM5QXZ0cjVYMjZpTy1UXzFFWVJFMlA1eW1BVFZYUy1BWUl3WFlFRXJsYzJKd3loUk81aURXNUJJUm1VR3RZbjJzQklUNjZrNU1sVUFUSnhhdTI0S3plRGVlZ0VVa0Q2ZzFaUkhWVUJsUjlNWk9UM3Q3MnBEWnhKS0dvZUh3Rk9kcklERWJVWUl6T2ViZWQzNmV2YklUSXViUk5EYkp4a2lhM2FWMV80dHBjMF85YURHQzFFR01TeXh6ZTAtUkRabE0yWkx3cDBqTDg0b2p2eHBYQ2NmLTJnODM0YXA?oc=5",
+"date": "Fri, 21 Aug 2026 14:31:43 GMT"
 }
 ]
 },
 "Sweden": {
-"score": 53,
-"tone": 0.55,
+"score": 51,
+"tone": 0.22,
 "volume": 3,
 "label": "neutral",
 "headlines": [
@@ -1087,7 +1087,7 @@
 "title": "Sweden World Cup 2026: Route to the final and tactical analysis",
 "domain": "www.squawka.com",
 "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQeWh2N3U1ZDUtdHFSVVpqSkNOdlBpNDV1bGs2d1VBRExLc0prVlBYeC1LMHloakN1Qmk2TmtfUXp5RGRLTFEyRWdxZllrZGI2dEtaNjJaU3NvaDVRQ0pqRWxOMWhrYlZuRnRXRDQ2OUlXUWxlejFuU2s3ajk2eDdiV24wS2FHWG41UjRONDhiS1pYdw?oc=5",
-"date": "Thu, 20 Aug 2026 15:08:20 GMT"
+"date": "Fri, 21 Aug 2026 12:43:05 GMT"
 },
 {
 "title": "PSG sign France defender Digne on three-year contract",
@@ -1098,22 +1098,22 @@
 ]
 },
 "Switzerland": {
-"score": 56,
-"tone": 1.11,
+"score": 57,
+"tone": 1.47,
 "volume": 3,
 "label": "positive",
 "headlines": [
 {
-"title": "Atlanta United finalizing $18m deal to sign Switzerland forward Breel Embolo from Rennes",
-"domain": "www.nytimes.com",
-"url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOalB3S0IzaUkwS3FzdkZTOTNWN3JjTkxIY1dndEp2VXE2dlUyMFViLTlxVTFaU3h1U1ZYbmJvWThJeWY5eU5GZkM0d1U3ZWVZUzc3ZzRvQlAtcl9UbndFTm0tcEhxaGZDVng0S3RHa2MzVHZ0bVlSMVpsODJTbTIwZ2hHYUJpVUdjZ2xFNmpmR1JvQWc?oc=5",
-"date": "Fri, 14 Aug 2026 13:09:45 GMT"
+"title": "Switzerland World Cup 2026: Route to the final, results & tactical analysis",
+"domain": "www.squawka.com",
+"url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOd3hkaUEyT0xaa1BSZWE0bEgtYkJIOGFvLUdBdWdMY3pTamZuWmI1TXNPaVNWbDFGcW91eUZtaldvWVpIeFRzTjFUay1BTTVQcGZuS0czQlFtWHBJTkN6S0Z0ZkJ1bEZndnBieFcyc2tlYWItMVJrSDRUSEQtWTVVWW5JWW1VakZ2UGEwSDVUdEo4UUNvd3RENkliYW4?oc=5",
+"date": "Thu, 20 Aug 2026 15:43:55 GMT"
 },
 {
 "title": "World Cup: Argentina vs. Switzerland Odds, Lines, Spreads, Betting Trends",
 "domain": "www.vegasinsider.com",
 "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOcGdDVjc1QnNzVk1faGl2SFlIZzczakUxaDNodmdKUlJvdmVGTGJHRlRDMEFlQjljTG1UOXJPM1RMM2lZT0M0OEFKOVBFdWZBU2w3RDBRU09OSkNEb2VzWFg2dV9OUk1CTVFFMjdCakNjMFhoMzZ0NnZER2VRSjdiX051VWE?oc=5",
-"date": "Wed, 19 Aug 2026 07:00:00 GMT"
+"date": "Thu, 20 Aug 2026 07:00:00 GMT"
 },
 {
 "title": "Report: Atlanta United nearing $18M transfer for Breel Embolo",
@@ -1124,48 +1124,48 @@
 ]
 },
 "Tunisia": {
-"score": 49,
-"tone": -0.15,
+"score": 53,
+"tone": 0.54,
 "volume": 3,
 "label": "neutral",
 "headlines": [
 {
-"title": "Palace sign Japan defender Tomiyasu after trial period",
-"domain": "www.reuters.com",
-"url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQQm9DbWxiUFdjMDhUTmQ0QXgzSTU5RnZuaDVpLUV0ZkV0bnlSOTlmUF9hREJ5dWdod3ZYb3lHaHZ5akNaSWNlVjBTRDRHN01wYnN1Ym5mbnlGaXNGY1BFb1ZVZlRWUjYxdWNlb2RXV3lqQXNSSVYyb2FrLVdFMzJNTVdrX3BwcThkY3FadUVCUGNIeDhRSUdJTWdqcHEwSUpZRFgtMFphOA?oc=5",
-"date": "Fri, 07 Aug 2026 07:00:00 GMT"
+"title": "Utah Jazz guard Josh Okogie leads strengthened D'Tigers roster for World Cup qualifiers",
+"domain": "www.espn.com",
+"url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPM3k5LW4zcnhRYllnSnJMbVNTZWRyTl8tNlpYTEdfUUROUWpsa1dlY1FHd3NMMWZPVElRaVZOVm5hU1QyWndBeVB3U09Ga0xKOV90VzFrOXFVem45b010ZHZjZ2s0NTgzWGZoekxFUTdyZFJnV2g1OUQzeFBqM3VXZl93bjZ4Mkp1X2xQNjJ5aUMwc0YtM0N5eWNfdGFQM1NRSXNYYnBBYUxiNEdtRUpTVGIxNjZ5ZnhzWU1rckFZaFh5WGFiSGJV?oc=5",
+"date": "Thu, 20 Aug 2026 07:16:00 GMT"
+},
+{
+"title": "Tunisia World Cup 2026: Fixtures, results, manager, squad depth and tactical analysis",
+"domain": "www.squawka.com",
+"url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPRjhIQ05BNTVwY1NDeVgxV1pCRV9ZZ19FQ1R1MG5pejU1OVJoeUQxNXVTbnBOSnIzbmQyU3FSZEx5bFU2cUpYS2VBdk9iYmJGUUhfMVJ6TDBrazhnWWZUTGctWDliZnd3dUsyaXR6M2FNXzRkRUktV2NjTFJBWGJrcHp2UDZma2J2WE14VzZVT2tCUktMQnR2SEtJTER3QQ?oc=5",
+"date": "Fri, 21 Aug 2026 09:13:13 GMT"
 },
 {
 "title": "Watch Tunisia vs. Guinea Live Stream Online | DAZN US",
 "domain": "www.dazn.com",
 "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOOWxreUFpTEVWV1FyMGNTb2xYOXA5NExMdElza2NZQlFBZExDRVp3cXA5amNIZ09iakxOWnB6b0ZSbVJZYWQ1U2tlSEV2cm5KSHRMSGlTWmtLRFBRcDBmYTJ3Y295eXJYSDcwUVo3dkhvZ1FwMnBIc2szZEdSeVJCQVd6enV5OWd1QktB?oc=5",
 "date": "Wed, 19 Aug 2026 16:12:14 GMT"
-},
-{
-"title": "Barça Academy Tunisia set to open",
-"domain": "www.fcbarcelona.com",
-"url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOSm84OFNKM1VoYjNhS0FlcXVOb3FYTS1zSWFsLXB3RnBHQ3pWcTh3NVFQWkk0c2JEMjgtcG1UZTMzLTY2U1RJTF9Sd21TMGowVTczY3JKYVZPYkJPc0dHU3VXMERfamgtTWlxcTdYVlJ1UDh6RlUtMkk1NDFwelJyRVI0X3kxbDFSSVE?oc=5",
-"date": "Thu, 13 Aug 2026 10:36:05 GMT"
 }
 ]
 },
 "Turkey": {
-"score": 50,
-"tone": 0.01,
+"score": 53,
+"tone": 0.62,
 "volume": 3,
 "label": "neutral",
 "headlines": [
+{
+"title": "International World Cup Betting Bonuses for USA vs Turkey on June 25th",
+"domain": "sailgp.com",
+"url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPbmpQRFNEdXpaVXdxWGZiVFpiNi1JU3ozX1RWZzVRTTFxV1NkTVMyNERoai1KSU5tMzg1enk2T21LTkFydjU4WGRub1FyTHVFVGUtZDlGdGtNNi1McUxSSlUzNmk1alppbWFFQi1VLU1hTDhkdFV2UkhvOTF4YUVtS0FGbU52ZjB2RktabXVSZ2VMWGFxN0dJZFB3?oc=5",
+"date": "Mon, 10 Aug 2026 07:00:00 GMT"
+},
 {
 "title": "Is Turkey home to savvy signings or a new retirement league? We’ll soon find out",
 "domain": "www.theguardian.com",
 "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNQXBVYkdSM1plNFBRQXpCQVZGSjdldzJFb29CQ2ZDN2ZZUTIwTURaSHV6SXBJOWI3clpCQ1BtNy0wWllXU1BiTTFMd1Q4cHUzTDJVNGR0RGFUTkIxeUNkU1dKV3VCQy1tak9vaUtBYXIxOGRvUF82dHVySjJMeFpVbXpqYmRLa1JsV3ZFUFNZcGtNWDRtdVZIOHNYbVA4azg?oc=5",
 "date": "Wed, 19 Aug 2026 10:01:00 GMT"
-},
-{
-"title": "The cold truth behind Mohamed Salah’s move to Turkey’s fourth-biggest club",
-"domain": "sports.yahoo.com",
-"url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNYWl1TkVNdWxZWVVxRHUyLXZBaHJtTDBKVVZNblEyUFk3X1RfNFlPWUFHZlpUNXNQbXVLMHp5Qnk5N21XajZDeG92eUJsSVUwN0ZGM2x5UW5DMWlOQnFZU19uZVYzTVYzUk15RzFLb3lCM0JNalBVX0Y5bG9ud0Y4aVlnTEVxcEU3eWNWWmh2Tmhwc2FfN3pEZHhxeS04dDRqcVBxTU9QYTg1dTVEZW85OGVTR2hvT1MtdHdIR2t3?oc=5",
-"date": "Fri, 07 Aug 2026 07:00:00 GMT"
 },
 {
 "title": "A journalist arrested in Turkey for his reports on Musiala's alleged signing by Galatasaray",
@@ -1176,8 +1176,8 @@
 ]
 },
 "United States": {
-"score": 56,
-"tone": 1.23,
+"score": 59,
+"tone": 1.84,
 "volume": 3,
 "label": "positive",
 "headlines": [
@@ -1188,42 +1188,42 @@
 "date": "Wed, 19 Aug 2026 19:04:11 GMT"
 },
 {
-"title": "What to know about US soccer star Folarin Balogun's 1-game red card suspension, why team can't appeal - ABC News",
-"domain": "abcnews.com",
-"url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPODhnZnRkRTdiLWtrV2RZRVUtb2NteHQxV2lMNU1EdzFXOWlqeXR4X0RKaU5OWTlBY2RzekdDNVVBeHdtUXV4UHhOb0ZHQlNhLUhPd2lDYU8zcmhxb1B4N05MY0RpaDFxYS1nSkVJNXF4RVQ1bFpVMnFVWEJ4R1FfQ0pSd2RVYlVwNnZxNG9VdnN0VWtIaXZYUdIBngFBVV95cUxOcVRwamkwUV8zWm9sUkM4dWtMVHhkOW9PN1l2Y3pBWmFSTmo3S0gweXprd1cwWDhndzJBaVBiQUlrZUIzMzZCNlVyRFFiVFAxNDd3cGI5eDVsZFRMSG5Vc1hEMmdQMjFDOERKejAtbkdqMDBjWXJMaHg5QmxKZ2JvelJONklwMElNdnBfNzB2bWJFU0VxSjZ4UmhFSE5xQQ?oc=5",
-"date": "Thu, 20 Aug 2026 20:26:35 GMT"
-},
-{
 "title": "Ayva Jordan Called Up to U.S. Soccer U-20 Women’s World Cup Training Camp",
 "domain": "utsports.com",
 "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPTHVwcHg4bzNVTW51MUk0M0lqYXlveDlPR3VTdHMtWVg5Z0lacm9sd3RXYWFmVzhKTXhTZzdIT2xTd0JJWTNrbmF6SDh1cGZRSE1HTmxsaldkOUR2Y3FrU0dZQXByQVR5VmxodmRrU3pXYnRsQ0pnUzZKM0pYWXY0RFMtUC1lV2FrbWpqc3AtYmw4V2ItN3RoOWpRQnlFakViel9TX2NhYkxBZw?oc=5",
 "date": "Wed, 19 Aug 2026 23:44:57 GMT"
+},
+{
+"title": "USA men's players in Europe: Where are USMNT's World Cup squad members, 2030 hopefuls?",
+"domain": "sports.yahoo.com",
+"url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQSDUwSXpUemQtM0VNTUhvc2NEOVF0MUROdmk0SWNFcDIzYlZPZVRJZ3NrelZ3RkthTHBmODcwZzVYbm1lRDFFMTlXcExFcF9QWEE4elJjTkxwYU5iODdSMWxKd1BrNUYwNzc4bmlfVU5qcnJRMF9OczdIVllWZzBUb2N0VUU?oc=5",
+"date": "Fri, 21 Aug 2026 18:02:29 GMT"
 }
 ]
 },
 "Uruguay": {
-"score": 55,
-"tone": 0.94,
+"score": 56,
+"tone": 1.19,
 "volume": 3,
 "label": "positive",
 "headlines": [
 {
-"title": "Diego Forlan welcomes potential Luis Suárez return to Uruguay fold",
+"title": "FIFA sanctions Argentina and several players for World Cup final scuffle",
+"domain": "abc7.com",
+"url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNcnRzYlktczItVFhRMlQ2d080YnBTTXFZZ0Jfcld4M3VxUWlRSXRhQ2FnYk1qdGNicWlFMEpKLVEtMG1rZzhiemxLUjRXd1A4bnNPaGRnaVVuY181cUJUZDlsUmw2QlUydEpZNm82U2FCekpjRjd0RHRHYW0zWW52eUxhaUhQYk5RZFVWSUV3eE9jQnJFMEgzWVo0cjfSAaIBQVVfeXFMTzdKZnVnR3NFTjlmQXMxZnMtbktHTU9ZVzVXT0FDVU90VWdvamVXV3gzX3pDZFVSU0ZQZDFTbEE0Qi1pa2tQUVpsNVZWeVZzWEJFYV9PekJGaGdKUWtVZzdkeDNfa0FmMW9obEVXOUZZQ2Z6QXZFWnY0OXp4cUVKaHJqWWcxT1JpRGpBN2E4SnA5b2Y2c2hRWVRpQUFhM05UUV93?oc=5",
+"date": "Sat, 22 Aug 2026 00:22:02 GMT"
+},
+{
+"title": "Why South America is lukewarm on a 2030 World Cup on home soil",
 "domain": "www.espn.com",
-"url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOZUpVNFp0Q3lTZ3ljMG5yUUNtZ2dNYzBXZWhHcnJrMHdPR3p1bXV1bUxhSm1PZWdUdDhlNXFhc0pzX0JEM25VcjB3RkpQYVo4TFk3RWpxVy1MNmNMS1llUXdibUdnX3ItOXFzMEJib05QNTdpYVpjSWhsVU5taWp0ZEtvWW9kUWFVV3hGWHY0aWdNci1yTGhsa1UyUWdkUjF0ZWhmX2Q4OWw2LXNRbW16VQ?oc=5",
-"date": "Tue, 11 Aug 2026 07:00:00 GMT"
+"url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQY3Jfb1pEU3I2M0R1QWgybG51YWNxak4zTzNkRzlKUkdjNlNCdWNpeGRLaVJZZUp4a0RJLWpYVEVDc0h2N0c4WVY3QWFFRzBHUHlKWTlGM2tOMTk5Mno5X3VUUDlNTS1DeklVMklwUk5Jd01aenZMajdreFVhYkx1Q25BeTVyMnlEaVdSYmR6UXNwUkx1QWV4YzkwTmY5SVh6WnlLYzdPQQ?oc=5",
+"date": "Wed, 12 Aug 2026 07:00:00 GMT"
 },
 {
 "title": "Qatar still not satisfied with Asia chief over Infantino letter",
 "domain": "www.reuters.com",
 "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOV2pPelNZVkRNeUlDS283eGZnelNIdHR6WV9oUzBPTnpyWC00YThGOFBkb01seHJJZkQ1TW53dDVmQXM0T1BQWFRnaFdkMkg2bnAwZWp5Yi1aUFVrTlc0S3Azc3lhZGJ1UTVpMUcyYW9YU2JBVHZYNUtkYUx3TFNFY0dvS0dCQW1ncHNSYTA5VHJ2YlctU2psQzFCWVpWblhhNUo5Y2x3d3g4RlBsWmJ6RURiUQ?oc=5",
 "date": "Thu, 20 Aug 2026 07:36:10 GMT"
-},
-{
-"title": "Uruguay Soccer Forlan",
-"domain": "www.idahostatejournal.com",
-"url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOMy1Va2JEcHotUlc2bGZfNm11SWlzX2ljb3lMemVxTzQ1V0NBT3I0VDlHank5UVNMVVFJdUNuVVA3d3c4Ny1NQWNJUi1HZk1QTVBtcEJqME1feUJYSG5zUm92ZG9tc2J5b3VXTkg5dnBTWXZJTkZVNWYyN0ZsbmdMeWpwLTZ2a0FZQWVOZERrWGdLNXFNWncxakc4Z0xLbXlqUXJnSTVsaWJIU3BqZWZZMkRJRnZ4RERXMkl3?oc=5",
-"date": "Mon, 10 Aug 2026 18:08:01 GMT"
 }
 ]
 },
@@ -1234,10 +1234,10 @@
 "label": "neutral",
 "headlines": [
 {
-"title": "Uzbekistan World Cup 2026 squad: 26-man squad named by White Wolves ahead of debut World Cup",
+"title": "Uzbekistan World Cup 2026: Results, manager, squad depth and tactical analysis",
 "domain": "www.squawka.com",
-"url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPQTZ6anhEdWRKbzhwRXQ4azlXYm9EaWFiVzRLWFQ0S0UyZUQzbFA2UG1OLUtuTUpvTVBkb0kyUW4xXzVZZE55SU92bUFQMGZIYTZaNFh5NnFObkFGT1pTU3lITmowMW00OWVVR3JRaFpGMnRrTGRORnRmYmVjRUduMnJWZkF3eDdKcWZJ?oc=5",
-"date": "Wed, 19 Aug 2026 14:35:49 GMT"
+"url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPU0I3ZzBCal9zVEpYQ29Nd3J2ZXZtQm9UaFVUOHplbjZHMndFRXFTVS1FRUNKd2REYkd0U1EzSm9zX2tjcjhwS2p1LXpYOEZLVGo0MDNxQzhfWmVYTVJCcVJKNUNlTUVqZnNHLV9lLTJ1REVLdXlZR3NzTkp5X3laZ2RWQlM2Mm9ZUXM0Nm85Ni12bG5ndE5v?oc=5",
+"date": "Fri, 21 Aug 2026 20:22:16 GMT"
 },
 {
 "title": "DR Congo vs Uzbekistan World Cup Odds: Coin Flip?",
