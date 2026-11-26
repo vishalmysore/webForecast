@@ -1,15 +1,15 @@
 {
-"generated": "2026-11-25",
+"generated": "2026-11-26",
 "method": "Google News RSS headlines over 14d, VADER compound sentiment, score=clamp(50+5*tone,0,100)",
 "source": "Google News RSS + VADER (no API key)",
 "note": "Media-sentiment index: how positive/negative recent public coverage of the team is. Not a measure of anyone's emotional state.",
 "timespan": "14d",
 "teams": {
 "Algeria": {
-"score": 54,
-"tone": 0.81,
+"score": 53,
+"tone": 0.57,
 "volume": 3,
-"label": "positive",
+"label": "neutral",
 "headlines": [
 {
 "title": "Algeria FIFA World Cup 2026 TV Guide: Live streams, channels, fixture schedule, dates, kick-off times | Goal.com US",
@@ -32,16 +32,16 @@
 ]
 },
 "Argentina": {
-"score": 49,
-"tone": -0.11,
+"score": 51,
+"tone": 0.29,
 "volume": 3,
 "label": "neutral",
 "headlines": [
 {
-"title": "How will Argentina replace Lionel Messi ahead of 2030 World Cup?",
-"domain": "www.espn.com",
-"url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPWUxJaEZ3VGt2TzZuclc5OVVvRGRlT2VLWVRNMUFoSGhHbkpxalBVOEtfRGlBbkxGZTByS2h1SzZXSXBMbFdUMXNqTUtUUXVQdWJ6T1ZwT0hpRnZzbzhUMk96enRhNGw0TWgxaV9nUXF0R3ZSYjVOY0h3TVZzc21LR1MyTXY0bk8yTTY4?oc=5",
-"date": "Thu, 12 Nov 2026 08:00:00 GMT"
+"title": "Argentina beaten by Uruguay in first game since Messi retirement",
+"domain": "sports.yahoo.com",
+"url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQT1pncDdaZTNJS21VR2xNSk5RSTVtYzNoeWpZTFItSXFxZl9XYmpHTjY2dkFLYTFGMFlZQ0Y2d2VsQ0lJcUs1V05KS3NMbkVodU9ndjVhYWlhdDNYOEFEcTUwLU0tQUMxMmxtZDAxWjhiU1JaYUROLVIzWThrOExYbnZ2cGpBQ2k4WHFaNA?oc=5",
+"date": "Sat, 14 Nov 2026 08:00:00 GMT"
 },
 {
 "title": "Are Argentina and Lionel Messi in the midst of a commercial break-up?",
@@ -58,10 +58,10 @@
 ]
 },
 "Australia": {
-"score": 57,
-"tone": 1.31,
+"score": 52,
+"tone": 0.36,
 "volume": 3,
-"label": "positive",
+"label": "neutral",
 "headlines": [
 {
 "title": "Socceroos’ future looks bright as Australia stun Argentina in U17 World Cup",
@@ -70,68 +70,68 @@
 "date": "Fri, 20 Nov 2026 04:44:00 GMT"
 },
 {
+"title": "[LIVESTREAM]TV!!] Australia vs New Zealand Rugby League World Cup FinaL Live Today",
+"domain": "www.ub.edu",
+"url": "https://news.google.com/rss/articles/CBMimgJBVV95cUxPUnF4VUpVUGdyUkJuTldjc0loSFR5bENQTVNsOTFmd2pxZ3o5ZjBlVW1EZUxCRkY2Y2Z4OFFnU1Q2aHZieXh1dkVzaGhIZWRIanNlY3ZNQUpsM3F0SktTOGV2Q0EyamI4MXVhazgyMGhRbFZ4YWR0aXBZXzNrOXF1UlZlSnNNa2NKNXlyZWx6U09va1pHX1phN2ZvX0ZQZjBjS2dMYWpiOEVHd0h0c3JBdFAxU3VFVWwzM1lnV2R6OTRXaHF2ZmtOcHMyd1daeVJZZXJweUpVUkxmbHRGb21VWUpPMHdodFJ6ZGZzUzZ4UHhxSUlmTTJSYlhaeHNhUzZSSFU4dGFTdENDMHA4NWxfUER0WTRZOGtiTUE?oc=5",
+"date": "Sun, 15 Nov 2026 09:31:36 GMT"
+},
+{
 "title": "Trinity Rodman (shoulder) to miss USWNT'S World Cup qualifier vs. El Salvador",
 "domain": "www.reuters.com",
 "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQV1RYVThkWVdBVFV1TU1TZHp4UnNGWnlCbGNFYjlfRzVqbVJmMDBjQU9tZ2hsTkVGMXl2NEhUa24zbEtVbXVlRnpRZnpNV3BRdXllQjh0N3VZQmoxZVNpLWxRQlZIOHpBQTBTaDBYbEYtX3NWMzRMY04xaDdkUnNSUkxFWFF2am5GR05mMzVLb05kNjNGdlYwX1JsOGZhQkxNN1N1R3dxdTcyc0dKV1RrUWhURkhaNUlkWl9lclg4dUprMk0?oc=5",
 "date": "Wed, 25 Nov 2026 10:20:32 GMT"
-},
-{
-"title": "United States picked by FIFA to co-host 2031 Women’s World Cup",
-"domain": "www.bostonherald.com",
-"url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE14aWo3WGd3ZllSV0N0eGtjcll6ZktUYjNoWnFSMG9Wdk9PYUVnYThmZS12a21ZUkRfVlIwQjJQTHR3QVBDREZJb0dtRTRVY2tyRXQ1aHk0SGZwcjVSMmZLSmtuWDZHLU9hVTVPdkgyLWJUb2xZS0luM2pVZHI?oc=5",
-"date": "Mon, 23 Nov 2026 20:05:36 GMT"
 }
 ]
 },
 "Austria": {
-"score": 60,
-"tone": 2.1,
-"volume": 3,
-"label": "positive",
-"headlines": [
-{
-"title": "Israeli soccer squad fails to win a UEFA Nations League game as it ties Austria 1-1",
-"domain": "www.timesofisrael.com",
-"url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQN2k4ZGRfeUtmdDdVQUM5TDVrVnV3SFR4cG5fV1lCM2FJYWI3UU5WRVUtQWdzM19qa3djZFNpZEhsV0lvUmZKZUlvTGxEZ0ljLU53OVlfdU1XdjVDZDc5b013NW5Ea2hDenpkc3FTSGwxd08wM0ZpQUhwTHBwOTFkdzc2N1UyV0RBQWdwNlpzUDQ4QnVYc2tmWTdIY1hsNXd3cm1oQmZfRkFraXdhWHRkb2V2WnZtNmpFUXVlRDZRbEdJOEFzd2dlbQ?oc=5",
-"date": "Wed, 18 Nov 2026 02:23:00 GMT"
-},
-{
-"title": "‍‍‍!+[SOCCER MATCH]Israel vs Austria Ｆｏｏｔｂａｌｌ Ｌｉｖｅ Ｔｏｄａｙ",
-"domain": "vacunasaep.org",
-"url": "https://news.google.com/rss/articles/CBMiqwJBVV95cUxQeUtVb0NCaVpVb3RTaEhfSG4zOEZyeTM5MVloUkx2dXNVeG9TeFRYSEtzaUk2TnNpRTJXMUx2UnNVc0Viem5KSkM4a2cyOFlDQkdDVzJSQ0xncllBMk9aRFZrUTBQUkJ2Z0RKeUhPbmh0end2M040T1Y1OUNWOEdiZERQUk9wRFdzRjM0Q1k0U3J6ZXA4Q3NWNXhpOXFoajgxZHN1YnBGYU1JY3lLNTBVSHRVdFowNGNsMFZuc081VkNiTDBMQXlrTHpXa2tLMndKRUstMU44ZE5waFgzblBwbmc5TEFCUllobkY4Y2EzcnpNRXhhN05HTk9ySUJmdmxkMVpuQWRVVVM2TmRKZXpLSm8tOXBvTU1SUjNNMUl1Q0lQNndVaHRreUYxQQ?oc=5",
-"date": "Tue, 17 Nov 2026 20:00:15 GMT"
-},
-{
-"title": "Ski & Snowboard Club Vail alumna scores World Cup points in Gurgl, Austria",
-"domain": "www.vaildaily.com",
-"url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNcUhnelJ4OUxqVVpSZkFiZHBQUm5aX3h2SWV4d1VFbW02TmlUTU10anRxWm5MU25RbVRuN091TGxqM0RaS0t0RnpGMHRCeEVYQzZpbWVSUmRYUlJ3TGs4MjJVUk11MkJ5YUtIRjFCVVUxU1Jia2dyeHhaekMwUUZ0X0NpT3dOSTc5N0FqOE5yeWd2eGFtek9QVmFkOFItQ1lhbWxIamdPN0JDVEU?oc=5",
-"date": "Sat, 21 Nov 2026 15:37:27 GMT"
-}
-]
-},
-"Belgium": {
-"score": 52,
-"tone": 0.45,
+"score": 53,
+"tone": 0.64,
 "volume": 3,
 "label": "neutral",
 "headlines": [
 {
-"title": "Belgium’s Romelu Lukaku retires from international football: ‘I went through every possible emotion’ - The Athletic",
-"domain": "www.nytimes.com",
-"url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNdURTZzdSWU02NkFCel9iX1lKNEUxOUxLSDF6bHNCZzAtOXh2NkcyNnUwck5FcDZMSE0yY056UTl6dDBod3JrNzREOVZ5SHZ0LW92R0NYczZFdEQzNWxJOTZ6SW5Ram81MEplZkxtQUtrZmZRWm5MQUYyenBvMjFfV2swVmdYR185VGJkbVYzRTZJbzFvckVr?oc=5",
+"title": "Ireland XI vs Austria – Predicted lineup and team news",
+"domain": "sports.yahoo.com",
+"url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQY2FDLUR1NnJIM3FEQzVNSkh6YXFBM3FoY0lCYTVGRjViQkw5eXVxRzlsa3VfM3FabmstbGZvRlBhZjhwdzBSTzRTOEg1c0txYjNNTmJJTlQ2Y1BROVZmc0o2anVEZFA3TzhEWjNMMmhGcmZKY2J2M1pBSjBHX1BaaUU1ZDhYSEE?oc=5",
+"date": "Sat, 14 Nov 2026 08:00:00 GMT"
+},
+{
+"title": "Watch Austria live: TV channels, live online soccer streams, how to watch FIFA World Cup games for free",
+"domain": "www.goal.com",
+"url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNQ3dXOUd2MXFTZ0s3YjM0TFh6NVJkQW4zRklpbFVJQUU4c3FxcTFCN2VmNFFHX3JkY1A3U0otRHpQNDhpei14MXhZRFB1VXVjb1k0eW9jWHNhczk2M0puN1NtQk1YcHh1WjVrYnVDR3NTSktjc2dQQ1BtbUFRakhIMnhCcTVQVl85bW56VA?oc=5",
+"date": "Wed, 18 Nov 2026 09:08:57 GMT"
+},
+{
+"title": "‍‍‍+[LIVE-NOW] Israel v Austria Football Updates",
+"domain": "vacunasaep.org",
+"url": "https://news.google.com/rss/articles/CBMiwAJBVV95cUxOLXJDUDBrWjFPX01KeklJTlB3Um94dHpHMFE1eGluTjBobGdaNkFoR3B4c1ZSTml4S2hOYURZVVBnaWJrY245Ykhkc2h4aEtsRF9wVXVrNmhEX0VyT3ZfLUpLaVNDZWZmdHBvRWMxaGY0LThlTk1ndHBJOGhlazhvbEFmVHZZOGRnQVk0QTd6Vm1zM2lwLXhHWjB1OGVOVmhXV2VNeVNVM3dWTXcyZW1uZXFxSG4xRmhGLS1WTE55bndXRW5fSUFHWjB4U3g5SXByQ0pyZndNdVFrYWhqNEpOZ3pmbTJmcklKZHlvaGZGMVVnV040ZWVMQjNTb0dxYjhIV1hGU1l0LWhiSThrMkxhQ1ZrRUJTVWllRzZQMGxXSzRJLUNjMXBrbXJjWTJIeWFGUUdlQkM3S3VaTExQUTEtcA?oc=5",
+"date": "Tue, 17 Nov 2026 19:48:01 GMT"
+}
+]
+},
+"Belgium": {
+"score": 53,
+"tone": 0.64,
+"volume": 3,
+"label": "neutral",
+"headlines": [
+{
+"title": "‍‍‍(LIVE!NOW) Italy vs Belgium Football",
+"domain": "www.ub.edu",
+"url": "https://news.google.com/rss/articles/CBMiswJBVV95cUxOWDRIZ3VzYjc0ZHJiUWlpdmJGbEs2QkZxc09MNkxVeXJrNEpjRmk2MnVGdzZTRFdLdldWVG5FUUN2WnFHeHNMZmlLemk1aGVfelZUSzJfVDJuck9jRmVxSThhRzk2SmxEZDRxWHgwUGRfQ2lPYjA2N3ZWeUNDUVdyQjRCNE1JMU5ncWNMWHh0SlUxbTNlbFVlbC1xX21XbUFfVXdIY1BEc3hOTzdOTUpUa2VBR3g4ZDUxLTdDRzJHVFFUT1pNaWJVUEtacU1NcU9BdEhfVUtGWFhuenlIT2hjNno1eFA0Zl94OTZCMmc1UjJLMmNQWmFXNUtmajBIVTdzREtTRU0xR3htVE9kRy05LV9xYTYtUEg5MkZtTllIY2tsRFZpTlg0dVlwLUwxcndTbmQ0?oc=5",
+"date": "Sun, 15 Nov 2026 19:27:07 GMT"
+},
+{
+"title": "Belgium's Lukaku retires from international football",
+"domain": "www.thescore.com",
+"url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPb254UmVBUzJNVmpieG96MzUtZkJHTFFrSHVYWHZILXd2ZUNRckZ4MUJiUm5MRWZTYzVPbXdUWGlUUTN6ckk0UEtKZ1BCNmZfLURub3pSeC1waUFNdzVaV1R2WFVoRnFpdE1abmw2Nlhacjd6Yi1HUVZtN2dwQ3NUNFJMQmJxN3VGcWR5MXFIeU1IRnpnZHVDSnluSQ?oc=5",
 "date": "Mon, 16 Nov 2026 08:00:00 GMT"
 },
 {
-"title": "Belgium’s Lukaku retires from international soccer",
-"domain": "www.japantimes.co.jp",
-"url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQVnZtTDBUWW9uN2F6cm5SZFdFZFBzbE8wdzFfdDlvSXZ4U2N4SEkwSUFwekZoald3aXB0R0Q3a3NtRHBmVGZSeFJqX25UTUxlbFU4T2VNWkhFcVFvYmdzOVh6TXJRMmFfUXM3NGtDT0VkdlZfR0xTVVBTdmE5dVBISC05OA?oc=5",
-"date": "Tue, 17 Nov 2026 02:01:00 GMT"
-},
-{
-"title": "Romelu Lukaku retires from Belgium as fifth-highest international scorer ever",
-"domain": "www.espn.com",
-"url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPQWdaM216T0dsek00Q2RRTS1YMmRrekZfbzhqWkViSmZocVU0NnY4MzRBQVZHa0k4SkF6dXQtZ0c2Q0dTaElpTjMwV3kzSHlIWVNBX05LeU9DVHZzRlI2MmE1ejBCaE5SNGFJV08zcUc1MkNEeGdjc2d3ZmduWDNrcERsejNNblpFemt6NHBVdVZlX2pseDZUc3V2aWw?oc=5",
-"date": "Mon, 16 Nov 2026 08:00:00 GMT"
+"title": "APTOPIX Belgium Champions League Soccer - Springfield News-Sun",
+"domain": "www.springfieldnewssun.com",
+"url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPLVhYVW54ZFZsb3hxWXBiX25WNlBuandxNVZQWEpSSEx0STFDbnRkTnZ1bzBvZHljVjV2MldKM0tTVmwzMG5mYmc1dENONHpsMUtZVFI1SGljS0JCTzA2TEJuY3FTWUVFZ2tKOXhRZWdsT0Z5YzkzMzQyTVJRdmltaDc0dHVwaDVvRnBYQkptRG9McFZYVnNoTmRlUk5fajhLdnpkUkFjNzllWFNqMnExcllYb0hTdGtzRW9vc2UtYkRxMllKMWc?oc=5",
+"date": "Wed, 25 Nov 2026 22:31:17 GMT"
 }
 ]
 },
@@ -141,12 +141,6 @@
 "volume": 3,
 "label": "positive",
 "headlines": [
-{
-"title": "What to know about US soccer star Folarin Balogun's 1-game red card suspension, why team can't appeal - ABC News",
-"domain": "abcnews.com",
-"url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPODhnZnRkRTdiLWtrV2RZRVUtb2NteHQxV2lMNU1EdzFXOWlqeXR4X0RKaU5OWTlBY2RzekdDNVVBeHdtUXV4UHhOb0ZHQlNhLUhPd2lDYU8zcmhxb1B4N05MY0RpaDFxYS1nSkVJNXF4RVQ1bFpVMnFVWEJ4R1FfQ0pSd2RVYlVwNnZxNG9VdnN0VWtIaXZYUdIBngFBVV95cUxOcVRwamkwUV8zWm9sUkM4dWtMVHhkOW9PN1l2Y3pBWmFSTmo3S0gweXprd1cwWDhndzJBaVBiQUlrZUIzMzZCNlVyRFFiVFAxNDd3cGI5eDVsZFRMSG5Vc1hEMmdQMjFDOERKejAtbkdqMDBjWXJMaHg5QmxKZ2JvelJONklwMElNdnBfNzB2bWJFU0VxSjZ4UmhFSE5xQQ?oc=5",
-"date": "Wed, 25 Nov 2026 11:33:54 GMT"
-},
 {
 "title": "Dizdarevic Called Up to Attend Training Camp with Bosnia and Herzegovina Senior National Team",
 "domain": "lindenwoodlions.com",
@@ -158,40 +152,46 @@
 "domain": "vacunasaep.org",
 "url": "https://news.google.com/rss/articles/CBMi7AJBVV95cUxQd2RMcF9HQnd3SWpVY1FQZlNIdDZjdGVkai1ZT0R5eFh5UDdrQTlHSEczOG9vejVSRWVDaXBIbmcxZHFwRVVpME8wclZaR1luU3FGTkRFS3ZTeVpHbFhESmF6RlROUEdXWU9qdzBhZk9YZkxqTmFFaG1Kek5KWkZ0SUR4V0ktdEZlamZaazMyaVQzUDQyNERwQ2p6V2Q0c29VV0htdmxUcDJuMHNqdDU1QjRxUm1QWFZqZ05CUF81SDBOQ0hWNUViSjJLTG95QmJCdTVmN2RQaUp3SUJObzZRNUhFb3BUUk9VRlFiS2EtcnlKZnl3ZFpwTVhzSzRvNXVmdHRhYVVoeWJBWEJWTjZUeThuX190ZmI2c2NXem9iSW5iazNPRVo3NU9TR214ai1mcEN6aFhVb2Z3WEQyMDJWZEtJUW5KSnZKLVZSR0xpZmhua09VZUJVdjg2NElhTTU0WDh4S0Z5MWE4UFJE?oc=5",
 "date": "Tue, 17 Nov 2026 19:42:36 GMT"
+},
+{
+"title": "Bosnia and Herzegovina FIFA World Cup 2026 TV Schedule: Live soccer streams, channels, fixtures, dates, kick-off times",
+"domain": "www.goal.com",
+"url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOZUg5REpIR2x3UEhzblZZLVY4eHZwamFmQmhHWWRLUkVIbXV4eGVuQm54b0dicGZyT09RUk1lMVc1a2Z0RDNGS05Ra29TOVkxVlMyZkVheFBYYmxZeGl1QzBRYWpEZ1FWdVAzN2R4aW51OWZiZ2ZCcmk2OElXYXpqNV9MNUJkd0ZiUWdaU01ER0lLNUNicUlZNWdjVQ?oc=5",
+"date": "Wed, 18 Nov 2026 08:33:51 GMT"
 }
 ]
 },
 "Brazil": {
-"score": 55,
-"tone": 1.05,
+"score": 54,
+"tone": 0.88,
 "volume": 3,
 "label": "positive",
 "headlines": [
 {
-"title": "Brazil - Soccer, Carnival, Surfing",
-"domain": "www.britannica.com",
-"url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5yZzJmSVkwdFdNSVBFczk1RWx6UEZmaGFZSE8zcUg3Y1M1MFhFSzVKdzVicmtFVXhxYkhGNHVDdlNac0RjbWxWZ2VHN29ROERsaFBXNldVWGQ1V1JHcnE0amlBQm8xNXRUUTdkRjl3?oc=5",
-"date": "Mon, 23 Nov 2026 08:00:00 GMT"
+"title": "Brazil beat Ireland 2-1 in Under-17 World Cup opener",
+"domain": "sports.yahoo.com",
+"url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9fN1plTHZrVHR3LTU0aXcwSU1kLXBfcXFoQjJLV0Zya3VEYWxBUmkzQWRqNXRIWDFpOUVKRHFrREQ2VDlvUTdlNmUtZ25uXzhqdjBuemlkdnFsd1IxVTMzMVVNVHBkZ185UjctV29PNXBaNld1cUg2eUNxUmw?oc=5",
+"date": "Sat, 21 Nov 2026 17:03:00 GMT"
 },
 {
-"title": "Japan beats Brazil 3-2 in friendly",
-"domain": "japantoday.com",
-"url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOeV9PNFNrcHBIdkkwd2lTZENOSTl4YmZ0SWRvcl96SGNIdTJ3czJpV281c0U5VmJza2stWmQ4dkNSSzZjOHYxZVJDbml0MW5sOFhRYUdhejY3UmdLaGJJbEI3czBkdThxMzdxR1hrSnZ0cHFrM2VGRmdEMm1yTk5ILUNCVmtCNHNWNGZoTHAtdFgwYVlhWXpYcXhaWjZsRVplSWRKVnZ6MlFzbGtiMm0yaDNsYVc4cWNMc3dOb3JxeEw5dmZCem15QQ?oc=5",
-"date": "Sun, 15 Nov 2026 08:00:00 GMT"
+"title": "Brazil defeat Singapore 7-0 as Vinicius scores first-half hat-trick",
+"domain": "www.aljazeera.com",
+"url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPaUVuQXVwU3VJNFg0TjQ0VVdzNGxoYnlIbVR0WUM4eXlPUjRxYUtfOUpYSFdBeHJ3UE5rNF9BX05rOXQtTDU1eHl3T280NDdJSHlsRG9hTndsY1E4TGJydzJPU20xcWxvY3ptd1ptUkIwY090ZF9kZ3FjZWRPVGRXdnB4X2JWOTBpVXdFV3Z0UzJ5cEo1MGp6SERjSkZNLURmaVZwc3JNOGFRWjJDbWp0WtIBtgFBVV95cUxPTUNsVlpFVFE4Y0MxbWdHZERtcmVGMmZWTlBkYTNndE9fQXNKNHQwbDFyWG53OHJubFB5SlZUSDFwUWI0dk1HSWNkMTBSeUd1VVB2Y0kxVk9uOTNiYVVydDdSMVpGM2RZdFNFbGFnV055azhwYWFDNVNOenJST1BoTFNhS0lPdDM2RkVtLUVQOHNUVzZJdV9iem9wdERtZk05eDdKaDNZM21OTU5sc2dHb195Wkkxdw?oc=5",
+"date": "Tue, 17 Nov 2026 08:00:00 GMT"
 },
 {
-"title": "Brazil-Morocco dominant viewership draw as World Cup continues hot start",
-"domain": "www.sportsmediawatch.com",
-"url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNa0NkYUtIOXRwMFJYQU9JUWtEeVBPQWsteVA3ZVB6d1F2cFZuOXRtcDdQNzZCYkNMaF8yMG9HQmwzeF9OalJ2WXJkeEhfYVlOTC0zYTVJMlJxTTd3bUZBM01CbXNBbUJCV05vYmxCY3BXWDVDQ0tfVFdqSy1NM2JuOUZyMWhqNTBITlBZRXpld1hTTi1IeVpkeXVRdlhYMHVQcEVRTA?oc=5",
-"date": "Fri, 20 Nov 2026 09:05:01 GMT"
+"title": "Ancelotti brushes off Romário's call for Brazil coaching change",
+"domain": "www.espn.com",
+"url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPNXZwTzBiSWdnejZ5TFV5QUhIVWFwTi03VUJFaG5fcGVqZ1VUS3FmU2VualhnTXRBVW1PcDU0T0ZwazNUbUpoS1ZKbTMyTG80X3lEcjhPT2R2WWl5dFZWcWExdHBhWTJTQ0wzTVBfMFdBM29vdUFQT29jVVFSYkZhZlFTamx2YTliRDlKNkMxYw?oc=5",
+"date": "Tue, 17 Nov 2026 08:00:00 GMT"
 }
 ]
 },
 "Canada": {
-"score": 56,
-"tone": 1.21,
+"score": 49,
+"tone": -0.21,
 "volume": 3,
-"label": "positive",
+"label": "neutral",
 "headlines": [
 {
 "title": "CANWNT roster announced for 2026 Concacaf W Championship",
@@ -206,16 +206,16 @@
 "date": "Fri, 20 Nov 2026 13:29:00 GMT"
 },
 {
-"title": "Fleming, Lacasse among players named to Canada's roster for Women's World Cup qualifying",
-"domain": "apnews.com",
-"url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQM2RZVDJIQ01nZjYyRXNIOE1WVlpBdkdUV0JEUlZLSm1jT0ZEbG9OLWtUREFkZUg1SUt5UkFyNV8zb1hraGVVUTRSamxZOFA0cmhuNS1sZ2JpVlE3aVZvTzFoWjlIb19Tbnp0dnc3aGN6MmxmaDVtSXJ5X1ZTbGtEcmowdXRQVzlDMERsSm5qWXpEV0xDbllvd2Z1ZmY?oc=5",
-"date": "Wed, 18 Nov 2026 23:04:00 GMT"
+"title": "FIFA Women's World Cup 2027: The Road to Brazil Starts Here",
+"domain": "www.netflix.com",
+"url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE8xQVVnWWJQQjNESUx5Nldjd0xSZFBsUDl6d2FldzVvR3Q1UWhwU0FQaGF4RFNIdk5qdTh3Mm01bFFmSkNpOWJUdHFJVVRyRnpLbzk1TnZRSjB3d1NIUnJIY0Y2UTFoa0dHWlFXSVpNY0ZlVVE?oc=5",
+"date": "Mon, 23 Nov 2026 08:00:00 GMT"
 }
 ]
 },
 "Cape Verde": {
-"score": 57,
-"tone": 1.48,
+"score": 58,
+"tone": 1.62,
 "volume": 3,
 "label": "positive",
 "headlines": [
@@ -232,16 +232,16 @@
 "date": "Sat, 21 Nov 2026 19:07:45 GMT"
 },
 {
-"title": "‍‍‍++[LIVESTREAM]!!] Liberia Cape Verde Live Football Stream",
-"domain": "vacunasaep.org",
-"url": "https://news.google.com/rss/articles/CBMixgJBVV95cUxPN2RDdkNLWVZvY1NfdEU0UWl4aFZYc0NGMTA4MllhSFFZeW9VZFBidkJlc1FYUkxsa1VqQkhPcUlkTFBTZy1vb3NWRWp2em5BNkpGQUFZYUZZVDRYVWpmalkwV0JQaWFZMHB5eks1N1E5WThlLXhSZE1SZDcyVmd5b2xDcUFHcl9Rc2pDTnM1VDE5eWlqbWIxc0kxSHp5NFlPYTZsallmbHBKNXZYWG5HdzNsR3dTWGNfY2d5aGgzMTF5N0lmMWRubmNBSmpvWG9lTkJ3Y1hXS1JZZnlEYmtwc3Nla1ZOZ2JMYWI2SmVoU0w0TFNDdUJqeGpEM3dlSmFMZ0MwVFpENVpkMml3QlF6aFQ1VkVkeXZSY1VQbGhjLVJPd2lac1F0THc4S0F5b0pfam5wLXR1dldUT3VFMExRT2FpSWdPdw?oc=5",
-"date": "Tue, 17 Nov 2026 19:01:38 GMT"
+"title": "Making connections, World Cup and more everyday reasons to give thanks - The Atlanta Journal-Constitution",
+"domain": "www.ajc.com",
+"url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNSnlxeVh3a0dhaVJ6RlVtYV9MV2t3Zl96bnFvUVRyWWdkYlNaNlZPMmZuVEltN19WeXdNeXlLLVlmeU9VcHRYTTVlMVlycVBhblNfYUNtd0lONm1xRDE4b1JuNGhxaHYwRE1VOXROQ3dJMUpDUVVubGE4aWNpbU16VW15YWN6SHI5amhaWTZ3VENveUQ3THBLSEZqSzBVbzd1c19zYjhZMDk?oc=5",
+"date": "Thu, 26 Nov 2026 01:58:23 GMT"
 }
 ]
 },
 "Colombia": {
-"score": 55,
-"tone": 0.99,
+"score": 54,
+"tone": 0.75,
 "volume": 3,
 "label": "positive",
 "headlines": [
@@ -252,50 +252,50 @@
 "date": "Mon, 23 Nov 2026 19:04:44 GMT"
 },
 {
-"title": "Honduras vs. Colombia (Nov 24, 2026) Live Score",
-"domain": "www.espn.com",
-"url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBiRnZxTU5fZWV4a2NkNHA4SHZZUlJrSHFOWGJRSko0T3h5Q2NiUjBYMllvLTBxN015LVNyeDE0ZzdVTlhCQXVWSHJMSWZlbE1NOXJOdGdkZTh6eXh1a2dNOEln?oc=5",
-"date": "Tue, 24 Nov 2026 16:26:23 GMT"
+"title": "Watch Colombia live: TV channels, live online soccer streams, how to watch FIFA World Cup games for free",
+"domain": "www.goal.com",
+"url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOZlFYTm1LcmdHWVNZQkFrbm10RUk1WGUyX2I1UUdCbTEyakVoNXZuRUZTWWlqcnVicDFVQ0dDdWtQelk4LTVndURwdnVxWHF2TFd5V1hfM3JTSUJaOFFpRlJHYU9PelcxUWlaM0ZoQzNOWFM3S0RZamVnZVlaamg3VDFZUHYxTjhRd3pETHhn?oc=5",
+"date": "Wed, 18 Nov 2026 08:34:14 GMT"
 },
 {
-"title": "+![TOTAL SPORTEK]! Chile vs Colombia SOCCER Live StreAms",
-"domain": "vacunasaep.org",
-"url": "https://news.google.com/rss/articles/CBMizgJBVV95cUxPZG9IXzFCTzFWdktIcVUzLVQ0bExJYV9UQmVYYTFBZkFrU0dGMFdfVVZsaXh4c0szU2tvd2tJeXkwZ05yV0FUc1RuOTlhX1FNbUFVLU1VMV8ySWsyeE9xWHliYlNUZ3Nxd1oxUjBjc3g0dmVWLTNjOG03dEx6S20tOFI3VDRWSWZ0Qk1lOVRwVnpDLXltWjFhYnByN1Y3M3BiOXlvalJIMGVmdkk3UE5LUDdjanhKVjVDZGJmRlZnYWNnNWE4NDFwOGNMWHNORU1fQ1Y4R3pCU1FLaDZtN0VBYThJaTBWNDFsX2haME9hZ1JtaWtKTldmRVJ6UTJWcVg1LUxoa0JXR3lQYWNYYkk2QmxsRmlHZ2xYZzVwbEdOTERfQ2xMdEstWXItUEg1cm1HWExLU2M1QTJmZlUwTlZQQ1JVcmNQdERJc3IxandR?oc=5",
-"date": "Tue, 17 Nov 2026 21:04:25 GMT"
+"title": "FIFA Men's Top 50 World Rankings: November 2026",
+"domain": "www.espn.com",
+"url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOZV84QWtjMW0yVExYbmFjRktGZnVOOWVSZlZhRUFiMVVNdF9YQW81bHhoZEtOeTNiS1JlelBlTVJfTVBCYm95SHRkZThDOW9icmoxb21PZGRXcG5icmFqWlpuN0J1UVZnbW5TdFRNLUJTMXM5LWhqNEZYZTlPMlZlYzZBNnd1dw?oc=5",
+"date": "Fri, 20 Nov 2026 00:18:00 GMT"
 }
 ]
 },
 "Croatia": {
-"score": 58,
-"tone": 1.6,
+"score": 52,
+"tone": 0.4,
 "volume": 3,
-"label": "positive",
+"label": "neutral",
 "headlines": [
 {
-"title": "From TV-watching grandmothers to roaring ‘doms’, this is why Croatia’s fans are Always Faithful - The Athletic",
-"domain": "www.nytimes.com",
-"url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPbXZsa2k3Y0ZVcFBTY3NkbjhjREExMlc2ZXBXZ2IzSzdKelQweFUyQTVFM0doRGtFb1NscXJwNFFmRjNpdk1odVFhWUE1VXFiMUxKdVBpMlVqZmM3bHBsWUJEUlJJd3NpS2hpcDg5a3ZRRUtCODhqN2g2WDVIM0FmVQ?oc=5",
-"date": "Thu, 12 Nov 2026 08:00:00 GMT"
+"title": "Croatia vs Czech Republic: UEFA Nations League stats & head-to-head",
+"domain": "www.bbc.com",
+"url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9LNGVTc2F4SWlaZHRVUy15dlFYV0FTMVdYdHVUbjNZRmphUTdBbTF6cU5XWEJqZmNzdDJGazB4eVBWOFpZLVE3R0RRVGdFWk96WkdXZjAyUmpNcXU5OVgxcEhqRQ?oc=5",
+"date": "Sun, 15 Nov 2026 08:00:00 GMT"
 },
 {
-"title": "England vs Croatia: UEFA Nations League – preview, team news, predictions",
-"domain": "www.aljazeera.com",
-"url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQMjdVbXVlTjhpcHcwN3B4akJvZ1FzTmQwNzN0Z0NmU2FmN3hzVVlYUEFLQkIyWl92ZmRubmdWZ3NFX1c5bU1pMmJCQjljdXViWnVhd29LTFFadmQ5RlBtc3RxRWhEcnU2VUp6QnJpQlhQN1M3TjBhd0lQSzBuem0wZlJoM0c2OTRsaW05dUh2cHllX05sUWZwZVRpMTM4dC1kYnfSAacBQVVfeXFMTmNoMjdzUzI5MjhqTVJoWWNiNlZDYXFNM3NkdUc4aTlkRklsbkxRbjlhV21BSGdQWm4zRmt2YkdPUzEzNkhSbEN3TWZlT3NFMTJBTUdkelAxbkZtY3oydElZNTlrMkZwdGk1R285Wk1DYjRkYU5ZQ09Wb1J6Y1dPLUlEbzEzSWxLZnRKMndNQWN0SUlwWFl6eTg5RVNuWU51dmEzUnZJTUk?oc=5",
-"date": "Thu, 12 Nov 2026 08:00:00 GMT"
+"title": "‍‍‍[LIVESTREAM]FREE!!] Croatia vs Czechia Live Free HS Football 2026 - UB",
+"domain": "www.ub.edu",
+"url": "https://news.google.com/rss/articles/CBMinwJBVV95cUxNUlhwQnVsR0sxNGpiQzJmenVxR21QZTRLdXB5NF9mVHBnbFRnODBpUjd2TldOMnBjZ0hQQlZTYzhRWVZ6UHRuVzJMb1J0ZlNpd21LdTFQOFEwS2dPQ1ZhZmMzd3FSMFVudkd6Q2xTUG53V0lueGd5M2dyRHMzbzBQdTdneUl6SjJBTTFFRXpXUkpsSmZ0YWhvRFNsOFZNajVSTkV5djJwdXRucXpDUHdPTnZVRVdWXzdyRGx3enBzb0hTdXQzX2ZueHNIQkV5b191SS0zNlJub2l1RG1nN0VkQXdOTnctREh3RFZyRGN2WWl2QkN0NVFnOUxvZFlUUVRjUk82eVU2NEp4M19xSWlsQUZvdEdMcjV2ZHNQcUdQOA?oc=5",
+"date": "Sun, 15 Nov 2026 20:58:41 GMT"
 },
 {
-"title": "Get Ready: Your Complete Guide to FIFA World Cup 26 in Philly",
-"domain": "www.visitphilly.com",
-"url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9NSWhaNU14ZWt0YzhUTlhUT0pYS2s1cUF0ZlhXZU5MTkk1ZUx0a3JIQmJEcld1VmFpQnF4d3pNZnZYTVpzdElJNmI4YWlzT095TXE3M25QWlJDU1N2VW5VNkxBZHNDOG9hRWc?oc=5",
+"title": "Bayern Munich star Harry Kane receives a very special gift from Croatia and Luka Modric",
+"domain": "www.goal.com",
+"url": "https://news.google.com/rss/articles/CBMinAJBVV95cUxQbUJkRzR1UllkVVBCOTUzYzhCUi1EU2toVlNMUENrUG9WR1VxZ09yN0wzMXR0a2N2QmxEdWF1OEEzOHlHQ3V4cDd6bV9rR0Vwekx4TmNJX1hQaDZQeFlXYW40LVNBWWJ1NHVLbl9xQWpjc20tRU14U2Zmd0tqSUppNTdWWTRqVk0xT3lnXzc4aXRMamQzaGRpXy1vVFdZN2FMQVhQUHFSVm1UMTA0ZWU5TFk5M1hybHlpNnNzeDlfRE9SZHJCWU12cHdHZFJhOFBZaEIxZHFjbmxQcGtRUVNjenlURlZqajNMQVR1S2RFemtTcXFLREJldnBYcTJFWG9qeG1yV20wNVA5UXZhUkRUVXZQX2VCUFpZSk5lcw?oc=5",
 "date": "Fri, 13 Nov 2026 08:00:00 GMT"
 }
 ]
 },
 "Curaçao": {
-"score": 53,
-"tone": 0.57,
+"score": 55,
+"tone": 1.02,
 "volume": 3,
-"label": "neutral",
+"label": "positive",
 "headlines": [
 {
 "title": "Curaçao fans arrive in Kansas City ahead of FIFA World Cup 26 match against Ecuador",
@@ -304,76 +304,76 @@
 "date": "Tue, 24 Nov 2026 04:22:55 GMT"
 },
 {
-"title": "Curaçao v Panama | Highlights",
-"domain": "www.concacaf.com",
-"url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPZW9iZFBOTjEwU1pBaXhXNUp3MWNFbUJrcHFQbFdvS04wMHFRd2JTOURDUV9kSWsyNjFlbVNwZE9xWVBWQ2VXS1poV0ZKZllCejRYVzVvbmJnOHZVTldwTHcxMlVadGYzZEpncTFaakNKOUdDSVliME04OFF4OGNfUnNVUVozRnpvN0VsZWNpdVp4aWtLMTNfNw?oc=5",
-"date": "Fri, 13 Nov 2026 08:00:00 GMT"
-},
-{
 "title": "[LIVESTREAM]FREE!!] Panama v Curaçao Soccer Live Free Match - UB",
 "domain": "www.ub.edu",
 "url": "https://news.google.com/rss/articles/CBMioAJBVV95cUxPXzBwV1lpY0pROHpfd2V0X3F0WjNYMm5iVFlsY0EtRGx0dGVYeUNnN3RXMW1WMWNlMkNwTFNQQkJoMVpubjhkUDVYb0QyOURka0I2YnExWHVlemlYcEtqX2pkSV9USVFsYWFHVkI2NklFVXlJQWhmTnZiZWFrSU0yYnFLSHZ4S2g2c0ZJWXRFU1lkSU51bVlEWXh1UG4zWF85TjY5Qkh4QjhxckNLOEZPN3J0a0VGMXBWNkF1cXpLQW92TlFvQnNOT0x2UlBmUmR5Q1A5Y3czenJxamhzSHBQd0xkamxodFE0Qlc1MS1NdktzUUFIdlRWWWJIME45SzdYRzJDSTJISEJUOGl0akFJYkcyUUE2UTBmWkdjbUhJSEg?oc=5",
 "date": "Sun, 15 Nov 2026 22:52:16 GMT"
+},
+{
+"title": "Where to watch Curacao today? Live soccer streams and TV channels for upcoming games",
+"domain": "www.goal.com",
+"url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOQ3ZZVHdZYnR1djFTZHlGWGJNM3hKU1Z2SWZpNEhvTDV6U0RVSXVkbFg2WDUxTThpS2xLNnIxei13NFFLRTYtMi03clNocXZrc3lNNjBfX1lZSXh3Zk9Wa0VFQ2dhWU9KSFZKSlp0V2J5dElPWnE0Y0lyX1NMMlNIeEJzUnBCTUNhWDAyQw?oc=5",
+"date": "Mon, 16 Nov 2026 08:00:00 GMT"
 }
 ]
 },
 "Czech Republic": {
-"score": 55,
-"tone": 1.06,
+"score": 58,
+"tone": 1.53,
 "volume": 3,
 "label": "positive",
 "headlines": [
 {
 "title": "Watch UEFA Nations League Soccer: Livestream Czech Republic vs. Spain From Anywhere",
-"domain": "www.cnet.com",
-"url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNTnpIOVFBZkNoenFTMzRzT3VkM1o1TjlnQVV6enAzOVAwZkRfTzFZckVoZHNpX2NReXp0VGdMVzB1WUxjWnJkMXAxQW5lOC1uYV91QUM3T2pURUNXSzdVc210WS1YRnVBMDlnNDlkOGtxQW15Qld4QlhYU1ZsYkFGeGd4RUxTV1NwVi1zZWJUcm1veG5fUUpWcUNyVTBmUmU2WENuanRqbGRHZWdQaHBKZ3gtdjNsdkM5UVl6eEFicnZ0eU9hYzQ5YmV3?oc=5",
-"date": "Thu, 12 Nov 2026 08:00:00 GMT"
+"domain": "sports.yahoo.com",
+"url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPclpMTUFmNHA4YkhhMWpHRFRfSFVFRGR1SWl4RXp1VlYwaVBTZTRndl9remhxWHFyQUpxaWZGQnBKRHpCd1Z6b2lPTHM4UENiMTRDeWh4SkdSSFhobzlDbGs0UjU2OGhLOVpveERJdFVmNzdzTnJ6NjNpZ0x6dk9zSlM0TkFEWEgy?oc=5",
+"date": "Thu, 12 Nov 2026 18:00:42 GMT"
 },
 {
-"title": "Czech Republic FIFA World Cup 2026 TV Schedule: Live soccer streams, channels, fixtures, dates, kick-off times",
-"domain": "www.goal.com",
-"url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNRGxVcUx6bkF5SDRWRkYtMUNnWGFXVDJRU0dqYWhVdlRTUnZwWGViRGdYNlVZLXdFSFE0TG9nTDVXSlRMSTZ1bjBtUWtaVTFnY3h0MmxMeUM1dmJybU1GNkljdlVnSzFzYWFUOHJzZjlnb0hMc0d6NDJOOEltVHQ3aXJVRHlKYWVSd0NuV3JGT2lJU2Zla0E?oc=5",
-"date": "Mon, 16 Nov 2026 09:04:47 GMT"
+"title": "WBSC U-23 Baseball World Cup 2026 presented by RAXUS: Game Report - Matouš Bubeník's two-run homer secures Czechia win over Great Britain",
+"domain": "www.wbsc.org",
+"url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQRzRLclhRT1RaVFE0RTktMHdyY1pJVGVkSzlzSy1ySlVOZXhYSVlfNkR1dWFTSkpWTjVoc0NPT1dodVpZS3BzVGhKajlHSjBqeURYMzJzai00SVRfdFZwa2tRQ0NKcDlGRXM2SnBqTzRqdnZkaEFJSGJhZTB5MTJfSUhXdDNQc1dPdk9LaTgwbFNlNUtONHU4bGp4cExRRFJKT1pub0FXOExrdVoxbHp0cHJhTXNwdDdqOHc?oc=5",
+"date": "Sat, 14 Nov 2026 08:00:00 GMT"
 },
 {
-"title": "Czechia: Road to Bologna",
-"domain": "www.daviscup.com",
-"url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPdE1KM0EtRWlJbUhTNDhrSzNGS0h1UmoyZzM1SmJZUlVOUDdRTi1RMlNaWDRmQTZGNUwzZzRLU2EyUEVtQmZCTEF0SGU2eTZKM05wdmNoSkdNenQ3d0hDMTV3alk1S1FiV1BlbFNMV2tvQTd5ZTBmOUNBajI0MVBMc05ZaGtDUzNENXRyQ1FiTWIyb1BzdlBuNg?oc=5",
-"date": "Thu, 12 Nov 2026 08:00:00 GMT"
+"title": "U23 World Cup Day 2: Tough Losses for Czechia, GB, South Africa",
+"domain": "www.mister-baseball.com",
+"url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNYVNpYjZfVUg5Wmk3amM1cEsyRVhyeGpZWjBjUWd1RDl6d0dRS0d6VU9ZdFlYZXpVOTNFc0ZfMHBiMGJhS2IxVXJUT2ZGcnM3ZGJuNnJOUUUzMkxwS2RKZUxpT1l2c2Zhd2NHRUJkUlUySERrYnRYdEh6WlJCYVRyTFg2VDQxRWNzYVBz?oc=5",
+"date": "Thu, 19 Nov 2026 16:36:33 GMT"
 }
 ]
 },
 "DR Congo": {
-"score": 53,
-"tone": 0.59,
+"score": 50,
+"tone": -0.03,
 "volume": 3,
 "label": "neutral",
 "headlines": [
 {
-"title": "[Reddit/Streams]!! Sierra Leone vs D.R. Congo Live Soccer Match",
+"title": "【WATCHLIVE]FREE】Sierra Leone vs DR Congo Live Football Match TOday",
 "domain": "vacunasaep.org",
-"url": "https://news.google.com/rss/articles/CBMiywJBVV95cUxPa1hBTUc3VUFUV0pqcEZqUTdkbkpxUW5vbWRIUV9yY1hGbDFQOXpFX1Y2c284dUwzRkdzeXZaU1gtTXI5TV95NTljY0MzTGZzMzczVXdQeHFGMUhHbjg4bUVPLVdCRGZSd1NEUG1pYTl0YjJmdVloZFlGNjF6eUk4eVRHUUhwaUs0ZVliTFNBdGliaWk1T0JkYU5VbWJTUGdzdkhtaUxMUURyUE1wRmk3U1NIaHV3ekJMM3F2Y2Vwc3JSXzAxcTljaEUzcGVEWTRQbHJHSGFob0RvYURrc3d0MFBiVXBMOUcwMkREQ1B3VEJWaW1NbzEwSlF3aVZzQnZPUUpjM3dMd3pkOHpXSjlmbkNXZjZZc1ctWHZuX3pOVEY0YzYzc3E0enZKTFU3VmxILXM4d19yS3ZCbjVHdEtjS3RTSFJrWHhSTy1z?oc=5",
-"date": "Tue, 17 Nov 2026 16:09:23 GMT"
-},
-{
-"title": "Congo DR 3-1 Sierra Leone (Nov 12, 2026) Player Stats",
-"domain": "www.espn.com",
-"url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE96WHhxTDZSZFFDalNRZkZjM2xlNGZzblhXdF91Zkd2NE5aMXFnQW5ZRmoyZzJNdjN2WFl3cjlVbHBZRUgyMXM2SHZTOURXWmRqNzhnQkNfdDdGRGtMQy1GTGRUZmQzVVpBVURj?oc=5",
-"date": "Thu, 12 Nov 2026 18:22:23 GMT"
+"url": "https://news.google.com/rss/articles/CBMijAJBVV95cUxPNmEtSXpBbVhOWnNubnpsdEhRaDNDSzBZbHhtcm8yUGpKSDJ0T2p1SGVZVGNDc2ZHYVlfVzVvU3hmYk5HdXZTWnJLLVNzQ3V2V2VHZ3ZTSEN6TllIZVNoNHNZSW1lZzUyU2VucnllS1pxd01xQmVGYTJyZ1p2TmVlQU9NbmNuQTBUTUdQSkphajFxdkQ5M3dBWFUzaWlrMC1zbWl3Qk5qOXlVcXdXU24yY2hQbnl6dzF1Sm9IbjUxeWpnQ3kxQkI0bExrWVd4Y3RtdlZISGNUSWxMdzlJalRuYmU0NkFremZFVUpleDN1a2JDdm5zcVVENDJlcFJzajBoRTB0WXRTTmZlb0hQ?oc=5",
+"date": "Tue, 17 Nov 2026 16:03:48 GMT"
 },
 {
 "title": "The DR Congo Players Leading Humanitarian Work in the DRC",
 "domain": "www.borgenmagazine.com",
 "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE05WXVmbGlXalV6dE9udHVVOHk1Y3Z1VklrSW5rNnBHOFloTnBvVGhfT2s0ZndrZU5aNUZLVkpmeFpZZDNXZWhDa0FBeTdzQjBnVG1uTnY5MU1ZZ0dVZjhiZUpNRTg4cGVodDEzTFNCTQ?oc=5",
 "date": "Tue, 17 Nov 2026 11:00:42 GMT"
+},
+{
+"title": "Nigeria to face Zambia after beating DR Congo in 2028 Olympic qualifying",
+"domain": "africa.espn.com",
+"url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxObE5idkwzel9oM2NyRWhhQ08zb3ByMEVZdVczM205czFqZFF3VEFGeV9DazhVQ3F1ZHVFcjBfWnd4QVpNc3g3Rl9lUUlOZXlvQkVFTFpjQXZ3NkJvd3l4S3hSNkFlcGNjZW1UVUZUYW85N0l1OHRzeFMtc2tObmdYaXh5Znl6TnFTSzREdk1IX0JEM3QwLXQzZkpSSmhkdk9VdGJCclZqWQ?oc=5",
+"date": "Wed, 18 Nov 2026 09:52:18 GMT"
 }
 ]
 },
 "Ecuador": {
-"score": 53,
-"tone": 0.68,
+"score": 56,
+"tone": 1.12,
 "volume": 3,
-"label": "neutral",
+"label": "positive",
 "headlines": [
 {
 "title": "Curaçao fans arrive in Kansas City ahead of FIFA World Cup 26 match against Ecuador",
@@ -388,16 +388,16 @@
 "date": "Fri, 20 Nov 2026 13:40:00 GMT"
 },
 {
-"title": "Future Arsenal duo on verge of u17 World Cup knockouts",
-"domain": "sports.yahoo.com",
-"url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOTFd4Y21zaDY3VGdmY0c0Yzc5dXhIcTlTM2NVaFk5NWRpY29neUtneXFjYU0tQjdROEpabExTOXVBQThJX1dzRFpUT2JPVkZqczMyZWkyQUZsUnJwR0xzR0xpbDJYaGZNOTlISC12eEQ4U1dJcXhUdzZ1X0NWZnM4TFVuWQ?oc=5",
-"date": "Mon, 23 Nov 2026 11:01:00 GMT"
+"title": "Ecuador vs Bolivia: Friendlies stats & head-to-head",
+"domain": "www.bbc.com",
+"url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBOQkFLa2ZqckxpeE83Um5WUEhsM1NDS3RMWFZrTXQxdTJRRnNDSHloei1sUWg0QU94V055a3hWRzVEcXpvaFkyZm8yQ3BFakxCMWdpejRsOE93YnFONG1ieEMxUQ?oc=5",
+"date": "Tue, 17 Nov 2026 08:00:00 GMT"
 }
 ]
 },
 "Egypt": {
-"score": 56,
-"tone": 1.19,
+"score": 60,
+"tone": 1.97,
 "volume": 3,
 "label": "positive",
 "headlines": [
@@ -414,16 +414,16 @@
 "date": "Tue, 17 Nov 2026 13:19:57 GMT"
 },
 {
-"title": "Egypt 5-0 Malawi (Nov 13, 2026) Team Stats",
-"domain": "www.espn.com",
-"url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE04ZEl5X3BkQ01OMzhkanZRUnJMTTc5U3NoV1VyeS1fMFprLU50WG9jbjlZeTUwMzhLNVM1NFMwNEtBRGVCSTl2VFRRdWFxaHp5MXpKNUg1ZE13M3ZVdVQyTXM2cWFINzFp?oc=5",
-"date": "Fri, 13 Nov 2026 08:00:00 GMT"
+"title": "Salah breaks Egypt scoring record, Tunisia lose to Libya in AFCON qualifier",
+"domain": "www.aljazeera.com",
+"url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQNmJ4TVB5YUZCOEdwajlKa1hrTXFWZ1M0T09QVjJtRldOM0lrQmZqQW9NMHhjQ0JSRjlCaVZtNDRSZWR4ZVM5S29tMnlLUENjSWRxbXo1UXBWM0pzS1F0ODBSZEduSGxndWljZk1XU19HVG5HVjN4UEFkdW9GUDZ0RUFZbFltV2kzSDNnc3QtbFJZbXZkUlJ3cDM4YkcwX09DYTg3SWdwdXhsY1RZUUs1RThORU0yMUVGVG5Dc9IBwgFBVV95cUxQSVJCN09lclptSURpR3hrTWctZXR1b3dDZGxpYzZGTzl5N1N5emhfZVpQeVJQbVVVU0ZFaDhaTS0tcWsxOHBNM0s3VFlYQ09wWVZFQ0JsUDBQb3NiWTNYWVU5SkFXRHB6VDBIWDN5Xzk3WC1UdlFRa3doWmdrelpibWQ1WW1MQ09DSGdJLWlIOHpqbDRhU21iRnNQRXVJVnE5UTNYamRrbzZRVFlXNERZM3daZEdQRGkwMlpJbWV0ZThVdw?oc=5",
+"date": "Sat, 14 Nov 2026 08:00:00 GMT"
 }
 ]
 },
 "England": {
-"score": 47,
-"tone": -0.65,
+"score": 53,
+"tone": 0.67,
 "volume": 3,
 "label": "neutral",
 "headlines": [
@@ -434,24 +434,24 @@
 "date": "Wed, 25 Nov 2026 15:42:09 GMT"
 },
 {
-"title": "Match Centre: Spain 2-3 England",
-"domain": "www.englandfootball.com",
-"url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxPcnRqVmN4b1B2Yjd1Q3ltbmJHT0lsc04wb2psd0U0MEJZNWdnckktSkppNjdxLTlrSjZTWE9HbzdFUzJpd2l2ampsQ3lhNFp3R296T0owZFZpdEtJRVZVUXY0aGkxbmZHY3UwbUNxOXFLQ0tjNkNsWGF3aU45dWdpbFRZc05PRHJYRWhCSjR0eE8xWW1HZ3RBWXltOXJYSlhsbXdNYTg0ZnJkTzAwOUFVTG9hX25tUnR3UEZnclZxbzBOdUUtZDNzR1c1UjcyeE1DT3JVX1ZiU25uSFVNZ09Jb2N4VmI5Y3FJMUZ5VTRuMnp4RjhLcUJOclhhN2VIQQ?oc=5",
-"date": "Sun, 15 Nov 2026 08:00:00 GMT"
+"title": "England World Cup playoff squad: Isobel Goodwin and Katie Cox named",
+"domain": "www.espn.com",
+"url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOSGhPQmhlTGllNTZtQ08zZjFnb3c4LS1yTi1qMjVkTDg1SHNFeXJPT0RLM1Y2ZFd2U3JQTkEta1pPSHMwMTJ3ZHJXQXpPOUpPbkdNYXBZZGVYOFFYUE14WG9lWmtYMmlXUTZzcHFHSi1oZWc5RUk0cWgtQzNrS3NKZzNCNEtndkpfdkQwWjc0OEEweUU5c0dCeVZESXZCdw?oc=5",
+"date": "Tue, 17 Nov 2026 08:00:00 GMT"
 },
 {
-"title": "England: Football Association punished by Uefa after fans' anti-Catholic chants against Spain in Nations League",
-"domain": "www.bbc.com",
-"url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5yb2lxRUFrRXMxUHhSNERocnhYamNZd1R6NzU2R2lNTjlxa2JEN0NQYWw3NHBxWVVueUNVS3NGYzJuSnotMml3RjV2Qy0yRkdUWjRZZXlwRDNPVGVkd1F0MkRqS1pzbzNR?oc=5",
-"date": "Thu, 19 Nov 2026 19:11:03 GMT"
+"title": "FA fined, handed suspended ban after England fans’ ‘racist and/or discriminatory’ chanting in Spain",
+"domain": "www.nytimes.com",
+"url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQSXBONzNvMXY1anRzMDhmUWxWaXhDaHAzRHpZQU4wam1GQ2ltWjY3THRYcnA5b1BPRWJycFE4YkpheElUZlpiSm8tNWVMdmVHQnY1cGk3elBNek5Wak1ieURGaWR1ZHpPVEF4bEdIV2l5Si1jLTUyNmVabFl4VmQzeTNlOG1UYm1FVk52di1wOHc?oc=5",
+"date": "Thu, 19 Nov 2026 19:07:47 GMT"
 }
 ]
 },
 "France": {
-"score": 53,
-"tone": 0.65,
+"score": 56,
+"tone": 1.26,
 "volume": 3,
-"label": "neutral",
+"label": "positive",
 "headlines": [
 {
 "title": "France football boss Diallo to challenge Infantino for FIFA presidency",
@@ -466,24 +466,24 @@
 "date": "Fri, 20 Nov 2026 08:00:00 GMT"
 },
 {
-"title": "Watch UEFA Nations League Soccer: Livestream Italy vs. France From Anywhere",
-"domain": "www.cnet.com",
-"url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQM3hGbFNHRDFjQ0ZBUHZad1JMZHRUNmc0eDgxTi1tSWJJRkNvYTFBTHFXTDJ2Z1JjZFlHbWgwSFFPSURUSnl6MFFFLVl3aDA3emQxWkRqZDZ2c3ZWQVhVMG1ub3ZEbnRaRVR1b3Rkdk5ZdmVZcTc5V05uSlhuY3BwMDFINHUzS0g2cWttcnlySF81SU1fT0tlOW01Tzg0dzVMdFNseG8yVUFqOUhYN29zTXBiR3lkbHpKTW5Eb2phdXBSUQ?oc=5",
-"date": "Thu, 12 Nov 2026 08:00:00 GMT"
+"title": "Get Ready: Your Complete Guide to FIFA World Cup 26 in Philly",
+"domain": "www.visitphilly.com",
+"url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9NSWhaNU14ZWt0YzhUTlhUT0pYS2s1cUF0ZlhXZU5MTkk1ZUx0a3JIQmJEcld1VmFpQnF4d3pNZnZYTVpzdElJNmI4YWlzT095TXE3M25QWlJDU1N2VW5VNkxBZHNDOG9hRWc?oc=5",
+"date": "Fri, 13 Nov 2026 08:00:00 GMT"
 }
 ]
 },
 "Germany": {
-"score": 56,
-"tone": 1.24,
+"score": 52,
+"tone": 0.4,
 "volume": 3,
-"label": "positive",
+"label": "neutral",
 "headlines": [
 {
-"title": "Germany 5-0 Netherlands (Nov 16, 2026) Game Analysis",
-"domain": "www.espn.com",
-"url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE8xWDFLNlhhYUhrM083YVZCX2lOTnQzUXlvRU1kYmtubFRpTEFZdHMtUGJFVnVWZVljZjIydDVqb0R1ZGJsUVRHR3VWMkhwaEg0ZDRIaXNqZHZHa2ZrRWlTU01CQQ?oc=5",
-"date": "Mon, 16 Nov 2026 08:00:00 GMT"
+"title": "Amon-Ra St. Brown embraces being football ambassador to Germany: ‘It’s my duty’",
+"domain": "www.detroitlions.com",
+"url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNWm05ak5vdzZxdXRNRERNLWRqRFZfdUJoZWhIOGNiUlRQWTlucmZFWUh1Y2xZdEtJYWxtV1BsZGFWc1BsX1FyQ2RUSHUwdTJNeDVBRW9WMVNVRGg0VkY4X08ya0hEclZCZllqMXZ3dW5wWUZwMkN1TlZadWttNDZPZ0hGcThybE5JdGM2NUwtZHVVWFAyc2FNazFrRkx4cHQzTjdKQkVpVUxTWUxzUlFHSlFWSGc2NWJnQVZzZ2xR?oc=5",
+"date": "Sun, 15 Nov 2026 08:00:00 GMT"
 },
 {
 "title": "Germany men’s soccer team wears home brand Adidas one last time before Nike takes over",
@@ -492,16 +492,16 @@
 "date": "Mon, 16 Nov 2026 08:00:00 GMT"
 },
 {
-"title": "Florian Wirtz scores twice as Germany beat Netherlands 5-0 to reach Nations League quarter-finals - The Athletic",
-"domain": "www.nytimes.com",
-"url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNeHNzOHlqQWxTM1AzQTZsZTd3QlZFVE9qT2MzeTdvUmZHMkJCNUFPZU0xWHZDVlpOZW5wZndITjlIMVNncVlSaFdLbm9QLXdwd2xRNl9ZS2Q2WElqa3M1MDF6WERUMEJnakVCUzN2aHBoZUNGOHc0dXdObHBMaFdTYXNpdUNsTVVtMWltcVRFRQ?oc=5",
-"date": "Mon, 16 Nov 2026 08:00:00 GMT"
+"title": "American Soccer Players in Germany: The 2026/27 edition",
+"domain": "www.bundesliga.com",
+"url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOMHVFVWo3V2QzWjZULXhkY2FsajRiZ0NObjdod2E0bW1od3hvbWxiRVNfdVo4LUpQbEM0cFo5b0g0em0tbnAxc3dHZk1EV01jb0tBNjdrUUtkallHcERjMHJKdGt2SjRKbW81RUs0bHBPb0FLVFF5NGhTZkM3WUloN1dWc3hZb3dZVEp6QzE4bGtoRENDc1pPb2h6VDI4eHlOSGFGTTd2cjZxVHpyeDJV?oc=5",
+"date": "Sun, 22 Nov 2026 08:00:00 GMT"
 }
 ]
 },
 "Ghana": {
-"score": 58,
-"tone": 1.66,
+"score": 59,
+"tone": 1.82,
 "volume": 3,
 "label": "positive",
 "headlines": [
@@ -521,20 +521,20 @@
 "title": "Amputee World Cup 2026: Morocco and Ghana win way to final",
 "domain": "africa.dailynewsegypt.com",
 "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBsbFFRLUgtTnBtckNTTkxoam5fZjJ4RjB2UVExMkRUaDVodzRXRmRwZndPS2llaERkVGc3QUtDbjhZeFZhMlQtWHY4QVJMYWNBdnREcHlJSTRXWnozWVZ5VHg2TjdnQUN3UUE?oc=5",
-"date": "Sun, 22 Nov 2026 22:37:00 GMT"
+"date": "Sat, 21 Nov 2026 16:26:00 GMT"
 }
 ]
 },
 "Haiti": {
-"score": 55,
-"tone": 1.01,
+"score": 57,
+"tone": 1.43,
 "volume": 3,
 "label": "positive",
 "headlines": [
 {
-"title": "USMNT vs. Haiti: Match Recap & Highlights | Concacaf Nations League Quarterfinals, Leg 2",
-"domain": "ussoccer.com",
-"url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPdTNyYURhUmRuc0prLVJ2eHc0aXBYVDNlM2FlNDFpTkFEbUxyS2pQN0o4RVhQb25oSGwzWlBuSUU5Y2FVQ3hFSk5KU1FjblFZaFEzeEk4NEhES3FkR3FoVVJVUVpLRVcwSk5VUE5sY2liRjR6RmcxT1VfZFplZkZhVVRGR05lQXR1c3c0ZWY0Mll2eHlScndJaHpZUk9lZEV0UVd1TDMteFpYS3RpTGRXUGdnRWY?oc=5",
+"title": "USA 2-0 Haiti (Nov 17, 2026) Game Analysis",
+"domain": "www.espn.com",
+"url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE8tdWIzR0ZLa2p3eThSVXAxZnpwX19hQ05BVzkyV1FoZzM1dldYa1V4T3JEZTR4MFZBZ3BKZ1JCdXNYdWVDTUhiX0RoLVN3Qm1ESmNHRU9kamZfNE0xRDZsUUlldw?oc=5",
 "date": "Tue, 17 Nov 2026 08:00:00 GMT"
 },
 {
@@ -544,25 +544,19 @@
 "date": "Wed, 18 Nov 2026 20:35:14 GMT"
 },
 {
-"title": "Why is Haiti 'hosting' USMNT game in Miami? Les Grenadiers feel right at home",
-"domain": "www.usatoday.com",
-"url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNcm9BeWpOYkZPSDF0bzQzdUI3YVlSbkQtTDAxQzlhOVpSVUo2cTI0SEtKcUFaZnlyU3EyeXc0V2JQb3UwYTQzamV0ajhLa0JPYjd0Y1pOQVBVcW0xZkZBVjZVa0FtZWM4em1yOWIyTlRfUzZidTc5Q1I0dk5qV09xbVlFX3ZQTENfaXlaMjdZZFZLZFlYdkh0cUcxdGdCcDk0clZNWFhSNnpxXy1oZWU3MGFnMHdOeHJ4WlFuWQ?oc=5",
-"date": "Sat, 14 Nov 2026 08:00:00 GMT"
+"title": "You can watch USA vs. Haiti Nations League soccer streaming live for free tonight - Here’s how",
+"domain": "www.oregonlive.com",
+"url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNSHNYazNKcXVYWWs5bXh2MVBKejM4SkFxTXFKWWFyUnUybnZXVWlLV1FSYTNrOGpRcTgzV2lfY3REVkF4eEZ6WU1Iemh6SjcteXBkejFnUl93LXN0THRjOXlNdXdPRXdXdWlZTnJXU1JiMjFsdVMzcWNlTC00c05HaThjakFUdlFFaHdLTUZYSFF5aEhGTFJsVHBXZHVhQnVnVWttYnVFa3VLX2pjTFQ4SkdrTWM2VDA0c2hKb29tNXRXREVNd0RFemFpS1FmZ9IB4gFBVV95cUxNaU1EQUJ0andHZ3V6T1dFZlZCSjZ6OFI2SF9heXpsSXF4TE9xNnFPZzU2MDFQZWNYM0J4c2R2Z24xbE5reTJSUTcyY2Q3QmZvTG9Udy1PME90VHB6SEprQWF1bFVJazJuUVc2dmxBVGtXZHl0TTZjdGNhVWJENnJHZjVYMGpqZXQyeEx4Z2lNWUJqaHFiOWpJdFJLbDJ2OUhmX1NxbTNDOTRiQlE2N0I0UGEyZXdyOC04c09qUnFaX0tWQUhTNXo4cHFUUTAyT2xNWUVMXzFoelJIQkVYZk9NbjN3?oc=5",
+"date": "Tue, 17 Nov 2026 08:00:00 GMT"
 }
 ]
 },
 "Iran": {
-"score": 52,
-"tone": 0.41,
+"score": 56,
+"tone": 1.26,
 "volume": 3,
-"label": "neutral",
+"label": "positive",
 "headlines": [
-{
-"title": "Iran moving World Cup training site to Mexico",
-"domain": "www.pima.gov",
-"url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNUmNFUXZVMms5U2NkbU1ZR1RMZU9PQ01OY1l4a2JBN0h2UndjbkxXc2gwTE5Ma3VScWFFVEEzNWxEM0RnRTVhaXZhR2FBMkVRdDIyQmJXbFAyUXQxcnBCVVJ3OXpOU0Y2MkpZU203OXVaanJ5dk9zNVFiMWcteE5qV2VlN1lHdw?oc=5",
-"date": "Thu, 12 Nov 2026 11:23:38 GMT"
-},
 {
 "title": "When Iran played Egypt in the World Cup ‘Pride Match,’ even Iran’s captain showed respect for gay people",
 "domain": "www.outsports.com",
@@ -574,12 +568,18 @@
 "domain": "www.nytimes.com",
 "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQazZoNi1RMEx3LWkybnJ4UXdCaUk5T3dLNEQ2VUlnYkIwbmxwaElkbWJ0RjIwY21ZQkxwRjJ0Y2x3MUxTLXdjejQ5dGkyc0p3Yzl1cUFGNXFWTHF2dGRYNnlhbnVibGNLNV9wVTUtNGZLcVJ5TTRZSWltbGF3b0duMnFB?oc=5",
 "date": "Sun, 22 Nov 2026 10:28:13 GMT"
+},
+{
+"title": "‍‍‍!+[𝐒𝐓ream]HERE'S]Iraq vs Iran Soccer International Friendly Live Updates 17 November 2026",
+"domain": "vacunasaep.org",
+"url": "https://news.google.com/rss/articles/CBMi2wJBVV95cUxQTWFUc0o2OTZkNHlhSThDdmxrTlBJcV9fdTF3TTdPQjVlVU41VU1rM2tlQ2Rlb0h0b2NoUWEzbkxNeVQtUkVycTUyNGd5dm1BVkZjeE5DOU9TLXU5OG1wd0g2MFk2T1pFeFN4OUJtbEVVV3owMnR1MHBaMUthdjRSU0xIaEVGQ1l2WDBabWRacmNvYTRTZWZDQWZMMlJoUHl2bU5DMkxXVUdtU0lKaWlWNTVpSVJWZ083a2dURHloOG5nT0VlbHRQeG1MdVR3b3FXMDQ2M09lc0oyTHJRTERBbVZIYjhoYTAtc2pEVkttbTR2NUEwcDdqamFJSXVKcXZTcUJweVVNaXREWTdEcEoyVHF5VUdfczBvRHIydU5PZDNJV1p1bHgxNGd6cDU0dFRyUE9BaURnU0ZBeHY1d3FmUGhQM2FQeE9ZSlZCNXhpTEhxNkkzaUh5M3hxVQ?oc=5",
+"date": "Mon, 16 Nov 2026 23:51:00 GMT"
 }
 ]
 },
 "Iraq": {
 "score": 50,
-"tone": 0.05,
+"tone": 0.09,
 "volume": 3,
 "label": "neutral",
 "headlines": [
@@ -604,22 +604,22 @@
 ]
 },
 "Ivory Coast": {
-"score": 53,
-"tone": 0.65,
+"score": 56,
+"tone": 1.14,
 "volume": 3,
-"label": "neutral",
+"label": "positive",
 "headlines": [
-{
-"title": "☑︎!+! [ＬＩＶＥ ＯＮ ＣＨＡＮＮＥＬ] ☑︎ Ivory Coast vs Gambia Live Soccer Match",
-"domain": "vacunasaep.org",
-"url": "https://news.google.com/rss/articles/CBMixwJBVV95cUxQTXN6UFBCUDRiZEZ4cE9SVHRlalBjSVkyemR4TDE2eldFdFlucTlaeWV3bm9xMWpSSEhyN1pPQ3EwU0xzN2NkcHIxVF9meDM3YVJWYjdxMHlmTjEtYmVxcjdLWVlrYXg5V01BaE44UEs1SldLaTZ6Qk5SODV4MDZDSVJkcFZBX3hfUjYwbm0tOFZVdDl2UjVwUkpNYnpqSU9IVVM1Wm5VWHhyOE81ejRQaGxvT09pR0tBcTZBLU5STEF5WjM2YlVFTkhIdEVVbHNWX3dabHkwMjFna0p0dTNBQlRQY1lJRktjVWtXQ0FMZGNZc2QtY2k1Q0dPMVY2X0lBNExHMHI2Q19YQXN5aFFySmxYNXdFd1BvdnYzY2VWN2o2aXhPY3dWczI4NVNQTkNXaXFrMGVrTF9aaldmeDBpV0ZTRjBGU2s?oc=5",
-"date": "Tue, 17 Nov 2026 16:10:52 GMT"
-},
 {
 "title": "FIFA U17 World Cup: Jamaica test awaits Ivory Coast after Italy setback",
 "domain": "www.africanews.com",
 "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPRTU5cmJfb1NNanJMTHVPOHQxNU1oUjllaGU5UC1wcFVnUzlwZjBkWVp0d25YeGJKQ1M3c0dWaXdWLTY4ZHlRODFTYnFrUDA2a0FCWmFickYtbGd3SGl0REx1S3U1b21OYmp1VUljNkZsRzNjWDBLSXB0SkpuVU5WY0NSVUNycXphWDVaTEtaMkZiM2NaNTZienpYWjBLbF9YSUhobkN2TTJ2aDd3N3fSAbMBQVVfeXFMUDZMQUNwNEpHejNLUll5RHZIOWVTZC1yREMwalRwU3Zfbk5XV19uU3drM3lGajl2UDB3XzJreXJ5b2xMMEI5VFhGOE5zSV9CQkN3S1NHalRlVjc4THYxdUJTQXlQaXVTZ3VWcHMzVmR1RndRaFpNa0c1akF3azNmSUlxVmV4T2ZjbWhjNVBoVFU5NjNZMy1wWGhWaVJ3Uy0yZ0l0VVN1RzFEMUx2Q3lNa1l1R1k?oc=5",
 "date": "Mon, 23 Nov 2026 21:16:19 GMT"
+},
+{
+"title": "(HD BROADCAST) Ivory Coast v Gambia Live Match Coverage",
+"domain": "vacunasaep.org",
+"url": "https://news.google.com/rss/articles/CBMixAJBVV95cUxQUlhjSlNRZTF4Y0RBeUxwYzlFcDkyeTh4a0JLaWtBUTdSakRza3ZvY05PSEhJWXdtSHh4cXB2dXEzR3ltdDc3Mk5LUE16TklnWFNvb0lLNzY5RzBLeWlWLWRCYXRZX2J1LTB5UE9CNENzNW15YXdJUXhVUHAzVGNmRDhJRGdrS1V0Z2R3ZERBaVYyRlFrNnFTdFhGNmFZdFVrYXpqcnVHblZESXRJNnIyZ0ZuNTdIUXZhbGhkUTExSkxwcklBMGxBNGIwWXc3d0phOFAzQ3U1NDhLUk45b1poSVExakF1enYwYTc4SEo5OTVGb3ByeXBsZmVTNU81ZXd2UmNUZWIwSGJ6Y19CLTV0SHVaSEQzcUZlYkhQdEtaVGN6cncxd3ZKdTYtM3RuMm9JZGxGMmM5ZTZubVJ0bUVxb2FROTA?oc=5",
+"date": "Tue, 17 Nov 2026 16:12:01 GMT"
 },
 {
 "title": "Where to watch Cote d'Ivoire today? Live soccer streams and TV channels for upcoming games",
@@ -630,34 +630,34 @@
 ]
 },
 "Japan": {
-"score": 53,
-"tone": 0.68,
+"score": 52,
+"tone": 0.35,
 "volume": 3,
 "label": "neutral",
 "headlines": [
 {
-"title": "Japan 0-1 Serbia (Nov 24, 2026) Final Score",
-"domain": "www.espn.com",
-"url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBPTDhHTTNEZE9wakFGZkQ3eG9yTlYzU1dITlk2RlNoT3o0Yk96ZWxCcDNtNFlObjZJZTh0c1l3a2NNb2lmMi1SX094MEdTam16aHlvUUpEX3h5U2x0b3QydVRR?oc=5",
-"date": "Tue, 24 Nov 2026 13:09:04 GMT"
+"title": "Red card drama at World Cup inspired Kozo Tashima’s run for FIFA presidency",
+"domain": "www.japantimes.co.jp",
+"url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNeWFIZzlyZE5hSXk5Q05mV0xyZ2pBNkMzYmZMSVRpYXpaeVJmN18yU19sUmVRblFZZmdZUHVaU1hhOHlVQzRZVUVnQUROOXRCUGtrbnVWa2pTREMyMFZRMnMxSkRxUTkxX015UHBEcmFieHN3ZUo0Q3J3WEsyQXJwNTJn?oc=5",
+"date": "Fri, 20 Nov 2026 08:28:00 GMT"
 },
 {
-"title": "Moriyasu leaves mixed legacy as loss ends era for Japanese football",
-"domain": "www.reuters.com",
-"url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxORXB0RDFxaVVjcVB1ZG1salRBdldvS2k1QVRWTnFMczd4Nl9SY1lURkM2TnNfQVNFRnBhc0VlSmJhYWdGdzB3NnBlT3Y0ZTdqSERVYVVYaDJZaUZ5Z3RWOEpnWE1HQUlEZTFoNnRqQlVOb3BXa003dE9nR1NOM0FTWE4zQV8zQXZfVFMtTnpWVnd6TkZ2Rjh6cXVzOENFd01ZYWN3dmVEUzBKSE5Nak9R?oc=5",
-"date": "Wed, 18 Nov 2026 05:32:00 GMT"
+"title": "Ancelotti and Raphinha sent off as Japan beat Brazil",
+"domain": "www.bbc.com",
+"url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1IbFFsN3I0LWIyZkt3azk5c0ZaeW5QblhObTJ5MnR2a1Q5WGZBNkVZcmdnVzNlX1pKdHEwdzdIOVdPbW42dTNUZDFRbldOelRmLWFXTnBxQVJla3I5SmQ0OHYwMA?oc=5",
+"date": "Sat, 14 Nov 2026 08:00:00 GMT"
 },
 {
-"title": "Origami flower bouquets: Yuna Marui’s gifts from Japan to Duke women’s soccer and the world",
-"domain": "dukechronicle.com",
-"url": "https://news.google.com/rss/articles/CBMinAJBVV95cUxNVlNjenpRVFlZZUluSUlhX0xjNXdwT0VyZnBhXzZzWG42N1l4ZjBHai02Q19YdGVTaTRNdGwyOXJXdDdLUmVoQXdtdGwtMUp1dkEwSk1tcVhYVkozV2FKS05mNzZ2WE9zUVlBQ3QwT1ZJOW1KOWJNdzJ6LTFZYWllOFdYOXFGRzRjalZZMmh5SnRvaGlIQ1MtY0lhbnhPQkstVWRlSVU1N180V1lBMFUtV2dCZ3NZd0IwSTRjTG5JYS1tVnZHZGwwam1ic08xWU95WEpFT1dwT2hGNC1haFdqOGFxY3pQakxicUhhbzBQa2pGYVZXcGR3Z3V0MW9acVhWelpnUXFEWWxMMHZ0bnJpWldja1BaMXNjQld1ZQ?oc=5",
-"date": "Thu, 19 Nov 2026 18:02:56 GMT"
+"title": "Leaked FIFA Documents Show Infantino's 96-Year Private Equity Plan for World Cup",
+"domain": "www.usnews.com",
+"url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPYXU1T0NnYWRzMkd4TUZGY2s2ZFRuM3VZV2hyRVNNcVlhblF2VUR1YlpRdS1qUXJlWnZOeFdKVU5acUU2N19FOVRrQnpRZUx6SXRqQ1NKOTlKa1lyTl9Rb0Z6a2djWXN2bjAtbVZGUzZUdzJPWElpWTRKQmJDQ0VzMUdoNmxNSEZORjI3aVZ6Q0ZzYmJua0J1d0tmVXlmQnNrRlVuUFZQbkxmNGh0d3MtVzBTRnludkozRC1SZ3ZLQjhPZHYtczZLY2JwbVNkSms?oc=5",
+"date": "Tue, 24 Nov 2026 20:26:00 GMT"
 }
 ]
 },
 "Jordan": {
 "score": 58,
-"tone": 1.56,
+"tone": 1.63,
 "volume": 3,
 "label": "positive",
 "headlines": [
@@ -668,22 +668,22 @@
 "date": "Sat, 21 Nov 2026 08:00:00 GMT"
 },
 {
+"title": "Day in the Life of Notre Dame Football Wide Receiver Jordan Faison",
+"domain": "fightingirish.com",
+"url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNU3k4bng2MTdNRTFucG1fOThRcWtNNDJteklUM3Nzak5DTUxzTmphdHdDbFhuVmhWWWVmZFphbG4tM3drU2t2UWdpOHdNWUVrdHFmZGZDWDRORkN0MTZQQmhjTFpJbC1EYi1pMHdmNkhpOFRQOHo5Z19PbzhiM0hNUXhoZDdiVGhWLTE2OTN3blR1SmJ1ZUZHaGZYYklXeTdOejlHQVlnUmJtWnIz?oc=5",
+"date": "Wed, 25 Nov 2026 20:05:30 GMT"
+},
+{
 "title": "Football Australia: No cost blowout associated with Jordan fixture relocation",
 "domain": "www.espn.com",
 "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOeHJ0eDNVR1NtSktMTkxTcDVNZ2FDTC1RbVZ0OFlUXzBOTHc4MHZXTFZyQjQ2bHdxQlpYYTZ4eHNETVFaRUM2MnhiVjdSdGprMmQtRVJwODVkeXZKRDZJUURJbS10UkxfOFo3QmF6MEpYT0VfeUd0ZFlWVlRGLTNpLUx2Uy1QY1Q5VFJrc002SVNDaldEUnlnX3U3c1U2UG45ME04UE85QUh1NjJMaFZXYU1VMUJEc0Vrb3ZOeThKdjlGckRhazhBdzRYRTFCUUE?oc=5",
 "date": "Sun, 15 Nov 2026 08:00:00 GMT"
-},
-{
-"title": "Trent Mosley, Waymond Jordan Score 2 TDs Apiece In No. 18 USC Football’s 35-21 Win Over Maryland",
-"domain": "usctrojans.com",
-"url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQNGtoeVpIdGhBbS1PVjVKMURGQndIMm5wR0xaX0RkUVVZbXVKN0VSeUVnS3Vsb29pTjVHblpTV0d1eUU1Rl9JSDVMY0ZyX1ZxMFluUmZhZTFQWEF3dmRwUjFvTFNlWDdBcDVsb00zOWxXMVBGRGRwZDY4OGNoYmh6SWJ4T0pVcDRMTC1EOTNVc2Q5YmowelJlMXdZVXItYjZsN0YzclFibUNXeE5MNXE5WnJRTTRqbzF5Ny1xQmhjam9ucUQ3VHBkN2R1b2NPTVc2OHVCOGxPZzNjcVpaT2c?oc=5",
-"date": "Sun, 22 Nov 2026 02:58:29 GMT"
 }
 ]
 },
 "Mexico": {
 "score": 60,
-"tone": 2.01,
+"tone": 2.03,
 "volume": 3,
 "label": "positive",
 "headlines": [
@@ -709,7 +709,7 @@
 },
 "Morocco": {
 "score": 58,
-"tone": 1.62,
+"tone": 1.53,
 "volume": 3,
 "label": "positive",
 "headlines": [
@@ -726,10 +726,10 @@
 "date": "Tue, 24 Nov 2026 18:18:41 GMT"
 },
 {
-"title": "Africa Cup title given back to Senegal after sports court rules against Morocco",
-"domain": "www.npr.org",
-"url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1CWWRpelpzZmRmUk9SZHJxa1V3WG9uaW5pUWpvaEtpZHFHVjFJaGJ2UFE4MzduUHNJemFJcDBoYzhpUmo1NnBVVGZKOW8tRzY2ZXNRM0V3clBDQWg4VU11cEY3c1BNOHZmVnZoLVBNZWRGNG9OSjRCR0g3bw?oc=5",
-"date": "Wed, 25 Nov 2026 06:43:23 GMT"
+"title": "Senegal reinstated as 2025 African champions, Morocco to contest decision",
+"domain": "www.reuters.com",
+"url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPLUdqbXBTdHQ0bnlyVkl2dnlMRUowVE96a0R5c1BqbEZiN0UyMXNNSDhnWkhvdFJHOGwxVDlVakJKRGZXMTNRRnNVRHZuai14a1JiUkRFWm1YbVJBTGdrSkFrMEZ5ZGp6QWd2ZTNDV0JIY1A4aExxTFVOWHFuRlh1MWY3bVBwd3NUUWVyU3hOcWQtenJSWjBjYVJEam5QS0hLZ0drZXZXczlRTnM?oc=5",
+"date": "Tue, 24 Nov 2026 20:42:43 GMT"
 }
 ]
 },
@@ -760,8 +760,8 @@
 ]
 },
 "New Zealand": {
-"score": 61,
-"tone": 2.16,
+"score": 60,
+"tone": 2.03,
 "volume": 3,
 "label": "positive",
 "headlines": [
@@ -778,10 +778,10 @@
 "date": "Sun, 15 Nov 2026 11:02:58 GMT"
 },
 {
-"title": "Australia beats New Zealand 32-12 for a 4th straight Rugby League World Cup title",
-"domain": "www.nbcsports.com",
-"url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOSldDeXFLX2R5MmlHelN0NlFVZVp2UDV4XzhqdzZ3Tlo5OXNBYy12cURBUGlOZk5IUnk5VGlvTVJhamJEY2lwWk5qSU5XNTdCeUJaSXpHbVFFVWhRczVfSHBCOV8tR1JUeXRvSUJUaG1OMzVKTnNIUVgtUGFqQzc5SmVUemhYWk5ucUFMMXY1Rk5rdTNueVU3ZkxBdzE1YkczXzFxRDJUV28tZ0xYSEtsWENMSkkyN18xT3c?oc=5",
-"date": "Tue, 17 Nov 2026 02:48:15 GMT"
+"title": "Women’s Soccer’s Guy Called Up to Philippines National Team ahead of New Zealand Friendlies",
+"domain": "brownbears.com",
+"url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQMWdJRS1qMXZKc3BOaC1keXN0R05Jb0hiclNXTXRKVjh3eUYySC1mX2VkdERfZXFmZWlDaWY5M3F1aDNSZkZHc3VhRWR2U2NxUnVjekg3QkNJVDRUNWtRS1ZGTWRSN2JvTXdldzd5cmNFWVB6U2phREVsek5Sb1dPMlFacTVMT1o3TVBTeWhSazFqa18zZmt2aG0xS2xkS3lFLWMzRUF0Q3daM2hjX3R3Z3JIM2tmcDFrZFZpVWtINy1hdzJLX2NPVXZqWUFKZjdwbUFpaVNxUFZyQQ?oc=5",
+"date": "Wed, 25 Nov 2026 15:33:55 GMT"
 }
 ]
 },
@@ -792,28 +792,28 @@
 "label": "positive",
 "headlines": [
 {
-"title": "Haaland's late penalty sends Norway into Nations League quarters, Portugal top group",
-"domain": "www.reuters.com",
-"url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPRFVEQk9ONWNWbE1nZnY0WWd6djlWTldPWXNEc2dyVEl5djBRbFhtbzBCMklSS3JJWlhCdldxOU84S2JKN0o2cFh6Q0lLdEg0ZFRrRVVKT0FYRTNyNFRaVDNEa1ZYT09qZ0xWYUZLWjNscG9aZEVNbzBjU2ZveTBTX0x3Qm1DT255VmNwTVZzaVFHcVYyR3BXQVgxMWgtaFdHQnFZYm5aUVg1R0FyNGNQS29aWG5qWHk1MFBJSGpmbng5cW9P?oc=5",
-"date": "Tue, 17 Nov 2026 22:56:02 GMT"
-},
-{
-"title": "Erling Haaland scores injury-time winner to send Norway through to Nations League quarter-finals - The Athletic",
-"domain": "www.nytimes.com",
-"url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOZmJjdTZCTk8waDVLeVZWbmZlTmNUTE91QURYM29KOVN5WWNTZFh2bUc1ejVhbk1TQ3kzeVNvdG51bTRIWFg5ZXRhNHRpdGk3V2xtRkx3VGhyTDNqVHFFYnJSSXhOYXZNSGZCa0c1TXZBbFNNZW5JUzJ2Rll6RFo0ZWd0QzdJNWtWOFNKMkVOeF80N0YwcjQydF9vNEtmem1oeWQ2RUNVQ3FnamhFb0E?oc=5",
+"title": "Haaland sends Norway to Nations League quarters on last-minute penalty",
+"domain": "www.espn.com",
+"url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxONjR5M2hTVHJwVVFucF9JV0JJbHdySDFsZkVkTUdDRDlYUGlBMWM1bjJEZmc2dkNELUNXN1dsM0s2SVpmbnBuSVVOWEN2ekFNU01QMUU3elFnQnNoc1lGMGpCeUF2cWVYd0RsQmtUTm5KWU1fOGFHalh4WDhuMUNXMDkwSGFDQlFxc1VMV1lOWTE0WjRWZFVCMElWdXFvRHQ3b3lIZXJfdw?oc=5",
 "date": "Tue, 17 Nov 2026 08:00:00 GMT"
 },
 {
-"title": "How to watch Norway vs. Denmark soccer live for free today: Nations League live stream, TV channel, odds",
-"domain": "www.oregonlive.com",
-"url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPVE9ySVQ2bTlwS1hLbWdqYkVhOF9hT0hoYzdhYWVxOUZiZ2t1V0x4SVY3dmlIUHVjaUk5Z2ROMzRyZTk1QmVIT1VaT3hVNjJwN1FaR2VPQWZnX3hhZDB5V016VFhybHhjSHE2S1cyR3hrd1dxNEswaXJieTlRcGRVZGxob3RKLWVWM1BkbTRJeFdpRUs4dnR6RmdjWGpHZm9BUndIMzdTbXdEMHVaVE42ZU9GcmxaMHctT2UyN0tRZDJQaHUzektaMnFmWHdCOHNsckItbnp4cGd5aE3SAe8BQVVfeXFMTnJJYUpOOGotT3JfY3liTVZIelctU0twWHM1b3dvbjNqNWhqc3Q4bzR2Z20xeVpwUXB2ZjllUXVwTXFzVFpwZzFRS1ZjcTRoV0J3bDVHU2FNVGJkTzE4VXg5OUtKQnlrbmFuV0Y3eE1teENHOEpQUVVHS2w2Yzk3SmtPb2lLUm9Ibm5PcXNFa3dOb0YwZHFLYktnTE11VjdDVEVSTGg5VHl6dzI0dnRPNE5QQm5VelRpdHItbUxLeWVfRU5xSU5mdkF5OGVxWWZuWUY2R1plYXJRSGVMQlhXcENQSzdnVzhjdGMzbC1lLTQ?oc=5",
-"date": "Tue, 17 Nov 2026 16:18:00 GMT"
+"title": "Erling Haaland",
+"domain": "www.britannica.com",
+"url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE44VVctR3ZXTmpzX3d1S2o4Q1B5a2ZjTmlOU0JTamRtdTBaM242U0xWWWd4QTZ0RXdkd1JIdXplaFRXZ3l4LS1oeVRxSnJlY01xVWFJMjRuZ2N2dUFhNFVudA?oc=5",
+"date": "Thu, 19 Nov 2026 08:00:00 GMT"
+},
+{
+"title": "The history of the Women’s World Cup final – 1995: Riise’s Norway triumph over Germany",
+"domain": "www.nytimes.com",
+"url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQSnV4RDlLNTQtcHBNM3hVNjhTZTl0WGRhemRpdXhaMG8td3FQN1JhSDNPUjRoUUFBa1JUUjJWNHdNMk9oV2JLcGlOQzFZam9lbTZpOFFhVDBlcE5pelJfUVI3dnlCMjNoZWFUU1ZoZHNSejl2Y0luN1p1ZHhBYm1LdC1Td0x1OFBJZFlhSHNTWWl2Yk8yRHNtaExrOA?oc=5",
+"date": "Sun, 22 Nov 2026 09:17:50 GMT"
 }
 ]
 },
 "Panama": {
-"score": 58,
-"tone": 1.55,
+"score": 56,
+"tone": 1.2,
 "volume": 3,
 "label": "positive",
 "headlines": [
@@ -821,32 +821,51 @@
 "title": "U.S. Women's National Team Returns to Southern California for Training Camp to Kick Off 2027 Along With a Match Against Panama at Dignity Health Sports Park",
 "domain": "ussoccer.com",
 "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPR0ZZV0JDZjFNSkZHR2JjTk9WMXE3TkJzT3RqVG8yZGJnS2MyVkc5Qlk1LXBFanJNSEtwczFfZG1QbkxYWERRWkhSQVJHQ1ljSElaR1lNeGRaM0pGZ1NodzIzZTZJRXFZdThFdmxsTlZHX1QxdktkN296N0RpOFRxZmxrWWh1Z2RUS2VyS1FWM2I0MjAyWmZOVC1VZ0FudFByQkVDQXJxNVBmV2c?oc=5",
-"date": "Mon, 16 Nov 2026 16:18:50 GMT"
-},
-{
-"title": "Curaçao v Panama | Highlights",
-"domain": "www.concacaf.com",
-"url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPZW9iZFBOTjEwU1pBaXhXNUp3MWNFbUJrcHFQbFdvS04wMHFRd2JTOURDUV9kSWsyNjFlbVNwZE9xWVBWQ2VXS1poV0ZKZllCejRYVzVvbmJnOHZVTldwTHcxMlVadGYzZEpncTFaakNKOUdDSVliME04OFF4OGNfUnNVUVozRnpvN0VsZWNpdVp4aWtLMTNfNw?oc=5",
-"date": "Fri, 13 Nov 2026 08:00:00 GMT"
+"date": "Mon, 16 Nov 2026 08:00:00 GMT"
 },
 {
 "title": "USWNT to play Panama Jan. 12 in first match of World Cup year",
 "domain": "www.espn.com",
 "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNUDVrcnpuRTRCWk5FTjBSQkU1dTB2S2ZOdGR4TXh6QTdRcm5VVzBiZnBNcVZYM0dJUm16aUxUcV9HLVlWOTBsY3pvSUxKMTJTZlhVYTJNNm1JSHhtZUc3MElodjBkQXFUWG5DXzNVUy01TnZBVV90VTFsZWVVa01UckJ1Si1QSkNBeWtoY0s0TUhGaWZiSGhmaUtlOURLdw?oc=5",
 "date": "Mon, 16 Nov 2026 08:00:00 GMT"
+},
+{
+"title": "January USWNT camp returns with California friendly vs. Panama",
+"domain": "equalizersoccer.com",
+"url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOaHR3MVVhNm0wWFBUWlctOWxpN1ptRlF4a1NTekpMY3liU2RnNE0wQ3VUMFRRYVkyV2EyMGx6bmxQNzhGMXdYQTdNZG5GakFtS0RzZmdDN09TbVZXZ2FkdUtLNFVEV0NyR051c0FQLUp5TjRMZW5EWExsdkwxMUFOci1sVmVxQ2NPXzdjY1pkcXpKbjRxVFpOTEZJSHAwYnlfa1Jn?oc=5",
+"date": "Mon, 16 Nov 2026 08:00:00 GMT"
 }
 ]
 },
 "Paraguay": {
-"score": null,
-"tone": null,
-"volume": 0,
-"label": "no data",
-"headlines": []
+"score": 55,
+"tone": 0.94,
+"volume": 3,
+"label": "positive",
+"headlines": [
+{
+"title": "U.S. Under-20 Men's National Team Falls 2-1 to Paraguay to Close Tournament in Fayetteville, Ga.",
+"domain": "ussoccer.com",
+"url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQZm0yYUgzeFlyczJKSUFsdFlpT0VlbWptU01ndlYyOHlOWEJnZWxWZTR2aEV3OEMxMkVVTWZscG96UUI2V1k1ZlhNT0RSRVZMdklPZGJuSnczSDZXVnRmdWVwMV9yNzgteC1uOEJHVWF3TUQtQmZ3LTRDbFp2YmV2U084SzJCUFZUT3lBWkxUTk9zWUJHVGFzNFhtREh3aWVIZXQ0aDhFRGpNRWd4d0RGUGwtaC0yaFJ4VDVSQXBlTThpM2lnUmc?oc=5",
+"date": "Wed, 18 Nov 2026 21:01:21 GMT"
+},
+{
+"title": "Song Ui-Young gives Lions one moment to roar as Paraguay hand Singapore lesson in levels",
+"domain": "www.espn.com",
+"url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNQ0V3QlJoNzZ3TUY3R0xjS28tTklVbzhUSnZ0blJTYTl0YTczajNhWldueUpZMTBKR00ybThfM3ZJXzQ1Q294ZThDQ3ZqZ1A4RkVOY2ZkVFlPbGxMUVl6YWFDQ2FfTDJCaVRfUnFJV1lYelBGVFRvd25XMEJCUFlRZEFpM2NjR2VhNllPbjRUU1ZRWlNESG8yeEI3c2hubEpZUnhWeUpyQjdOMElFVFpWNkx6Q2FsLUhyQXhBZUFha25xOVpLcXc?oc=5",
+"date": "Fri, 13 Nov 2026 08:00:00 GMT"
+},
+{
+"title": "Japan vs Paraguay: Friendlies stats & head-to-head",
+"domain": "www.bbc.com",
+"url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5jclBlN05COU5qOGI5Mk90VFdhRmR0dlNOSGliX1RmdTVPRkhmYUFndDZLTDRrTXRHTTNxWkluRFFLZk1rUmc3emx3UmNzdVR6eHFZdG9uQzdqYl95SWlaczhGbw?oc=5",
+"date": "Tue, 17 Nov 2026 08:00:00 GMT"
+}
+]
 },
 "Portugal": {
 "score": 53,
-"tone": 0.64,
+"tone": 0.56,
 "volume": 3,
 "label": "neutral",
 "headlines": [
@@ -866,34 +885,91 @@
 "title": "Portugal coach Jorge Jesus responds to criticism from Ronaldo’s mother",
 "domain": "www.aljazeera.com",
 "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQLTRDYXpDLXQ0bUxyMEc2SVF6WUVra3ZiMk5CTzlOX1RobXotalVTRWhYaHEyWG84aVBvRzA0V3N1ZGdITFYzVGR4amlXUTR0WENXWFBndmV4cWM2cEQyY0l1S1RwdjJFVHJvcVBqM2NhQ3JRUXFTa0RMWDY2Wm5KZzZRWlRPX3I5dDQyZE5JeEdMS2ZsM2JPWUhEQdIBoAFBVV95cUxNWmpya3lLTlhSVzZhdWVUTnlqYVp2OTg2M1Rzem83SmxxQkZjcUF3emRTMGtaU01VZk5UUU14OWhFNkc3VS1iSS14WjlBdWpnUFRFeGRtUEVhNDhCUVFmV29VM0RTaWQ3eVd1RVQxNzRCX0VyNDhHLWRhalJjOG9yZnRtcWhOYVM1cHNzbXJjOGE5dFVnOC1MV1Iyc2hxcHhX?oc=5",
-"date": "Tue, 17 Nov 2026 07:21:49 GMT"
+"date": "Tue, 17 Nov 2026 08:00:00 GMT"
 }
 ]
 },
 "Qatar": {
-"score": null,
-"tone": null,
-"volume": 0,
-"label": "no data",
-"headlines": []
+"score": 57,
+"tone": 1.45,
+"volume": 3,
+"label": "positive",
+"headlines": [
+{
+"title": "2022 FIFA World Cup | Qatar, Controversy, Stadiums, Winner, & Final",
+"domain": "www.britannica.com",
+"url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9VUkpQQWE4UU94OVRiR2RjTnNEM0pQYXByOGhoLWxjZTNJd09GREdYVlZTb0xZdm9iZkJSQ1dtRjJuNDR0aDhDUEpuaDl5YjB0TVhaeWg2RzJZeDBmbWd5d0NR?oc=5",
+"date": "Fri, 13 Nov 2026 08:00:00 GMT"
+},
+{
+"title": "FIFA Under-17 World Cup 2026 gets under way in Qatar despite USA withdrawal",
+"domain": "www.aljazeera.com",
+"url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNQ3otcmczLTh6YjRKaC10UF8yWDQ3YUc1ZVZRRUt4cktiYTJzNk9HY3RkTVRjUVJPWFlOT05UNXktRUthQUUtYXp2cDBDQ3A1aXhVSDFubFpXYzRITDBCa2pDLWV4em1rcFdmd1psUkJQVXNpM0FwdFhzbkVlZ1hmT3g3dkFZQWxzcnZhblY2U0lPekFrQ1FQVXkzOXRGTk1oc0xLaXh2UXhvT1FiQ1hhN1RFVnpvejVJcE9z0gHAAUFVX3lxTE1lUlRFYnMyTnBNdzk2TksxM2c2bjZhR0FFd2FTZy01M0F5YlljUnpLU3pHUEl3dGQxanpYS1pEd1hSUHpiUkZ1TUphTTM4aV9id2VtOWtsV1lGNjcxRF9abC1PSUptZDZoVlVsazRCY3U2Y256azFvTjZUbW5IVlJFUjBCYm1rR0p0eU9wTHZoSTdHbmpOa3psLWVsWk0wdlVzZlhzVUVoUDNOaXBYM0Q4Ulg5bEMwaVdFM0ZGc3BXRQ?oc=5",
+"date": "Thu, 19 Nov 2026 13:57:27 GMT"
+},
+{
+"title": "Inter Miami CF Academy Duo Set to Compete at FIFA U-17 World Cup Qatar 2026™",
+"domain": "www.intermiamicf.com",
+"url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNbWwyVTJjRWx3WW5nRklZelE4dkppOWNvRmxsallzZ19ManFyQkljNURyb0JKLW1RRUpVc1FxaUI5TGtTUktuMG9VRlJpcl9UUHNNZHhZejJpUHo1OEJFSGl6VnJwbWFWTFFZSllCUFVSOEhYNFJTdk5Bc2E2TVdHQzBzc2gtNDB4dEk4eXBvNkxrTFdrS3pScHFpckY2Z0YyUWVKUHdtOEY1WnVuZkp0SA?oc=5",
+"date": "Thu, 19 Nov 2026 16:26:52 GMT"
+}
+]
 },
 "Saudi Arabia": {
-"score": null,
-"tone": null,
-"volume": 0,
-"label": "no data",
-"headlines": []
+"score": 55,
+"tone": 0.95,
+"volume": 3,
+"label": "positive",
+"headlines": [
+{
+"title": "Haiti 1-2 Saudi Arabia (25 Nov, 2026) Final Score",
+"domain": "africa.espn.com",
+"url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5pNFplUVRydG9kc0ZyUEUtdlVKSDY3Rk5qczFSaG54b2hSdDE0U2VtVWVmanFDV2lNelJhbC1HTk1WV0I5dkhreEZXZU1nV04zRTdzRWVfal9vWlVPUXdwWWF1MWFyVjlF?oc=5",
+"date": "Wed, 25 Nov 2026 14:31:39 GMT"
+},
+{
+"title": "+!(ESPN~TV) Way to watch Uzbekistan v Saudi Arabia Game 𝐋𝐈𝐕𝐄 Football Updates Ｔｖ Ｃｈａｎｎｅｌ",
+"domain": "lpssonline.com",
+"url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQd1EydlZMMVpKb0FNQi0zMVFfUURjUG51SzQyOV9aTExOem1mZkJfaUFPOC1WeEJiLTg5VENEbTcwbGg0enhadU5NNlhYZ1R4d1pBdmcxbUFpYVN4QmpDbHhZS0hHZlczV25FdEMzQXZnaU1kcW9CYWZTam50QXJid1R1Y3Z5bDNTLVhkRWVlSnp4S01RdXhSZl9Ld0czRkZicE5iY2lzMld3dUI1WXkzRHlJdndjTmpURXQ1Wkt6V3dCYjZQQ2V1bUlCRGdvdw?oc=5",
+"date": "Tue, 17 Nov 2026 16:01:33 GMT"
+},
+{
+"title": "Q-final: IR Iran 6-0 Saudi Arabia",
+"domain": "www.the-afc.com",
+"url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQZExBMHpYUEpuc0dpcU00dEJ0SjRxdTBvTWFJU2g2ckhiUHdZN0d2NGhHdk95UmR5TWFJaURJR0NEeVBiTEUwVHZIQVZNazN4OEZNSFVOdmlEZnpoblI4UXVMb3hldTNSbndTd1F4NXVXV0doY2VUZWg3bFAzeXZhZUZuUl9KZ2ZDM2V6WjI5TkNmN2oxZzhuRUgwaWxqSVBqbS1iSENrWmU?oc=5",
+"date": "Wed, 25 Nov 2026 08:06:11 GMT"
+}
+]
 },
 "Scotland": {
-"score": null,
-"tone": null,
-"volume": 0,
-"label": "no data",
-"headlines": []
+"score": 53,
+"tone": 0.63,
+"volume": 3,
+"label": "neutral",
+"headlines": [
+{
+"title": "Scotland High School (Laurinburg, NC) Football",
+"domain": "www.maxpreps.com",
+"url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE52T3MwTFFTYTBYWVBDekRfUGV0NUxSVXdFSjN3SFI0N2lzVlY3MVBFa25VeThSdlVPc0ZvdWtaZTJ0LUw1ZVZoRTlyUXAyZ1dId29ldjdjY2hCRHA1TXF3cV8xUkUxN0owQ0p4V015ZWU?oc=5",
+"date": "Sat, 21 Nov 2026 08:00:00 GMT"
+},
+{
+"title": "Scotland FIFA World Cup 2026 TV Schedule: Live soccer streams, channels, fixtures, dates, kick-off times",
+"domain": "www.goal.com",
+"url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOcDhpbnN5elVIMUNRY3ZyRzllVXRMeTlVVXpVTVE1dDRBMmF3OXY1UXdWRW12MG5fQ1gtR2xsb3hvTTJvS0dfS21ZYmlyZFZsQ2dPVUg2TUNVODY5R3U5Q196VldvUlpnUDV0QktCNERUYjVtN1Q4emtXU24yQVpUd05BV19GZ2tYYTdIb2F3?oc=5",
+"date": "Tue, 17 Nov 2026 08:31:14 GMT"
+},
+{
+"title": "World Cup 2035 so positive for Scotland - Grimshaw",
+"domain": "sports.yahoo.com",
+"url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxORWZMOFFOVXRCSlZHZld0Z2xWajQybHFKUk1YeGtFOXlXaFNFYkxNc1NFWm1BeldEczV4SnNlZWprclBKTExGMWpJOTFLdmRvdTVUem0xbWQyakNPeW4xRzlxa1BnY2xEQ2lfQUlRQ2xydHZXVmNnbnNKeHJXLWdRajJjblM3UTlKakNpWVpOX0JJSHdRRXcxQTllUEJrVUZNcjU2NExhckNSUEE?oc=5",
+"date": "Wed, 25 Nov 2026 10:10:48 GMT"
+}
+]
 },
 "Senegal": {
-"score": 67,
-"tone": 3.31,
+"score": 65,
+"tone": 2.92,
 "volume": 3,
 "label": "buoyant",
 "headlines": [
@@ -904,24 +980,24 @@
 "date": "Tue, 24 Nov 2026 18:18:41 GMT"
 },
 {
-"title": "Senegal reinstated as Africa Cup of Nations winners over Morocco by CAS ruling",
-"domain": "www.espn.com",
-"url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOdW5uQ3ZsZHZHcGxDbkoxZUdFSVZwUVRPRnNNSVFRMGhabXotZ2J4aWN5NlpELU1kMU5hdlF1bmNjYXg2dHJOa2FTb0RvaERWVzZ1Z0VHZDRYN2JYV2cwNU9oYUZzd2xCQ2FlMkQtcVpDQTRLZkJybjlFNVhhbWpCRjA0RFJWSExSSWtSTTZaZw?oc=5",
-"date": "Tue, 24 Nov 2026 14:33:00 GMT"
-},
-{
 "title": "Senegal reinstated as 2025 African champions, Morocco to contest decision",
 "domain": "www.reuters.com",
 "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPLUdqbXBTdHQ0bnlyVkl2dnlMRUowVE96a0R5c1BqbEZiN0UyMXNNSDhnWkhvdFJHOGwxVDlVakJKRGZXMTNRRnNVRHZuai14a1JiUkRFWm1YbVJBTGdrSkFrMEZ5ZGp6QWd2ZTNDV0JIY1A4aExxTFVOWHFuRlh1MWY3bVBwd3NUUWVyU3hOcWQtenJSWjBjYVJEam5QS0hLZ0drZXZXczlRTnM?oc=5",
 "date": "Tue, 24 Nov 2026 20:42:43 GMT"
+},
+{
+"title": "Senegal reinstated as Africa Cup of Nations winners over Morocco by CAS ruling",
+"domain": "www.espn.com",
+"url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOdW5uQ3ZsZHZHcGxDbkoxZUdFSVZwUVRPRnNNSVFRMGhabXotZ2J4aWN5NlpELU1kMU5hdlF1bmNjYXg2dHJOa2FTb0RvaERWVzZ1Z0VHZDRYN2JYV2cwNU9oYUZzd2xCQ2FlMkQtcVpDQTRLZkJybjlFNVhhbWpCRjA0RFJWSExSSWtSTTZaZw?oc=5",
+"date": "Tue, 24 Nov 2026 14:33:00 GMT"
 }
 ]
 },
 "South Africa": {
-"score": 61,
-"tone": 2.15,
+"score": 63,
+"tone": 2.69,
 "volume": 3,
-"label": "positive",
+"label": "buoyant",
 "headlines": [
 {
 "title": "Where to watch South Africa today? Live soccer streams and TV channels for upcoming games",
@@ -930,24 +1006,24 @@
 "date": "Wed, 18 Nov 2026 09:00:22 GMT"
 },
 {
+"title": "Chinese Taipei vs. South Africa - How to watch Banyana's FIFA Women's World Cup qualifier",
+"domain": "www.espn.com",
+"url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOMlYzNzJSaHBHNUhsX3Z0R3IzOHBBNEJRZDVHQUgzdUR1a1FnYXFsZTNfOW55QWpnMUR3ZmhGbktGUXJyS28xV09tWDFRWWRmd3ZGMUZ0bkJZaTVYQjJqY0thdS1pVHE5eFBFUlFiclVQNlU5Sk41QXlSb18zeGMzVnZCWUxsNEV3Z1p5Y28zNVBXRmRVaXVWSFdjR0JLVTljZFo1dGdnOVFxUQ?oc=5",
+"date": "Thu, 26 Nov 2026 08:27:00 GMT"
+},
+{
 "title": "South Africa win hands France World Cup 'cornerstone'",
 "domain": "www.afp.com",
 "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1YTGRiTDdtU2RYcnF3QVQ4Q2F0VU81NTFTTTl3U0RlV09BNjZicGdvakdPZFN0aE80QUFsU1Nia09DM2FSdE1zRUVjSXNibTdOaDNuRU5fT2RkSXRxQVY4N3A4bDFubE4zbWJnemxESHRCWnc1Vm5yZEkzS0taT2M?oc=5",
 "date": "Sat, 14 Nov 2026 10:03:42 GMT"
-},
-{
-"title": "FIFA Men's Top 50 World Rankings: November 2026",
-"domain": "www.espn.com",
-"url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOZV84QWtjMW0yVExYbmFjRktGZnVOOWVSZlZhRUFiMVVNdF9YQW81bHhoZEtOeTNiS1JlelBlTVJfTVBCYm95SHRkZThDOW9icmoxb21PZGRXcG5icmFqWlpuN0J1UVZnbW5TdFRNLUJTMXM5LWhqNEZYZTlPMlZlYzZBNnd1dw?oc=5",
-"date": "Fri, 20 Nov 2026 00:18:00 GMT"
 }
 ]
 },
 "South Korea": {
-"score": 52,
-"tone": 0.4,
+"score": 54,
+"tone": 0.76,
 "volume": 3,
-"label": "neutral",
+"label": "positive",
 "headlines": [
 {
 "title": "APTOPIX Qatar South Korea Soccer",
@@ -956,24 +1032,24 @@
 "date": "Tue, 17 Nov 2026 15:14:08 GMT"
 },
 {
-"title": "Ecuador vs. South Korea (Nov 25, 2026) Live Score",
-"domain": "www.espn.com",
-"url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1SVWpnVTd3eW8yaFU5Nm0wTDlvZnM2OEhUUmV2X3RUbVBqZWZXbW5ITG1rUUJiN3NJMWN3V24tNDNlc0lQNk5TTEpHZHF4TWFzSkJWS3BOTkwyMFNDMDdhNXFB?oc=5",
-"date": "Sun, 22 Nov 2026 15:35:54 GMT"
-},
-{
 "title": "Qatar South Korea Soccer",
 "domain": "www.idahostatejournal.com",
 "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQWFlyZWp4dFFHVDVRMElyQzlNZGxWdmM2Wm52RERHOGhZZjNsaWpvVmM3Q0Q0b0xONTB6UXpLeXQtT1plajJGNWRPQU9UamRwc2pkbzZxQ0hHbWxuRlNqdWdUQWd6NUxweXNtQWRubGo3SXk5M3N2S3RkRnp0OE1yc2Y2VDR2cl82UUpLbWhSQVNaakxmRzdDbm1rS0czUlRkWW5hR05yOFo3TXVFeFRYU2M0a2hwRkdwaUJFMXZEbw?oc=5",
 "date": "Tue, 17 Nov 2026 14:18:23 GMT"
+},
+{
+"title": "Korea Republic’s fast start sinks New Caledonia at FIFA U-17 World Cup™",
+"domain": "www.oceaniafootball.com",
+"url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOcmJYT1BVYW5lQ3otWmhycXZfUjQ1MWdwMHlBdGlXcmFVajBKNHdxYTNjQ3pvUl8wM0VqdzY4YllBTmc1c29lM1FORXhpTGN2VS1oSnU5MlR4VGVNTXZNM0tBcDFQLXU5U3VwUUpmYnROYjc0WEhvRk5RTkNCcHJjYVNjQ2hWOXMzTThYbTRwS2NES0xhM0JOVmMzZXUzUmRKVGZzRA?oc=5",
+"date": "Sun, 22 Nov 2026 20:44:22 GMT"
 }
 ]
 },
 "Spain": {
-"score": 53,
-"tone": 0.54,
+"score": 56,
+"tone": 1.25,
 "volume": 3,
-"label": "neutral",
+"label": "positive",
 "headlines": [
 {
 "title": "Spain thrash Fiji 15-0 to record biggest Under-17 World Cup victory",
@@ -982,31 +1058,50 @@
 "date": "Tue, 24 Nov 2026 11:34:00 GMT"
 },
 {
-"title": "England end Spain's long unbeaten run, Italy crash out of Nations League",
+"title": "Spain thought it had the 2030 World Cup final. Morocco had other plans.",
 "domain": "www.reuters.com",
-"url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOd3ZhSGtta2ltYVFfbXVVSC00alNLM3hwX0JOR09kbkZiQW5mQy10clVEX2lXYUhacnUtTjRPbUtYbC1SZTM4bThUNkp3WVg5RXl2VURGYlREMm5BNU14NjNic2RrNEg3bldja1liYmx5SXI0dnBsaHRidldoYmczQ3hjWnptRzFKMmlpd2w5S2RuSGJfeUZxUDlPdmZxMjJNQVc3TE1iS3hJblFCN2ZqRmJxdzFfYzBK?oc=5",
-"date": "Sun, 15 Nov 2026 08:00:00 GMT"
+"url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPSElHNEozY1dCNFVyYUc1VWs3VmpramRCZTZMMFdnbGpVLWdCR0J3VUdESTlRNW0tay1DbDhmOE83TnFGbVBaRFFET3ZVQW9OaHJZUVVacjFDcDVTY29SWkdDYTFLeUZGdWxHSVJDTkhRSUtmWXVhRUc4NXg1VGZoTDdqZEEtLWs3TDVQSVZSVjh3VlNwalNuczNGenpEd1RxODB2X1R3STk0Q0k2d0VlM0lfc1BZUQ?oc=5",
+"date": "Wed, 25 Nov 2026 07:03:00 GMT"
 },
 {
-"title": "Spain in pain as historic run ends but De la Fuente feels best is yet to come",
-"domain": "www.theguardian.com",
-"url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxONDJjdlJOa2UtZm9mb2IyZlFJLW4yQlFtREZYQ1NCOENaNndaUVlLUlFoNDd1Q3Z6X3FvRW9GemlkNjR3NTAzc0IwYk1lcU9uQm1VWW84OUxXU0ZVTjVLRWZhYkpYVEYwdWxtSDlHTTFDelVCbmJzRm5VcFVYcmRLZmsyMmVZTWFuNkk3RDVzLWFGeURxc2s0SWRCVQ?oc=5",
-"date": "Tue, 17 Nov 2026 08:00:00 GMT"
+"title": "Spain record third-biggest win in FIFA World Cup history",
+"domain": "sports.yahoo.com",
+"url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPM3R2TmZZTUlqMlpQTHhyVEdLXzh4OFVzTUJGbUY5dy1NV096MzdpWVdCbkF2dzd2RTZkemR1YVFvWlBaNDlmbUp6aVRaN2w1Q2hYMlpiTjNYX0ZjR1ZjeEF4Z1ZzdFhKd0hLY3lWOWdKWkJLUVM3YlNzYzZtMEJpOFdJb0pHUQ?oc=5",
+"date": "Tue, 24 Nov 2026 10:17:00 GMT"
 }
 ]
 },
 "Sweden": {
-"score": null,
-"tone": null,
-"volume": 0,
-"label": "no data",
-"headlines": []
+"score": 56,
+"tone": 1.28,
+"volume": 3,
+"label": "positive",
+"headlines": [
+{
+"title": "Graham Potter has turned Sweden into one of Europe’s most exciting football teams",
+"domain": "www.nytimes.com",
+"url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNTkpfVVFXaExQejNhcmVyZ0pZamRqZ205d3QtcDMyc2pqc052UGMzSzU3UHg0RHhCLWIzLXNEYkVtd01NYmtoYnBSVThfNW5ZaFQzVG5RN3Vka1NrVG90aEhWcVZQTHBRM0o2Q2pmVHAtYlRUUGx1WllFcUtsUjg0d09kWndsQXltbWpUUk85dzJfUHB3R0wyamtocw?oc=5",
+"date": "Wed, 18 Nov 2026 08:00:00 GMT"
+},
+{
+"title": "News",
+"domain": "www.nccourage.com",
+"url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNQVZNYk5tek9OQUs0NUlUZmNCeUpuQUlXM1hQTVdrYzJoN09pR3FPaHlsSWMzWjdwTThZWjJTMWc4NFJfNXdkQWpQSWNpTWZOdjhudll1eVFZek4yOXFjUlIzRE5MbnZYOEVsNkFuWUtMTGpVeGFOTk9HRWVPLVNTVjRISTR2YW92dDNlcjQwcGJZSThudnBn?oc=5",
+"date": "Wed, 18 Nov 2026 13:57:26 GMT"
+},
+{
+"title": "‍‍‍!+[𝐒𝐓ream]HERE'S]Canada vs Sweden Soccer UEFA NL Live Updates 15 November 2026 - UB",
+"domain": "www.ub.edu",
+"url": "https://news.google.com/rss/articles/CBMi7AJBVV95cUxQNjc0bXlVS2UxVThnWEh5Y3Y2djlwMGlBR2JDT3VadnlWOC10U1BTM0U2ZFRiYjU3MUFBUGszcFFOSGJDMTFkOFNmcXF4SWFFTXlESHZXT3JCei1DV09DYmlKQU9DRlJ6VGdyVFhZZlhaS2lhd0pIb0dteG53Q0MwN2NZeUI0a2VGOHdiaUJKRzV4d2JjMTlzUmI2dUJEc1Bidm5MZFhZWWxQWGRXYm9GbGxMdVRYaUFzYzktNDlmbEJJRVcwV21PY2pvU05uNW0xdUxTMDRqSWFaOVpWRE5zYjU2dmxZU204azJCSF9PUklyR3NIM04tQXpQZGtabE16MF9wdXVaMkpvLV9mMXZ6c0RGaEVIYUhIbmRfNHdZV2c1emE3a3J2WVp6Y0dYVzRhTjZFQlZVV3NHNUJCSVdUN1QwcE9BbW5fS3hCcjAzNHhEdEFrTlQtM09KT3ZxSU12SXJwTUJMdGJYVzc1?oc=5",
+"date": "Sun, 15 Nov 2026 19:57:29 GMT"
+}
+]
 },
 "Switzerland": {
-"score": 53,
-"tone": 0.6,
+"score": 56,
+"tone": 1.3,
 "volume": 3,
-"label": "neutral",
+"label": "positive",
 "headlines": [
 {
 "title": "FIFA Men's Top 50 World Rankings: November 2026",
@@ -1021,16 +1116,16 @@
 "date": "Wed, 25 Nov 2026 14:55:42 GMT"
 },
 {
-"title": "Switzerland FIFA World Cup 2026 TV Schedule: Live soccer streams, channels, fixtures, dates, kick-off times",
-"domain": "www.goal.com",
-"url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPWjQ2WUdDMGdQNVlYYzJBVC1FVUp5TVdfVm10NlRNVE1JMDRxaWpiU3Q3Y3dGMTZ6X0ZGSk9pTmhEQV9kUjlPZ2psY2lteVZoSms1T0dacDFRbVd2eVdtdERtMC1ZNkZmeFBBSHI5SGxiTE5lRFRWemwxLUJuQlUxODFQTzl5VS1zekFlTUp0djNrdw?oc=5",
-"date": "Tue, 17 Nov 2026 08:31:10 GMT"
+"title": "[ＷＡＴＣＨＬＩＶＥ]ＴＶ!] Scotland v Switzerland football Ｌｉｖｅ Ｓｔｒｅａｍｉｎｇ Ｆｒｅｅ ＯＮ Ｔｖ Ｃｈａｎｎｅｌ 16 november 2026 - UB",
+"domain": "www.ub.edu",
+"url": "https://news.google.com/rss/articles/CBMimgJBVV95cUxPNlRKYW5mUVBfYU9qWjZaY2JWZjJYZktINTdyYlB0QldxSXl4Vmd5b2hjMlNxZXB3c3ktS2VqOE5qWFU4dnV3SlJ5SElmdzVNOHRyb3FOMXZlMVNqWDB6cExjUHR6Rm1idnQyVTdkX2xYajd3RC1HVVo4bWJibnc4Y2hVb3A4T0lOMy1Md1R2Xy1ZakdVdzh4dmN2Z24zR2hYc3NRc2Vnc2RxSVdWN3RhVUFJeEswZHB6STNCR09LY1pLUktYVG44amVNRnc3T1FJTWl3dFlxb1dzVThYLTBYYWVYYmNKN2tucElNeXNKREY5eTd0NzRVeUpMUzBSaV8xcTlaSkdqUmw5UElhUjdXbTdheDR1eF9lc0E?oc=5",
+"date": "Mon, 16 Nov 2026 15:31:57 GMT"
 }
 ]
 },
 "Tunisia": {
 "score": 45,
-"tone": -1.08,
+"tone": -0.93,
 "volume": 3,
 "label": "strained",
 "headlines": [
@@ -1041,22 +1136,22 @@
 "date": "Tue, 24 Nov 2026 08:45:27 GMT"
 },
 {
-"title": "Salah breaks Egypt scoring record as Tunisia lose to Libya",
-"domain": "www.reuters.com",
-"url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOanZyTDZYZG9Jdm52WklYTk56TzdFUEg0QWxjZU5LSEVEMV9tTHk5cXhoanRQVHdsLTh4S0N5bUdMSFFKOUJUd2trdEFpMTd3LVBYU1BmZG1yQ1lOTEVfMWpwUXd1d3kyYnhkQnh5eFBFS2FNeUlJMDdtSV9zU3M3cmFfLXZYTUVPWS1oWHVkRkNMLTBvcGZpV3JBeDZFVnNzNjJ0aA?oc=5",
-"date": "Fri, 13 Nov 2026 08:00:00 GMT"
-},
-{
 "title": "(HD BROADCAST) Libya v Tunisia LIVE STreams ON TV Channel 29 July 2026",
 "domain": "vacunasaep.org",
 "url": "https://news.google.com/rss/articles/CBMivgJBVV95cUxQbHV3VmRoZG53cDBBRC0zZjRhNHBxTmFiS1Jubzc4NUVmSDAzWEJoWnotM3JzZ1kwQXA3T2k1NXA4Tk5tRVkzc3BycURfMWNDbllUeTlBVXlxRG02Wk4zeURabnhFMTJkSG1PaXUwLTgtTTNJSVdkWnlLLXdzdFpXcHFzUFVJeHFIWVMwRGxKT2ZOelhDeGhDMjljZkx6NnhpU3pkQWFHVEcwME5ib2lkdXJGYU8zZmhkWHBTR3RSN05jNUFNU204MEZrTTlDUE5GQmUydk5ST1FwZzB5Sk5URGhtQ3k5RUtBS2xzVnUtUFFyZHBWTXpsd1lXbGhVU19uTVlNb2w0YUExOEFTZTd4cGZoR3o5eXpoNy0zSGJJd05TZXl0Z3RoSGpiVW1yOTZFWGdzenBxRTZZbHNRbUE?oc=5",
 "date": "Tue, 17 Nov 2026 16:07:46 GMT"
+},
+{
+"title": "Salah breaks Egypt scoring record as Tunisia lose to Libya",
+"domain": "www.reuters.com",
+"url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOanZyTDZYZG9Jdm52WklYTk56TzdFUEg0QWxjZU5LSEVEMV9tTHk5cXhoanRQVHdsLTh4S0N5bUdMSFFKOUJUd2trdEFpMTd3LVBYU1BmZG1yQ1lOTEVfMWpwUXd1d3kyYnhkQnh5eFBFS2FNeUlJMDdtSV9zU3M3cmFfLXZYTUVPWS1oWHVkRkNMLTBvcGZpV3JBeDZFVnNzNjJ0aA?oc=5",
+"date": "Fri, 13 Nov 2026 08:00:00 GMT"
 }
 ]
 },
 "Turkey": {
 "score": 57,
-"tone": 1.4,
+"tone": 1.37,
 "volume": 3,
 "label": "positive",
 "headlines": [
@@ -1073,16 +1168,16 @@
 "date": "Sun, 15 Nov 2026 08:00:00 GMT"
 },
 {
-"title": "Images - 1st Signal Annual Turkey Football Tournament",
-"domain": "www.dvidshub.net",
-"url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOeVQ3MHY1QlFWSHBzZWI5eXNTYjdDT1hmTVlnclRkMTBXRVRCcnBVUEJ3OEtybFJMRjd3Z1FkejdVNFpFV1JDTDdRSG12VHdGcmQtQmxybkI0SEkxVXpqVkJ3VWRLUXdkOEZMaHNLaDV3Q3FQZ01TbUlEUDVUOFdJQ01vdlY5SUF2dzZuSA?oc=5",
-"date": "Wed, 25 Nov 2026 06:23:00 GMT"
+"title": "Turkey Day football game between Webster Groves and Kirkwood canceled following snowstorm",
+"domain": "www.ksdk.com",
+"url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxONEo0RnNieGMwNkxsSHFNUGpRNFU4ZnZURWQ0b0dmdTN0UjN1Z0pKTE9jV2xTTmx5X1J3YUR3V3pxNkduSU9Hc0RnbC02bXFJY3dndWJLR1pqT3lmNzFzNWE0YktJallGc0RORm90ZDdkT1dhc3N5SzVOTjNnOGpqMGJUa3pHT0NqdFV6aW5ZYjE4OHB4b0FOTGRUSkpnREtOakhJYTlid3ZGZVZTMF9kbllvV05XVThwWFpJTUN2MU9EQ0hPOURtbUZXNmNDZTlTQXRHLTM3Ym9zMXhIZ1EwMm04S2d6OS1TS1Q4?oc=5",
+"date": "Thu, 26 Nov 2026 14:06:58 GMT"
 }
 ]
 },
 "United States": {
-"score": 63,
-"tone": 2.56,
+"score": 62,
+"tone": 2.31,
 "volume": 3,
 "label": "buoyant",
 "headlines": [
@@ -1099,45 +1194,64 @@
 "date": "Fri, 13 Nov 2026 08:00:00 GMT"
 },
 {
-"title": "U.S. Soccer's Pursuit Of Pep Guardiola Reportedly Hits A Snag",
-"domain": "www.foxsports.com",
-"url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQc3FDXzAtQW5HLUFSNnp5QU5SdUc1bjRIYThveFpNM2lLTHl0OTk2TS0yTFZlX0xwejR0YkpDMEpZX2h6R0JBWTdSMHJoWnlINml6bWFwSVRQTkFMTmNra3dIUU5wSExRa3BBV1JxSVJuM1pWcERVUzhTN1FMbl9va0h6Uk5EZENNcjBiUUFVdWlnZ2R2RERlOXB4QjVITknSAZ8BQVVfeXFMT1dzbnFuZUxUc2VpS2loUG1yS3paekpZNGR1RTFZODFvZ3R1LTZnbFZiRUNZejFjcnhCampId2ZQSjBEd19adUF6WGd3ZEhpRGVxWGlhQVcweHVMTXVlSXBHRV9XVk9vcHg4Wmp4QV9lSjZvWkJRYkM5aGxxVk80dnlaT21kVUZ2ZktGZU54bVhoQnlIcHplTHVpOG1mbEc4?oc=5",
-"date": "Sun, 15 Nov 2026 18:59:11 GMT"
+"title": "‘High ambition,’ not fame and celebrity: How U.S. Soccer will seek next USMNT coach - The Athletic",
+"domain": "www.nytimes.com",
+"url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPTHM1dU8yeVJJZEhYUW1HVmlTMktwMnVyYzJFT2ttRm1hRXNDYWt2SGFRY1NoSUNYZEhGcmlvTm1GTnRSTjc3cV81c01XSEt2b21TazRmcDJtT05GNzlzNV9SaFhGWWZrSHN4ZWlpdXRiMF9XU1dwbzZjVEhSX0ZzUUpGZ0xvemRzS1lSVGJtY2RFR1M1ajJUaHVtY1hDNzRQRWM5ZVRfTW9XQQ?oc=5",
+"date": "Fri, 20 Nov 2026 11:00:14 GMT"
 }
 ]
 },
 "Uruguay": {
-"score": 53,
-"tone": 0.67,
+"score": 51,
+"tone": 0.17,
 "volume": 3,
 "label": "neutral",
 "headlines": [
 {
-"title": "Argentina 1-2 Uruguay (Nov 13, 2026) Game Analysis",
+"title": "Uruguay beat Argentina in first match since Messi's retirement",
 "domain": "www.espn.com",
-"url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1vNDNnbWs2cUhJVmtGWk5qUEVkLW04aEtjTTI0Q3pLX2tsbk5RamJMNzVzZFJENnNOd2gzcXBpOEp1akk4eHdRYXpmYnI0bUxYVWJMQ0hZNmVhWm44QnlJeFVrdw?oc=5",
+"url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNbldQX25DWktnVlNwRkh5X2lINmtBUS1MbWY3Q3VaTkpxTy1hMlI2U01vMFhaQVFLTjVTai1nSjdOTnA0a0haeVRaODdCUUx1Zm1YcHd4LTdmS3dja1ZBWGw0Z0ItVE5ad3huQzBHWlNWaWZ6Y3JndEdXV0RqSU5WVV8wbXN3Y0F0b1Q1aDVrU0lrRFUyclZYUUhQNWo?oc=5",
 "date": "Fri, 13 Nov 2026 08:00:00 GMT"
 },
 {
-"title": "Why Is Lionel Messi Not Playing for Argentina vs. Uruguay?",
+"title": "Argentina beaten by Uruguay in first game since Messi retirement",
 "domain": "sports.yahoo.com",
-"url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPazhQRWdyNVlTTXdJcTZMOC1pSWQwYUlvSnV3RUNsRHR6ZU9Zb0VrMlI4VlU1WDI0elVldnVEbm4yWTRWd293V2VOV2tnRzlUNGs5azc1a29LeUtNVGhKdU9uTEJNWTFub0JiREgxMXBnWU5zTnJyaXMxRTVfSV90bTYyRQ?oc=5",
-"date": "Fri, 13 Nov 2026 08:00:00 GMT"
+"url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQT1pncDdaZTNJS21VR2xNSk5RSTVtYzNoeWpZTFItSXFxZl9XYmpHTjY2dkFLYTFGMFlZQ0Y2d2VsQ0lJcUs1V05KS3NMbkVodU9ndjVhYWlhdDNYOEFEcTUwLU0tQUMxMmxtZDAxWjhiU1JaYUROLVIzWThrOExYbnZ2cGpBQ2k4WHFaNA?oc=5",
+"date": "Sat, 14 Nov 2026 08:00:00 GMT"
 },
 {
-"title": "Haiti falls in second U-17 World Cup Group Stage match",
-"domain": "www.concacaf.com",
-"url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQYnA4c0h1bVNHR2R3U1JvX19VQU9VNkJlT2FNd1RVZ3BiQ0ZkcGY5T0FHMHRIMHJUUjZZMTJXRFNUb3dQS3ZFNlR4cXJoRTBZdTJoN3N1SXlUdkZWTXd0Q210UkRpTnA3Ulc0Y2xnWl82a1RCa1VsS3cxSVotenlzTVVLTHdETnlYZjhOVkdOTjh6OHVTOEtVWUVWVUNXSHRQa3p1bUhuSlRmS09UZDYyNi1aSnBHUm1p?oc=5",
-"date": "Sun, 22 Nov 2026 22:37:03 GMT"
+"title": "Uruguay - Soccer, Rugby, Athletics",
+"domain": "www.britannica.com",
+"url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBlTV9xcHN3NWg3OHVRYklkN0NzaVRhS0ZCdWhuMjFSeFp4dm80cG9Fc0VhZTAwVHQ3NzZwM2Z2a2U1UFNQT3BSMUg4YU9STnJMOXg3WDVUeDl5QlFYWklyMWJ6ZFZnS28tNDc1b3pSNA?oc=5",
+"date": "Sat, 21 Nov 2026 08:00:00 GMT"
 }
 ]
 },
 "Uzbekistan": {
-"score": null,
-"tone": null,
-"volume": 0,
-"label": "no data",
-"headlines": []
+"score": 52,
+"tone": 0.33,
+"volume": 3,
+"label": "neutral",
+"headlines": [
+{
+"title": "+!(ESPN~TV) Way to watch Uzbekistan v Saudi Arabia Game 𝐋𝐈𝐕𝐄 Football Updates Ｔｖ Ｃｈａｎｎｅｌ",
+"domain": "lpssonline.com",
+"url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQd1EydlZMMVpKb0FNQi0zMVFfUURjUG51SzQyOV9aTExOem1mZkJfaUFPOC1WeEJiLTg5VENEbTcwbGg0enhadU5NNlhYZ1R4d1pBdmcxbUFpYVN4QmpDbHhZS0hHZlczV25FdEMzQXZnaU1kcW9CYWZTam50QXJid1R1Y3Z5bDNTLVhkRWVlSnp4S01RdXhSZl9Ld0czRkZicE5iY2lzMld3dUI1WXkzRHlJdndjTmpURXQ1Wkt6V3dCYjZQQ2V1bUlCRGdvdw?oc=5",
+"date": "Tue, 17 Nov 2026 16:01:33 GMT"
+},
+{
+"title": "Uzbekistan vs. Jamaica (Nov 23, 2026) Live Score",
+"domain": "www.espn.com",
+"url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFB5ZTUyY1pDQzFSYUlwYjhYbmdZMFFXczRGNWhsTnFDbnpmempQazZaMVhuaGMtMEtJQ0Y2SXZSTnVxc3dDTkQ1WE4wR1NYTDk1QlNzZ1VETDZMT1ZLUXhCQVVn?oc=5",
+"date": "Mon, 23 Nov 2026 13:08:02 GMT"
+},
+{
+"title": "Soccer | South Africa vs. Uzbekistan",
+"domain": "www.dazn.com",
+"url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPWEE2Y3RZcWgtcU0xZ1JPOTVKbk5IQkZmYkc0Q0d3dUVCdVJDelVCNFVZSUtZcXJWTHBCWWxMWUpUc2dUSEF4ZEN1R19MSW44SnR4VkRqQ3FPZFJwdGEweTdYcHh1OTVhUGstSExOSWxaaVlOcDlHUWxXMWY4WFlTNjNuTEtzZ2hvdkhteE1KdTZMam40NmpCdFZBWFk0VHM?oc=5",
+"date": "Thu, 26 Nov 2026 10:13:06 GMT"
+}
+]
 }
 }
 }
